@@ -358,16 +358,20 @@ export const AvatarViewer: React.FC<AvatarViewerProps> = ({
   useEffect(() => {
     let isMounted = true;
     const fetchMocap = async () => {
-      const targetTerm = conceptTerm || (avatarData?.animation_name?.includes('algorithm') ? 'Algorithm' : null);
+      const targetTerm = conceptTerm || (avatarData?.animation_name ? avatarData.animation_name.replace('islrtc_', '').replace('_mocap', '') : null);
       if (!targetTerm) return;
 
       try {
-        const res = await fetch(`/api/v1/avatar/animations/concept/5`); // Algorithm ID 5
-        if (res.ok) {
-          const data = await res.json();
-          if (data.available && isMounted) {
-            // Load keyframe data
-            const detailRes = await fetch(`/api/v1/avatar/animations/2`);
+        const listRes = await fetch('/api/v1/avatar/animations');
+        if (listRes.ok) {
+          const listData = await listRes.json();
+          const matched = listData.animations?.find(
+            (a: any) =>
+              a.concept_term?.toLowerCase() === targetTerm.toLowerCase() ||
+              a.animation_name?.toLowerCase().includes(targetTerm.toLowerCase())
+          );
+          if (matched && isMounted) {
+            const detailRes = await fetch(`/api/v1/avatar/animations/${matched.id}`);
             if (detailRes.ok) {
               const detailData = await detailRes.json();
               if (detailData.keyframes && detailData.keyframes.length > 0 && isMounted) {

@@ -1,0 +1,147 @@
+[
+  {
+    "concept": "Algorithm",
+    "video_exists": true,
+    "mocap_exists": true,
+    "video_sha256": "aa396639f0c35e63eb19c5706638c58e7265ab22fe856d087962233793fffeff",
+    "mocap_sha256": "73687bd6057962d48d4792e4de2eeec68d41fef4ffea6446d5fcb4e7285c7e75",
+    "video_fps": 25.0,
+    "video_total_frames": 375,
+    "video_duration_seconds": 15.0,
+    "video_resolution": "1920x1080",
+    "mocap_keyframes_count": 150,
+    "mocap_duration_seconds": 6.0,
+    "mocap_sample_fps": 25,
+    "mocap_declared_source_sha256": "aa396639f0c35e63eb19c5706638c58e7265ab22fe856d087962233793fffeff",
+    "sha256_match": true,
+    "timestamp_continuity_ok": true,
+    "timestamp_issues": [],
+    "nan_inf_issues": [],
+    "hand_presence": {
+      "left_hand_active_frames": 97,
+      "right_hand_active_frames": 84
+    },
+    "joint_rotation_ranges": {},
+    "facial_nmm_summary": {
+      "has_brow_furrow": true,
+      "has_brow_raise": false,
+      "has_mouth_open": true
+    }
+  },
+  {
+    "concept": "Frequency",
+    "video_exists": true,
+    "mocap_exists": true,
+    "video_sha256": "69623ff6f47a1b8a7b5788df61150fcdc3ee023e20d4633be907937cd2de111c",
+    "mocap_sha256": "190abc36a4f32a7d4765faca07e7068b7728905318603d056a8f869cb40c18d7",
+    "video_fps": 25.0,
+    "video_total_frames": 107,
+    "video_duration_seconds": 4.28,
+    "video_resolution": "1920x1080",
+    "mocap_keyframes_count": 107,
+    "mocap_duration_seconds": 4.28,
+    "mocap_sample_fps": 25,
+    "mocap_declared_source_sha256": "69623ff6f47a1b8a7b5788df61150fcdc3ee023e20d4633be907937cd2de111c",
+    "sha256_match": true,
+    "timestamp_continuity_ok": true,
+    "timestamp_issues": [],
+    "nan_inf_issues": [],
+    "hand_presence": {
+      "left_hand_active_frames": 51,
+      "right_hand_active_frames": 39
+    },
+    "joint_rotation_ranges": {},
+    "facial_nmm_summary": {
+      "has_brow_furrow": false,
+      "has_brow_raise": false,
+      "has_mouth_open": false
+    }
+  },
+  {
+    "concept": "Current",
+    "video_exists": true,
+    "mocap_exists": true,
+    "video_sha256": "803a33d8a3e6cf98264d691e79841ff1c50163e93c049fb110b455f1b3418c71",
+    "mocap_sha256": "37fab92766002d2ee0416b10083662d5a8bfc57aaa5e4d3565c49ce39f2074ad",
+    "video_fps": 25.0,
+    "video_total_frames": 134,
+    "video_duration_seconds": 5.36,
+    "video_resolution": "1920x1080",
+    "mocap_keyframes_count": 125,
+    "mocap_duration_seconds": 5.0,
+    "mocap_sample_fps": 25,
+    "mocap_declared_source_sha256": "803a33d8a3e6cf98264d691e79841ff1c50163e93c049fb110b455f1b3418c71",
+    "sha256_match": true,
+    "timestamp_continuity_ok": true,
+    "timestamp_issues": [],
+    "nan_inf_issues": [],
+    "hand_presence": {
+      "left_hand_active_frames": 41,
+      "right_hand_active_frames": 40
+    },
+    "joint_rotation_ranges": {},
+    "facial_nmm_summary": {
+      "has_brow_furrow": false,
+      "has_brow_raise": false,
+      "has_mouth_open": false
+    }
+  },
+  {
+    "concept": "Beam",
+    "video_exists": true,
+    "mocap_exists": true,
+    "video_sha256": "41dbe899141978778bcbdd089da01ed84674776dae85df78824297ca695a93e5",
+    "mocap_sha256": "01db7c20c1ad4628ca1eed501fe7aa73786f86222118dcafd2868e459ec8b663",
+    "video_fps": 25.0,
+    "video_total_frames": 166,
+    "video_duration_seconds": 6.64,
+    "video_resolution": "1920x1080",
+    "mocap_keyframes_count": 125,
+    "mocap_duration_seconds": 5.0,
+    "mocap_sample_fps": 25,
+    "mocap_declared_source_sha256": "41dbe899141978778bcbdd089da01ed84674776dae85df78824297ca695a93e5",
+    "sha256_match": true,
+    "timestamp_continuity_ok": true,
+    "timestamp_issues": [],
+    "nan_inf_issues": [],
+    "hand_presence": {
+      "left_hand_active_frames": 107,
+      "right_hand_active_frames": 76
+    },
+    "joint_rotation_ranges": {},
+    "facial_nmm_summary": {
+      "has_brow_furrow": true,
+      "has_brow_raise": false,
+      "has_mouth_open": true
+    }
+  },
+  {
+    "concept": "Torque",
+    "video_exists": true,
+    "mocap_exists": true,
+    "video_sha256": "95bf3e1ec6a268b7c3b8250006a52ec932757e20eff82d079d81272ec075fb79",
+    "mocap_sha256": "e193f5b33279f4d77b2eee280afe81a83aaf57cdf5cec6be2da0271255834268",
+    "video_fps": 59.94005994005994,
+    "video_total_frames": 671,
+    "video_duration_seconds": 11.195,
+    "video_resolution": "3840x2160",
+    "mocap_keyframes_count": 180,
+    "mocap_duration_seconds": 7.2,
+    "mocap_sample_fps": 25,
+    "mocap_declared_source_sha256": "95bf3e1ec6a268b7c3b8250006a52ec932757e20eff82d079d81272ec075fb79",
+    "sha256_match": true,
+    "timestamp_continuity_ok": true,
+    "timestamp_issues": [],
+    "nan_inf_issues": [],
+    "hand_presence": {
+      "left_hand_active_frames": 133,
+      "right_hand_active_frames": 132
+    },
+    "joint_rotation_ranges": {},
+    "facial_nmm_summary": {
+      "has_brow_furrow": true,
+      "has_brow_raise": false,
+      "has_mouth_open": true
+    }
+  }
+]

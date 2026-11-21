@@ -24,12 +24,14 @@ from backend.app.services.avatar_animation import (
 )
 from backend.app.services.animation_library_service import AnimationLibraryService
 from backend.app.services.motion_retargeting_service import MotionRetargetingService
+from backend.app.services.motion_fidelity_service import MotionFidelityService
 
 router = APIRouter()
 
 ALLOWED_ANIMATION_EXTS = {".glb", ".gltf", ".json"}
 anim_lib_service = AnimationLibraryService()
 retarget_service = MotionRetargetingService()
+fidelity_service = MotionFidelityService()
 
 
 @router.get("/status", response_model=AvatarStatusResponse, summary="Avatar and motion capture subsystem status")
@@ -168,6 +170,28 @@ def get_avatar_animation_by_concept(concept_id: int, db: Session = Depends(get_d
     Retrieves animation keyframe tracks for a specific concept.
     """
     return resolve_avatar_animation_for_concept(concept_id, db)
+
+
+@router.get("/fidelity", summary="Get motion fidelity evaluation across all concepts")
+def get_all_motion_fidelity():
+    """
+    Returns quantitative motion fidelity metrics (NMLE, DTW, Handshape, NMM) for all ingested signs.
+    """
+    return fidelity_service.evaluate_all_available_concepts()
+
+
+@router.get("/fidelity/{concept_term}", summary="Get motion fidelity evaluation for a concept")
+def get_motion_fidelity(concept_term: str):
+    """
+    Returns quantitative motion fidelity metrics for a specific concept term.
+    """
+    res = fidelity_service.evaluate_concept_fidelity(concept_term)
+    if res.get("available") is False:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=res.get("error", f"Fidelity evaluation unavailable for '{concept_term}'")
+        )
+    return res
 
 
 @router.post("/sequence", response_model=AvatarSequencePayload, summary="Assemble multi-concept animation sequence")

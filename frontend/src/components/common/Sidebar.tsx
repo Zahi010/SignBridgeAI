@@ -8,6 +8,7 @@ import {
   BookOpen,
   History,
   Sliders,
+  SplitSquareVertical,
   Info,
   Home,
   ShieldCheck,
@@ -29,6 +30,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { to: '/validation', label: 'Expert Validation', icon: ShieldCheck },
     { to: '/history', label: 'Translation History', icon: History },
     { to: '/avatar-settings', label: 'Avatar Studio', icon: Sliders },
+    { to: '/avatar-audit', label: 'Motion Fidelity Audit', icon: SplitSquareVertical },
     { to: '/about', label: 'Linguistic Policy & About', icon: Info },
   ];
 

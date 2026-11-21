@@ -200,6 +200,33 @@ export const api = {
     return res.data;
   },
 
+  getAvatarStatus: async () => {
+    const res = await apiClient.get('/avatar/status');
+    return res.data;
+  },
+
+  getAvatarAnimations: async (statusFilter?: string) => {
+    const res = await apiClient.get('/avatar/animations', {
+      params: statusFilter ? { status: statusFilter } : {},
+    });
+    return res.data;
+  },
+
+  getAvatarAnimationDetail: async (animationId: number) => {
+    const res = await apiClient.get(`/avatar/animations/${animationId}`);
+    return res.data;
+  },
+
+  getAvatarFidelity: async () => {
+    const res = await apiClient.get('/avatar/fidelity');
+    return res.data;
+  },
+
+  getConceptFidelity: async (term: string) => {
+    const res = await apiClient.get(`/avatar/fidelity/${encodeURIComponent(term)}`);
+    return res.data;
+  },
+
   getAvatarTimeline: async (irData: any) => {
     const res = await apiClient.post('/avatar/timeline', irData);
     return res.data;

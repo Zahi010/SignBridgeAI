@@ -1,0 +1,172 @@
+[
+  {
+    "concept_term": "Algorithm",
+    "concept_id": 1,
+    "source_video_file": "islrtc_algorithm.mp4",
+    "motion_status": "PARTIALLY_VERIFIED_MOTION",
+    "total_keyframes": 150,
+    "duration_seconds": 6.0,
+    "sample_fps": 25,
+    "normalized_mean_landmark_error": 0.0393,
+    "median_landmark_error": 0.0394,
+    "p95_landmark_error": 0.0435,
+    "max_landmark_error": 0.0447,
+    "per_body_part_error": {
+      "head": 0.0,
+      "shoulders": 0.0332,
+      "elbows": 0.0528,
+      "wrists": 0.0523,
+      "fingers": 0.0582
+    },
+    "trajectory_smoothness_score": 0.694,
+    "peak_movement_timing_ms": 2120,
+    "handshape_fidelity": {
+      "detected_dominant_handshape": "Open 5-Handshape (Flat/Extended)",
+      "mean_finger_curl_rad": 0.369,
+      "left_hand_active": true,
+      "right_hand_active": true
+    },
+    "facial_nmm_fidelity": {
+      "brow_furrow_max": 1.0,
+      "brow_raise_max": 0.0,
+      "mouth_open_max": 0.352
+    },
+    "limitations_disclaimer": "Normalized landmark errors reflect monocular 2D projection and forward kinematics residuals. True 3D depth ground truth is unavailable from single camera recordings. Technical fidelity does not constitute formal linguistic certification."
+  },
+  {
+    "concept_term": "Frequency",
+    "concept_id": 21,
+    "source_video_file": "islrtc_frequency.mp4",
+    "motion_status": "PARTIALLY_VERIFIED_MOTION",
+    "total_keyframes": 107,
+    "duration_seconds": 4.28,
+    "sample_fps": 25,
+    "normalized_mean_landmark_error": 0.0389,
+    "median_landmark_error": 0.0373,
+    "p95_landmark_error": 0.0434,
+    "max_landmark_error": 0.0438,
+    "per_body_part_error": {
+      "head": 0.0,
+      "shoulders": 0.0314,
+      "elbows": 0.052,
+      "wrists": 0.0528,
+      "fingers": 0.0584
+    },
+    "trajectory_smoothness_score": 0.957,
+    "peak_movement_timing_ms": 760,
+    "handshape_fidelity": {
+      "detected_dominant_handshape": "Open 5-Handshape (Flat/Extended)",
+      "mean_finger_curl_rad": 0.376,
+      "left_hand_active": true,
+      "right_hand_active": true
+    },
+    "facial_nmm_fidelity": {
+      "brow_furrow_max": 0.0,
+      "brow_raise_max": 0.0,
+      "mouth_open_max": 0.0
+    },
+    "limitations_disclaimer": "Normalized landmark errors reflect monocular 2D projection and forward kinematics residuals. True 3D depth ground truth is unavailable from single camera recordings. Technical fidelity does not constitute formal linguistic certification."
+  },
+  {
+    "concept_term": "Current",
+    "concept_id": 41,
+    "source_video_file": "islrtc_current.mp4",
+    "motion_status": "PARTIALLY_VERIFIED_MOTION",
+    "total_keyframes": 125,
+    "duration_seconds": 5.0,
+    "sample_fps": 25,
+    "normalized_mean_landmark_error": 0.0373,
+    "median_landmark_error": 0.0362,
+    "p95_landmark_error": 0.0421,
+    "max_landmark_error": 0.0432,
+    "per_body_part_error": {
+      "head": 0.0,
+      "shoulders": 0.0298,
+      "elbows": 0.0505,
+      "wrists": 0.0476,
+      "fingers": 0.0585
+    },
+    "trajectory_smoothness_score": 0.918,
+    "peak_movement_timing_ms": 3440,
+    "handshape_fidelity": {
+      "detected_dominant_handshape": "Open 5-Handshape (Flat/Extended)",
+      "mean_finger_curl_rad": 0.384,
+      "left_hand_active": true,
+      "right_hand_active": true
+    },
+    "facial_nmm_fidelity": {
+      "brow_furrow_max": 0.0,
+      "brow_raise_max": 0.0,
+      "mouth_open_max": 0.0
+    },
+    "limitations_disclaimer": "Normalized landmark errors reflect monocular 2D projection and forward kinematics residuals. True 3D depth ground truth is unavailable from single camera recordings. Technical fidelity does not constitute formal linguistic certification."
+  },
+  {
+    "concept_term": "Beam",
+    "concept_id": 61,
+    "source_video_file": "islrtc_beam.mp4",
+    "motion_status": "PARTIALLY_VERIFIED_MOTION",
+    "total_keyframes": 125,
+    "duration_seconds": 5.0,
+    "sample_fps": 25,
+    "normalized_mean_landmark_error": 0.0401,
+    "median_landmark_error": 0.0398,
+    "p95_landmark_error": 0.0435,
+    "max_landmark_error": 0.0452,
+    "per_body_part_error": {
+      "head": 0.0,
+      "shoulders": 0.0371,
+      "elbows": 0.0527,
+      "wrists": 0.0529,
+      "fingers": 0.0576
+    },
+    "trajectory_smoothness_score": 0.853,
+    "peak_movement_timing_ms": 440,
+    "handshape_fidelity": {
+      "detected_dominant_handshape": "Open 5-Handshape (Flat/Extended)",
+      "mean_finger_curl_rad": 0.342,
+      "left_hand_active": true,
+      "right_hand_active": true
+    },
+    "facial_nmm_fidelity": {
+      "brow_furrow_max": 1.0,
+      "brow_raise_max": 0.0,
+      "mouth_open_max": 0.03
+    },
+    "limitations_disclaimer": "Normalized landmark errors reflect monocular 2D projection and forward kinematics residuals. True 3D depth ground truth is unavailable from single camera recordings. Technical fidelity does not constitute formal linguistic certification."
+  },
+  {
+    "concept_term": "Torque",
+    "concept_id": 81,
+    "source_video_file": "islrtc_torque.mp4",
+    "motion_status": "PARTIALLY_VERIFIED_MOTION",
+    "total_keyframes": 180,
+    "duration_seconds": 7.2,
+    "sample_fps": 25,
+    "normalized_mean_landmark_error": 0.0402,
+    "median_landmark_error": 0.0402,
+    "p95_landmark_error": 0.0452,
+    "max_landmark_error": 0.0456,
+    "per_body_part_error": {
+      "head": 0.0,
+      "shoulders": 0.0322,
+      "elbows": 0.0533,
+      "wrists": 0.0529,
+      "fingers": 0.0624
+    },
+    "trajectory_smoothness_score": 0.952,
+    "peak_movement_timing_ms": 500,
+    "handshape_fidelity": {
+      "detected_dominant_handshape": "Curved / Cup Handshape (C/O)",
+      "mean_finger_curl_rad": 0.556,
+      "left_hand_active": true,
+      "right_hand_active": true
+    },
+    "facial_nmm_fidelity": {
+      "brow_furrow_max": 0.964,
+      "brow_raise_max": 0.0,
+      "mouth_open_max": 0.367
+    },
+    "limitations_disclaimer": "Normalized landmark errors reflect monocular 2D projection and forward kinematics residuals. True 3D depth ground truth is unavailable from single camera recordings. Technical fidelity does not constitute formal linguistic certification."
+  }
+]

@@ -10,6 +10,7 @@ import { VocabularyExplorerPage } from './pages/VocabularyExplorerPage';
 import { ValidationPortalPage } from './pages/ValidationPortalPage';
 import { HistoryPage } from './pages/HistoryPage';
 import { AvatarSettingsPage } from './pages/AvatarSettingsPage';
+import { AvatarAuditComparisonPage } from './pages/AvatarAuditComparisonPage';
 import { AboutPage } from './pages/AboutPage';
 
 export const App: React.FC = () => {
@@ -26,6 +27,7 @@ export const App: React.FC = () => {
           <Route path="validation" element={<ValidationPortalPage />} />
           <Route path="history" element={<HistoryPage />} />
           <Route path="avatar-settings" element={<AvatarSettingsPage />} />
+          <Route path="avatar-audit" element={<AvatarAuditComparisonPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

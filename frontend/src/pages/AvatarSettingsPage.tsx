@@ -7,8 +7,10 @@ import {
   CheckCircle2,
   Eye,
   Zap,
-  RotateCcw
+  RotateCcw,
+  SplitSquareVertical
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { AvatarViewer } from '../components/avatar/AvatarViewer';
 import { PolicyNotice } from '../components/common/PolicyNotice';
 
@@ -42,7 +44,16 @@ export const AvatarSettingsPage: React.FC = () => {
           </p>
         </div>
 
-        <PolicyNotice compact />
+        <div className="flex items-center gap-3">
+          <Link
+            to="/avatar-audit"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-sm transition"
+          >
+            <SplitSquareVertical size={15} />
+            Side-by-Side Motion Audit
+          </Link>
+          <PolicyNotice compact />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
