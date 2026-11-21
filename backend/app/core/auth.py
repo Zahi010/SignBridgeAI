@@ -10,7 +10,7 @@ import hashlib
 import base64
 import json
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Dict, Any, List
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -77,9 +77,9 @@ def revoke_token(token: str, db: Session, user_id: Optional[int] = None) -> bool
         payload_bytes = base64.urlsafe_b64decode(payload_b64 + padding)
         payload = json.loads(payload_bytes.decode("utf-8"))
         exp_ts = payload.get("exp", int(time.time()) + 86400)
-        exp_dt = datetime.utcfromtimestamp(exp_ts)
+        exp_dt = datetime.fromtimestamp(exp_ts, timezone.utc)
     except Exception:
-        exp_dt = datetime.utcnow()
+        exp_dt = datetime.now(timezone.utc)
 
     # Avoid duplicate revocation entries
     existing = db.query(RevokedToken).filter(RevokedToken.token_signature == signature).first()
@@ -88,7 +88,7 @@ def revoke_token(token: str, db: Session, user_id: Optional[int] = None) -> bool
             token_signature=signature,
             expires_at=exp_dt,
             revoked_by_user_id=user_id,
-            revoked_at=datetime.utcnow()
+            revoked_at=datetime.now(timezone.utc)
         )
         db.add(revocation)
         db.commit()

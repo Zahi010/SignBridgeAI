@@ -1,10 +1,13 @@
 import enum
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import (
     Column, Integer, String, Text, Boolean, DateTime, ForeignKey, Enum, Float
 )
 from sqlalchemy.orm import relationship
 from backend.app.database.database import Base
+
+def get_utc_now():
+    return datetime.now(timezone.utc)
 
 class ValidationStatus(str, enum.Enum):
     VERIFIED = "verified"
@@ -43,9 +46,9 @@ class RecordingSession(Base):
     consent_status = Column(Enum(ConsentStatus), default=ConsentStatus.PENDING_CONSENT, nullable=False)
     consent_document_ref = Column(String(200), nullable=True) # e.g. "CONSENT-ISLRTC-2026-004"
     consent_date = Column(DateTime, nullable=True)
-    recording_date = Column(DateTime, default=datetime.utcnow)
+    recording_date = Column(DateTime, default=get_utc_now)
     notes = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     signs = relationship("SignRecord", back_populates="recording_session")
     videos = relationship("SignVideo", back_populates="recording_session")
@@ -63,7 +66,7 @@ class ReviewerProfile(Base):
     institution_affiliation = Column(String(150), nullable=True) # e.g. "ISLRTC Technical Working Group"
     qualifications = Column(Text, nullable=True)
     is_authorized_expert = Column(Boolean, default=False) # Only authorized experts can certify VERIFIED
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     validations = relationship("ReviewerValidation", back_populates="reviewer_profile")
 
@@ -74,7 +77,7 @@ class EngineeringBranch(Base):
     code = Column(String(50), unique=True, index=True, nullable=False) # e.g. "cs", "ece", "mech", "civil", "eee"
     name = Column(String(100), nullable=False)
     description = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     subjects = relationship("Subject", back_populates="branch", cascade="all, delete-orphan")
     concepts = relationship("Concept", back_populates="branch")
@@ -87,7 +90,7 @@ class Subject(Base):
     code = Column(String(50), index=True, nullable=False)
     name = Column(String(150), nullable=False)
     description = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     branch = relationship("EngineeringBranch", back_populates="subjects")
     concepts = relationship("Concept", back_populates="subject")
@@ -108,7 +111,7 @@ class Concept(Base):
     technical_context = Column(Text, nullable=True)
     example_usage = Column(Text, nullable=True)
     difficulty_level = Column(String(50), default="intermediate")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     branch = relationship("EngineeringBranch", back_populates="concepts")
     subject = relationship("Subject", back_populates="concepts")
@@ -125,7 +128,7 @@ class DatasetProvenance(Base):
     source_url = Column(String(255), nullable=True)
     methodology = Column(Text, nullable=True)
     peer_reviewed = Column(Boolean, default=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     signs = relationship("SignRecord", back_populates="provenance")
 
@@ -139,7 +142,7 @@ class ExpertReview(Base):
     status = Column(Enum(ValidationStatus), default=ValidationStatus.NEEDS_REVIEW)
     review_notes = Column(Text, nullable=True)
     sign_accuracy_rating = Column(Float, nullable=True) # 1-5 scale
-    reviewed_at = Column(DateTime, default=datetime.utcnow)
+    reviewed_at = Column(DateTime, default=get_utc_now)
 
     signs = relationship("SignRecord", back_populates="expert_review")
 
@@ -180,7 +183,7 @@ class SignRecord(Base):
     recording_metadata_json = Column(Text, nullable=True) # duration, resolution, fps, codec
     regional_variation_notes = Column(Text, nullable=True)
     
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     concept = relationship("Concept", back_populates="signs")
     provenance = relationship("DatasetProvenance", back_populates="signs")
@@ -210,7 +213,7 @@ class ReviewerValidation(Base):
     suggested_regional_variation = Column(String(100), nullable=True)
     comments = Column(Text, nullable=True)
     accuracy_rating = Column(Float, nullable=True) # 1-5 scale
-    reviewed_at = Column(DateTime, default=datetime.utcnow)
+    reviewed_at = Column(DateTime, default=get_utc_now)
 
     sign_record = relationship("SignRecord", back_populates="validation_reviews")
     reviewer_profile = relationship("ReviewerProfile", back_populates="validations")
@@ -245,7 +248,7 @@ class SignVideo(Base):
     license = Column(String(100), nullable=False)
     validation_status = Column(Enum(ValidationStatus), default=ValidationStatus.VERIFIED)
     notes = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     sign_record = relationship("SignRecord", back_populates="videos")
     recording_session = relationship("RecordingSession", back_populates="videos")
@@ -262,7 +265,7 @@ class AvatarAnimation(Base):
     is_neutral_preview = Column(Boolean, default=True) # honest indicator if it is neutral preview
     validation_status = Column(Enum(ValidationStatus), default=ValidationStatus.NEEDS_REVIEW)
     rig_standard = Column(String(50), default="MediaPipe-Holistic / ReadyPlayerMe")
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     sign_record = relationship("SignRecord", back_populates="avatar_animations")
 
@@ -273,7 +276,7 @@ class SignSequence(Base):
     name = Column(String(150), nullable=False)
     description = Column(Text, nullable=True)
     gloss_sequence = Column(Text, nullable=False) # e.g. "COMPUTER OPERATING SYSTEM WHAT EXPLAIN"
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
 class GrammarAnnotation(Base):
     __tablename__ = "grammar_annotations"
@@ -295,7 +298,7 @@ class TranslationSession(Base):
     source_type = Column(String(50), default="text") # "text", "document", "live_lecture"
     branch_code = Column(String(50), nullable=True)
     subject_code = Column(String(50), nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     translations = relationship("TranslationHistory", back_populates="session", cascade="all, delete-orphan")
 
@@ -318,6 +321,6 @@ class TranslationHistory(Base):
     has_video = Column(Boolean, default=False)
     has_avatar = Column(Boolean, default=False)
     
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     session = relationship("TranslationSession", back_populates="translations")

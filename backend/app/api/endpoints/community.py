@@ -4,12 +4,15 @@ Guarantees participant pseudonymization, ethical consent, withdrawal, and comple
 Enforces multi-license export segregation via ExportEligibilityService.
 """
 
+import uuid
+import hmac
 import hashlib
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
+from backend.app.core.config import settings
 from backend.app.database.database import get_db
 from backend.app.models.validation_models import (
     ParticipantConsent,
@@ -25,6 +28,7 @@ from backend.app.schemas.validation_v2 import (
 )
 from backend.app.services.validation_service import ValidationWorkflowService
 from backend.app.services.export_eligibility_service import ExportEligibilityService
+from backend.app.services.tombstone_service import register_tombstone
 
 router = APIRouter()
 
@@ -57,7 +61,7 @@ def record_participant_consent(
         consent_data_sharing=getattr(req, "consent_data_sharing", True),
         consent_academic_publication=getattr(req, "consent_academic_publication", True),
         is_anonymized=False,
-        consent_date=datetime.utcnow(),
+        consent_date=datetime.now(timezone.utc),
         notes=req.notes
     )
     db.add(consent)
@@ -118,7 +122,7 @@ def record_research_session(
         comprehension_score=req.comprehension_score,
         naturalness_rating=req.naturalness_rating,
         feedback_notes=req.feedback_notes,
-        completed_at=datetime.utcnow()
+        completed_at=datetime.now(timezone.utc)
     )
     db.add(session_record)
 
@@ -194,8 +198,11 @@ def delete_participant_data(
     consent.is_anonymized = True
     consent.consent_given = False
     consent.data_deletion_requested = True
-    consent.withdrawal_date = datetime.utcnow()
+    consent.withdrawal_date = datetime.now(timezone.utc)
     consent.notes = f"Right-to-erasure executed. Sessions purged: {deleted_sessions_count}. Reason: {req.reason or 'User withdrawal request'}."
+
+    # Register in persistent tombstone registry (prevents backup restoration resurrection)
+    register_tombstone(orig_pseudonym, req.reason, deleted_sessions_count)
 
     # 3. Scrub historical audit logs that reference the original pseudonym
     db.query(ValidationAuditLog).filter(ValidationAuditLog.actor_username == orig_pseudonym).update(

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, timezone
 
 from backend.app.database.database import get_db
 from backend.app.models.entities import (
@@ -194,7 +194,7 @@ def submit_validation_decision(
         suggested_regional_variation=req.suggested_regional_variation,
         comments=req.comments,
         accuracy_rating=req.accuracy_rating,
-        reviewed_at=datetime.utcnow()
+        reviewed_at=datetime.now(timezone.utc)
     )
     db.add(review)
 
@@ -202,7 +202,7 @@ def submit_validation_decision(
     sign.validation_status = req.assigned_status
     if req.assigned_status == ValidationStatus.VERIFIED:
         sign.is_authentic = True
-        sign.validation_date = datetime.utcnow()
+        sign.validation_date = datetime.now(timezone.utc)
     elif req.assigned_status == ValidationStatus.UNSUPPORTED:
         sign.is_authentic = False
 

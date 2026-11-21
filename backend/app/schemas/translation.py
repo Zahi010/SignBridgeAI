@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 from backend.app.models.entities import ValidationStatus
 
 class TranslationRequest(BaseModel):
@@ -101,7 +101,7 @@ class TranslationResponse(BaseModel):
     total_pipeline_duration_ms: float = 0.0
     unmatched_tokens: List[str] = []
     
-    created_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 class TranslationHistoryItem(BaseModel):
     model_config = ConfigDict(from_attributes=True)

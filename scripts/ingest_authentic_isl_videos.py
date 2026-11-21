@@ -20,7 +20,7 @@ import sys
 import shutil
 import urllib.request
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # Add project root to sys.path
@@ -140,7 +140,7 @@ def main():
             background="Matte Neutral Gray Studio Backdrop",
             consent_status=ConsentStatus.EXEMPT_OPEN_GOVERNMENT,
             consent_document_ref="GODL-India-ISLRTC-DEPwD",
-            consent_date=datetime.utcnow(),
+            consent_date=datetime.now(timezone.utc),
             notes="Official Indian Sign Language Research and Training Centre (ISLRTC) dataset via data.gov.in."
         )
         print(f"[SESSION] Created authentic recording session: {session.session_uid}")
@@ -275,13 +275,13 @@ def main():
             assigned_status=ValidationStatus.VERIFIED,
             comments=f"Verified authentic ISL sign per ISLRTC official dictionary standards. Handshape and movement confirmed accurate.",
             accuracy_rating=5.0,
-            reviewed_at=datetime.utcnow()
+            reviewed_at=datetime.now(timezone.utc)
         )
         db.add(review)
 
         # Upgrade sign and video status to VERIFIED
         sign.validation_status = ValidationStatus.VERIFIED
-        sign.validation_date = datetime.utcnow()
+        sign.validation_date = datetime.now(timezone.utc)
         sign.confidence_score = 1.0
         video.validation_status = ValidationStatus.VERIFIED
 

@@ -1,6 +1,6 @@
 import os
 import shutil
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException
 from sqlalchemy.orm import Session
 from typing import Optional
@@ -148,6 +148,6 @@ async def upload_document(
         translation_summary=translation_res,
         sections=section_translations,
         document_analysis=doc_analysis,
-        uploaded_at=datetime.utcnow()
+        uploaded_at=datetime.now(timezone.utc)
     )
 

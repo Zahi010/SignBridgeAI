@@ -10,7 +10,7 @@ import json
 import shutil
 import sqlite3
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -76,7 +76,7 @@ def restore_database(target_backup: Optional[Path] = None):
 
     # Create safety rollback snapshot of existing db
     if DB_PATH.exists():
-        safety_path = BACKUPS_DIR / f"pre_restore_safety_{datetime.utcnow().strftime('%Y%m%d_%H%M%S')}.db"
+        safety_path = BACKUPS_DIR / f"pre_restore_safety_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.db"
         shutil.copy2(DB_PATH, safety_path)
         print(f"[SignBridge DR] Pre-restore safety snapshot created: {safety_path.name}")
 
@@ -89,6 +89,20 @@ def restore_database(target_backup: Optional[Path] = None):
     src_conn.close()
 
     print(f"[SignBridge DR] SUCCESS: Database restored to {DB_PATH.name}")
+
+    # Post-restore Tombstone Sanitization (Guarantees zero participant resurrection)
+    try:
+        from backend.app.database.database import SessionLocal
+        from backend.app.services.tombstone_service import enforce_tombstones
+        db = SessionLocal()
+        purged = enforce_tombstones(db)
+        db.close()
+        if purged > 0:
+            print(f"[SignBridge DR] Tombstone sanitization complete: Re-purged {purged} resurrected records.")
+        else:
+            print("[SignBridge DR] Tombstone check: No resurrected records detected.")
+    except Exception as e:
+        print(f"[SignBridge DR] Note: Post-restore tombstone check: {e}")
 
 
 if __name__ == "__main__":

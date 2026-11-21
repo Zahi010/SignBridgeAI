@@ -8,9 +8,9 @@ Provides authenticated APIs to:
 """
 
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from sqlalchemy.orm import Session
 
 from backend.app.database.database import get_db
@@ -47,8 +47,7 @@ class RecordingSessionResponse(BaseModel):
     consent_document_ref: Optional[str]
     created_at: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 @router.post("/recording-session", response_model=RecordingSessionResponse, summary="Register authentic sign recording session")
 def register_recording_session(
@@ -77,7 +76,7 @@ def register_recording_session(
         background=payload.background,
         consent_status=consent_enum,
         consent_document_ref=payload.consent_document_ref,
-        consent_date=datetime.utcnow(),
+        consent_date=datetime.now(timezone.utc),
         notes=payload.notes
     )
     return session

@@ -6,7 +6,7 @@ and engineering concept coverage summaries.
 
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 from backend.app.schemas.translation import TranslationResponse
 
 class DocumentSectionTranslation(BaseModel):
@@ -42,4 +42,4 @@ class DocumentUploadResponse(BaseModel):
     translation_summary: TranslationResponse
     sections: List[DocumentSectionTranslation] = Field(default_factory=list)
     document_analysis: Optional[DocumentAnalysisSummary] = None
-    uploaded_at: datetime = Field(default_factory=datetime.utcnow)
+    uploaded_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

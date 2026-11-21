@@ -6,7 +6,7 @@ video retriever, 3D avatar sequencer, and frontend UI.
 """
 
 from typing import List, Dict, Any, Optional
-from datetime import datetime
+from datetime import datetime, timezone
 from pydantic import BaseModel, Field, ConfigDict
 from backend.app.models.entities import ValidationStatus
 
@@ -112,7 +112,7 @@ class IntermediateRepresentation(BaseModel):
     
     policy_verdict: Dict[str, Any] = Field(default_factory=dict, description="Zero-fabrication audit summary")
     asset_resolution: Dict[str, Any] = Field(default_factory=dict, description="Resolved video and 3D avatar assets")
-    generated_at: datetime = Field(default_factory=datetime.utcnow)
+    generated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
     def to_dict(self) -> Dict[str, Any]:
         return self.model_dump()

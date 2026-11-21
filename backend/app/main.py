@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -11,13 +12,21 @@ from backend.app.api.router import api_router
 from backend.app.database.seed import seed_database
 from backend.app.database.seed_phase5 import seed_phase5_database
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print(f"[{settings.PROJECT_NAME}] Starting up. Initializing database and verifying seed data...")
+    seed_database()
+    seed_phase5_database()
+    yield
+
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
     description="AI-powered Indian Sign Language (ISL) educational translation platform for engineering education.",
     openapi_url=f"{settings.API_V1_PREFIX}/openapi.json",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=lifespan
 )
 
 # Security Headers Middleware (Phase 6 Hardening)
@@ -50,12 +59,6 @@ if data_dir.exists():
 
 # Include API Router
 app.include_router(api_router, prefix=settings.API_V1_PREFIX)
-
-@app.on_event("startup")
-def on_startup():
-    print(f"[{settings.PROJECT_NAME}] Starting up. Initializing database and verifying seed data...")
-    seed_database()
-    seed_phase5_database()
 
 @app.get("/")
 def root():

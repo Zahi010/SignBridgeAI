@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import List
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = os.getenv("SIGNBRIDGE_ENV", "development")
     DEBUG: bool = os.getenv("SIGNBRIDGE_DEBUG", "True").lower() == "true"
     SECRET_KEY: str = os.getenv("SIGNBRIDGE_SECRET_KEY", "signbridge-isl-governance-secret-salt-2026-accredited")
+    DELETION_PEPPER: str = os.getenv("SIGNBRIDGE_DELETION_PEPPER", "signbridge-isl-gdpr-pepper-2026-nonreversible")
     TOKEN_EXPIRATION_SECONDS: int = int(os.getenv("SIGNBRIDGE_TOKEN_EXP_SECONDS", str(86400 * 7)))
     SECURITY_HEADERS_ENABLED: bool = True
     RATE_LIMIT_PER_MINUTE: int = int(os.getenv("SIGNBRIDGE_RATE_LIMIT", "120"))
@@ -42,9 +43,11 @@ class Settings(BaseSettings):
     MAX_UPLOAD_SIZE_MB: int = 15
     ALLOWED_EXTENSIONS: List[str] = [".pdf", ".docx", ".pptx"]
 
-    class Config:
-        case_sensitive = True
-        env_file = ".env"
+    model_config = SettingsConfigDict(
+        case_sensitive=True,
+        env_file=".env",
+        extra="allow"
+    )
 
 settings = Settings()
 

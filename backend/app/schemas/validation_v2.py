@@ -232,7 +232,7 @@ class ResearchSessionCreateRequest(BaseModel):
     participant_pseudonym: str
     session_code: str
     session_type: str = "comprehension_survey"
-    concepts_tested: List[Dict[str, Any]] = []
+    concepts_tested: List[Any] = []
     comprehension_score: Optional[float] = Field(None, ge=0.0, le=1.0)
     naturalness_rating: Optional[float] = Field(None, ge=1.0, le=5.0)
     feedback_notes: Optional[str] = None

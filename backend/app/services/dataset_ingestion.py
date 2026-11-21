@@ -15,7 +15,7 @@ import json
 import uuid
 import shutil
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 from fastapi import UploadFile, HTTPException, status
@@ -154,7 +154,7 @@ def create_recording_session(
         background=background,
         consent_status=consent_status,
         consent_document_ref=consent_document_ref,
-        consent_date=consent_date or datetime.utcnow(),
+        consent_date=consent_date or datetime.now(timezone.utc),
         notes=notes
     )
     db.add(session)
@@ -196,7 +196,7 @@ def ingest_human_signing_video(
     upload_dir = Path("data/sign_videos")
     upload_dir.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     safe_slug = concept.slug.replace("-", "_")
     saved_filename = f"{safe_slug}_{timestamp}{ext}"
     saved_path = upload_dir / saved_filename
@@ -264,7 +264,7 @@ def ingest_human_signing_video(
         source_attribution=source_attribution,
         license=license_type,
         validation_status=ValidationStatus.NEEDS_REVIEW,
-        notes=f"Authorized signing recording ingested on {datetime.utcnow().strftime('%Y-%m-%d')}. Awaiting linguistic review."
+        notes=f"Authorized signing recording ingested on {datetime.now(timezone.utc).strftime('%Y-%m-%d')}. Awaiting linguistic review."
     )
     db.add(video)
     db.commit()

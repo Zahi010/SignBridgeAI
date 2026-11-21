@@ -7,12 +7,15 @@ Strict adherence to Zero-Fabrication Policy:
 """
 
 import enum
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import (
     Column, Integer, String, Text, Boolean, DateTime, ForeignKey, Enum as SQLEnum, Float
 )
 from sqlalchemy.orm import relationship
 from backend.app.database.database import Base
+
+def get_utc_now():
+    return datetime.now(timezone.utc)
 
 
 # --- ENUMS ---
@@ -92,7 +95,7 @@ class Reviewer(Base):
     verification_status = Column(SQLEnum(ReviewerVerificationStatus), default=ReviewerVerificationStatus.UNVERIFIED, nullable=False)
     verification_notes = Column(Text, nullable=True)
     is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     # Relationships
     credentials = relationship("ReviewerCredential", back_populates="reviewer", cascade="all, delete-orphan")
@@ -114,7 +117,7 @@ class ReviewerCredential(Base):
     document_url = Column(String(255), nullable=True)
     verification_status = Column(SQLEnum(ReviewerVerificationStatus), default=ReviewerVerificationStatus.VERIFICATION_PENDING, nullable=False)
     notes = Column(Text, nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     reviewer = relationship("Reviewer", back_populates="credentials")
 
@@ -129,7 +132,7 @@ class ReviewerVerification(Base):
     new_status = Column(SQLEnum(ReviewerVerificationStatus), nullable=False)
     rationale = Column(Text, nullable=False)
     evidence_verified = Column(Boolean, default=False)
-    verified_at = Column(DateTime, default=datetime.utcnow)
+    verified_at = Column(DateTime, default=get_utc_now)
 
     reviewer = relationship("Reviewer", foreign_keys=[reviewer_id], back_populates="verifications_received")
     admin = relationship("Reviewer", foreign_keys=[admin_id])
@@ -144,7 +147,7 @@ class ValidationProject(Base):
     target_domain = Column(String(100), default="Engineering Education")
     rubric_config_json = Column(Text, nullable=True) # JSON criteria configurations
     is_active = Column(Boolean, default=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     tasks = relationship("ValidationTask", back_populates="project", cascade="all, delete-orphan")
 
@@ -160,8 +163,8 @@ class ValidationTask(Base):
     
     assigned_reviewers_count = Column(Integer, default=0)
     completed_reviews_count = Column(Integer, default=0)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
+    updated_at = Column(DateTime, default=get_utc_now, onupdate=get_utc_now)
 
     project = relationship("ValidationProject", back_populates="tasks")
     sign_record = relationship("SignRecord")
@@ -184,7 +187,7 @@ class SignEvaluation(Base):
     overall_recommendation = Column(String(50), nullable=False) # accept, reject, needs_revision, inconclusive
     general_feedback = Column(Text, nullable=True)
     suggested_dialect = Column(String(100), nullable=True)
-    submitted_at = Column(DateTime, default=datetime.utcnow)
+    submitted_at = Column(DateTime, default=get_utc_now)
 
     task = relationship("ValidationTask", back_populates="evaluations")
     reviewer = relationship("Reviewer", back_populates="evaluations")
@@ -216,7 +219,7 @@ class ReviewerAnnotation(Base):
     target_type = Column(String(50), default="avatar") # "video", "avatar", "comparison"
     category = Column(String(100), nullable=False)     # "handshape_error", "movement_jerk", "orientation_flaw", "expression_missing", "general"
     comment = Column(Text, nullable=False)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=get_utc_now)
 
     task = relationship("ValidationTask", back_populates="annotations")
     reviewer = relationship("Reviewer", back_populates="annotations")
@@ -231,7 +234,7 @@ class EvaluationDisagreement(Base):
     disagreement_type = Column(String(100), nullable=False) # "rating_conflict", "recommendation_conflict", "regional_variation"
     reviewer_ratings_json = Column(Text, nullable=False)   # {"rev_1": "pass", "rev_2": "major_issue"}
     status = Column(String(50), default="open")            # "open", "adjudicated", "dismissed"
-    detected_at = Column(DateTime, default=datetime.utcnow)
+    detected_at = Column(DateTime, default=get_utc_now)
 
     task = relationship("ValidationTask", back_populates="disagreements")
 
@@ -246,7 +249,7 @@ class ValidationDecision(Base):
     resulting_motion_status = Column(String(50), nullable=False) # e.g. "PARTIALLY_VERIFIED_MOTION", "VERIFIED_ISL_MOTION", "REJECTED"
     rationale = Column(Text, nullable=False)
     evidence_summary = Column(Text, nullable=True)
-    decided_at = Column(DateTime, default=datetime.utcnow)
+    decided_at = Column(DateTime, default=get_utc_now)
 
     task = relationship("ValidationTask", back_populates="decisions")
     adjudicator = relationship("Reviewer")
@@ -271,7 +274,7 @@ class ParticipantConsent(Base):
     
     is_anonymized = Column(Boolean, default=False)
     original_pseudonym_hash = Column(String(64), nullable=True)
-    consent_date = Column(DateTime, default=datetime.utcnow)
+    consent_date = Column(DateTime, default=get_utc_now)
     withdrawal_date = Column(DateTime, nullable=True)
     notes = Column(Text, nullable=True)
 
@@ -289,7 +292,7 @@ class ResearchSession(Base):
     comprehension_score = Column(Float, nullable=True) # 0.0 to 1.0 or percentage
     naturalness_rating = Column(Float, nullable=True)  # 1.0 to 5.0
     feedback_notes = Column(Text, nullable=True)
-    completed_at = Column(DateTime, default=datetime.utcnow)
+    completed_at = Column(DateTime, default=get_utc_now)
 
     consent = relationship("ParticipantConsent", back_populates="sessions")
 
@@ -304,7 +307,7 @@ class ValidationAuditLog(Base):
     target_type = Column(String(100), nullable=False) # "reviewer", "task", "evaluation", "consent"
     target_id = Column(String(100), nullable=False)
     details_json = Column(Text, nullable=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    timestamp = Column(DateTime, default=get_utc_now)
 
 
 class RevokedToken(Base):
@@ -312,7 +315,7 @@ class RevokedToken(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     token_signature = Column(String(100), unique=True, index=True, nullable=False)
-    revoked_at = Column(DateTime, default=datetime.utcnow)
+    revoked_at = Column(DateTime, default=get_utc_now)
     expires_at = Column(DateTime, nullable=False)
     revoked_by_user_id = Column(Integer, nullable=True)
 

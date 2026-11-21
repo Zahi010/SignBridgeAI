@@ -4,7 +4,7 @@ Handles Reviewer Auth, Credentials, Tasks, Rubric Evaluations, Annotations, Disa
 """
 
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from fastapi.security import HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
@@ -261,7 +261,7 @@ def verify_credential(
         new_status=req.new_status,
         rationale=req.rationale,
         evidence_verified=req.evidence_verified,
-        verified_at=datetime.utcnow()
+        verified_at=datetime.now(timezone.utc)
     )
     db.add(verification)
 
@@ -508,7 +508,7 @@ def add_task_annotation(
         target_type=req.target_type,
         category=req.category,
         comment=req.comment,
-        created_at=datetime.utcnow()
+        created_at=datetime.now(timezone.utc)
     )
     db.add(ann)
     db.commit()

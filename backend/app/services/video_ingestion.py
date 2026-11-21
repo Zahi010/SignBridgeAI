@@ -9,7 +9,7 @@ import shutil
 import subprocess
 from pathlib import Path
 from typing import Optional, Dict, Any
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import UploadFile, HTTPException, status
 from sqlalchemy.orm import Session
 
@@ -143,7 +143,7 @@ def ingest_sign_video(
     thumbs_dir.mkdir(parents=True, exist_ok=True)
 
     # 4. Generate clean sanitized filename
-    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     safe_slug = sign_record.concept.slug if sign_record.concept else f"sign_{sign_record_id}"
     filename = f"{safe_slug}_{timestamp}{ext}"
     target_video_path = videos_dir / filename

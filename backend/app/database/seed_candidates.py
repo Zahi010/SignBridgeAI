@@ -6,7 +6,7 @@ into the SQLite database. Preserves foreign-key integrity and prevents duplicate
 
 import json
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from backend.app.database.database import SessionLocal, Base, engine
 from backend.app.models.entities import (
     EngineeringBranch, Subject, Concept, SignRecord,
@@ -149,7 +149,7 @@ def seed_candidate_vocabulary():
                     source_institution=item.get("source_institution", "SignBridge Candidate Registry"),
                     license=item.get("license", "Government Educational Reference / Fair Dealing"),
                     consent_info="Deaf Signer Institutional Consent Protocol #ISL-2026",
-                    validation_date=datetime.utcnow() if val_status == ValidationStatus.VERIFIED else None
+                    validation_date=datetime.now(timezone.utc) if val_status == ValidationStatus.VERIFIED else None
                 )
                 db.add(sign)
             else:

@@ -4,7 +4,7 @@ SignBridge AI - Validation Lifecycle, Disagreement Detection & Adjudication Serv
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
 from sqlalchemy.orm import Session
 
@@ -57,7 +57,7 @@ class ValidationWorkflowService:
             target_type=target_type,
             target_id=str(target_id),
             details_json=json.dumps(details),
-            timestamp=datetime.utcnow()
+            timestamp=datetime.now(timezone.utc)
         )
         self.db.add(entry)
 
@@ -96,7 +96,7 @@ class ValidationWorkflowService:
                 overall_recommendation=overall_recommendation,
                 general_feedback=general_feedback,
                 suggested_dialect=suggested_dialect,
-                submitted_at=datetime.utcnow()
+                submitted_at=datetime.now(timezone.utc)
             )
             self.db.add(evaluation)
             self.db.flush()
@@ -105,7 +105,7 @@ class ValidationWorkflowService:
             evaluation.overall_recommendation = overall_recommendation
             evaluation.general_feedback = general_feedback
             evaluation.suggested_dialect = suggested_dialect
-            evaluation.submitted_at = datetime.utcnow()
+            evaluation.submitted_at = datetime.now(timezone.utc)
             # Clear old criteria ratings to overwrite with updated submission
             self.db.query(EvaluationCriterionRating).filter(EvaluationCriterionRating.evaluation_id == evaluation.id).delete()
 
@@ -147,7 +147,7 @@ class ValidationWorkflowService:
                 target_type=a.get("target_type", "avatar"),
                 category=a.get("category", "general"),
                 comment=a.get("comment", ""),
-                created_at=datetime.utcnow()
+                created_at=datetime.now(timezone.utc)
             )
             self.db.add(ann)
 
@@ -206,7 +206,7 @@ class ValidationWorkflowService:
                 disagreement_type="recommendation_conflict",
                 reviewer_ratings_json=json.dumps(recommendations),
                 status="open",
-                detected_at=datetime.utcnow()
+                detected_at=datetime.now(timezone.utc)
             )
             self.db.add(d)
             disagreements.append(d)
@@ -233,7 +233,7 @@ class ValidationWorkflowService:
                     disagreement_type="rating_conflict",
                     reviewer_ratings_json=json.dumps(raters),
                     status="open",
-                    detected_at=datetime.utcnow()
+                    detected_at=datetime.now(timezone.utc)
                 )
                 self.db.add(d)
                 disagreements.append(d)
@@ -283,7 +283,7 @@ class ValidationWorkflowService:
             resulting_motion_status=resulting_motion_status,
             rationale=rationale,
             evidence_summary=evidence_summary,
-            decided_at=datetime.utcnow()
+            decided_at=datetime.now(timezone.utc)
         )
         self.db.add(decision)
 
@@ -312,7 +312,7 @@ class ValidationWorkflowService:
             if decision_enum == AdjudicationDecisionEnum.ACCEPTED and resulting_motion_status == "VERIFIED_ISL_MOTION":
                 sign.validation_status = ValidationStatus.VERIFIED
                 sign.is_authentic = True
-                sign.validation_date = datetime.utcnow()
+                sign.validation_date = datetime.now(timezone.utc)
             elif decision_enum == AdjudicationDecisionEnum.REJECTED:
                 sign.validation_status = ValidationStatus.UNSUPPORTED
                 sign.is_authentic = False

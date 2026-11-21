@@ -9,7 +9,7 @@ import sys
 import json
 import sqlite3
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # Paths
@@ -34,7 +34,7 @@ def run_backup() -> Path:
         sys.exit(1)
 
     BACKUPS_DIR.mkdir(parents=True, exist_ok=True)
-    timestamp_str = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    timestamp_str = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     backup_filename = f"signbridge_backup_{timestamp_str}.db"
     backup_path = BACKUPS_DIR / backup_filename
     sha256_path = BACKUPS_DIR / f"{backup_filename}.sha256"
@@ -74,7 +74,7 @@ def run_backup() -> Path:
             manifest_data = []
 
     record = {
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "backup_file": backup_filename,
         "sha256": backup_hash,
         "size_bytes": backup_size,
