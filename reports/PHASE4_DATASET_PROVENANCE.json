@@ -1,0 +1,76 @@
+{
+  "system": "SignBridge AI",
+  "version": "4.0.0",
+  "provenance_catalog_date": "2026-11-21T00:54:00Z",
+  "policy": "Zero-Fabrication Rigging & Motion Capture Policy",
+  "primary_sources": [
+    {
+      "source_id": "SRC-ISLRTC-GOV",
+      "organization": "Indian Sign Language Research and Training Centre (ISLRTC)",
+      "parent_entity": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+      "official_portal": "https://www.islrtc.nic.in/",
+      "distribution_channel": "Official ISLRTC YouTube Channel",
+      "license": "Government Open Data License - India (GODL-India)",
+      "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "permitted_usage": "Permitted for lawful commercial and non-commercial utilization subject to mandatory attribution and non-endorsement.",
+      "assets": [
+        {
+          "concept_term": "Algorithm",
+          "concept_id": 1,
+          "file_name": "islrtc_algorithm.mp4",
+          "sha256": "6eef46dfd82729002f23cf961d19b33a5cb4481d6f784e1b5cf3c9ca3ce9d9b4",
+          "file_size_bytes": 4756033,
+          "video_resolution": "1920x1080",
+          "frame_rate_fps": 25.0,
+          "motion_capture_status": "PARTIALLY_VERIFIED_MOTION",
+          "retargeted_asset_path": "data/isl_motion/processed/islrtc_algorithm_mocap.json"
+        },
+        {
+          "concept_term": "Frequency",
+          "concept_id": 21,
+          "file_name": "islrtc_frequency.mp4",
+          "sha256": "67a6d859b48c4cf9aa8ff663c95973dd1011867cfa0ae1a3e9c4aa029f6db881",
+          "file_size_bytes": 538709,
+          "video_resolution": "1920x1080",
+          "frame_rate_fps": 25.0,
+          "motion_capture_status": "PARTIALLY_VERIFIED_MOTION",
+          "retargeted_asset_path": "data/isl_motion/processed/islrtc_frequency_mocap.json"
+        },
+        {
+          "concept_term": "Current",
+          "concept_id": 41,
+          "file_name": "islrtc_current.mp4",
+          "sha256": "2b137d6e679b37c02b26c7104b9015c9d4ff837cfb2d1d07c2a5ba8501178a9c",
+          "file_size_bytes": 547593,
+          "video_resolution": "1920x1080",
+          "frame_rate_fps": 25.0,
+          "motion_capture_status": "PARTIALLY_VERIFIED_MOTION",
+          "retargeted_asset_path": "data/isl_motion/processed/islrtc_current_mocap.json"
+        },
+        {
+          "concept_term": "Beam",
+          "concept_id": 61,
+          "file_name": "islrtc_beam.mp4",
+          "sha256": "c8d208365691d9b3294c7fe0237ca261ec83f3957ebf059c2f6d0f666f7f2b1c",
+          "file_size_bytes": 1008048,
+          "video_resolution": "1920x1080",
+          "frame_rate_fps": 25.0,
+          "motion_capture_status": "PARTIALLY_VERIFIED_MOTION",
+          "retargeted_asset_path": "data/isl_motion/processed/islrtc_beam_mocap.json"
+        },
+        {
+          "concept_term": "Torque",
+          "concept_id": 81,
+          "file_name": "islrtc_torque.mp4",
+          "sha256": "a9359e875aa3ebaeef15e0a0d42187b640eb537b8098c36fe963d3950ec4693b",
+          "file_size_bytes": 11181747,
+          "video_resolution": "1920x1080",
+          "frame_rate_fps": 25.0,
+          "motion_capture_status": "PARTIALLY_VERIFIED_MOTION",
+          "retargeted_asset_path": "data/isl_motion/processed/islrtc_torque_mocap.json"
+        }
+      ]
+    }
+  ]
+}
+

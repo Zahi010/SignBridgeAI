@@ -1,0 +1,403 @@
+[
+  {
+    "id": 1,
+    "category": "simple_definition",
+    "sentence": "A database stores structured digital information.",
+    "expected_concepts": ["Database"],
+    "expected_status": "verified",
+    "branch": "cs"
+  },
+  {
+    "id": 2,
+    "category": "simple_definition",
+    "sentence": "An algorithm is a finite set of computational instructions.",
+    "expected_concepts": ["Algorithm"],
+    "expected_status": "needs_review",
+    "branch": "cs"
+  },
+  {
+    "id": 3,
+    "category": "simple_definition",
+    "sentence": "Voltage represents the potential difference between two circuit points.",
+    "expected_concepts": ["Voltage", "Circuit"],
+    "expected_status": "partial",
+    "branch": "ece"
+  },
+  {
+    "id": 4,
+    "category": "simple_definition",
+    "sentence": "Force is an interaction that changes the motion of an object.",
+    "expected_concepts": ["Force", "Motion"],
+    "expected_status": "verified",
+    "branch": "mech"
+  },
+  {
+    "id": 5,
+    "category": "simple_definition",
+    "sentence": "A foundation transmits building loads safely to underlying bedrock.",
+    "expected_concepts": ["Foundation", "Load"],
+    "expected_status": "verified",
+    "branch": "civil"
+  },
+  {
+    "id": 6,
+    "category": "simple_definition",
+    "sentence": "A transformer changes alternating current voltage levels via electromagnetic induction.",
+    "expected_concepts": ["Transformer", "Alternating Current", "Voltage", "Induction"],
+    "expected_status": "needs_review",
+    "branch": "eee"
+  },
+  {
+    "id": 7,
+    "category": "technical_question",
+    "sentence": "What is an operating system?",
+    "expected_concepts": ["Operating System"],
+    "expected_status": "explanation_needed",
+    "branch": "cs"
+  },
+  {
+    "id": 8,
+    "category": "technical_question",
+    "sentence": "How does a microprocessor execute program instructions?",
+    "expected_concepts": ["Microprocessor", "Programming"],
+    "expected_status": "needs_review",
+    "branch": "ece"
+  },
+  {
+    "id": 9,
+    "category": "technical_question",
+    "sentence": "Why does friction resist sliding motion between mechanical gears?",
+    "expected_concepts": ["Friction", "Motion", "Gear"],
+    "expected_status": "verified",
+    "branch": "mech"
+  },
+  {
+    "id": 10,
+    "category": "technical_question",
+    "sentence": "How does concrete withstand heavy compressive load?",
+    "expected_concepts": ["Concrete", "Load"],
+    "expected_status": "needs_review",
+    "branch": "civil"
+  },
+  {
+    "id": 11,
+    "category": "technical_question",
+    "sentence": "What is the function of a circuit breaker in a power system?",
+    "expected_concepts": ["Circuit Breaker", "Power System"],
+    "expected_status": "partial",
+    "branch": "eee"
+  },
+  {
+    "id": 12,
+    "category": "comparison",
+    "sentence": "Explain the difference between voltage and current.",
+    "expected_concepts": ["Voltage", "Current"],
+    "expected_status": "verified",
+    "branch": "ece"
+  },
+  {
+    "id": 13,
+    "category": "comparison",
+    "sentence": "Compare alternating current with direct current.",
+    "expected_concepts": ["Alternating Current", "Direct Current"],
+    "expected_status": "verified",
+    "branch": "eee"
+  },
+  {
+    "id": 14,
+    "category": "comparison",
+    "sentence": "What is the distinction between software and hardware?",
+    "expected_concepts": ["Software", "Hardware"],
+    "expected_status": "verified",
+    "branch": "cs"
+  },
+  {
+    "id": 15,
+    "category": "comparison",
+    "sentence": "Compare stress and strain in structural materials.",
+    "expected_concepts": ["Stress", "Strain", "Structure"],
+    "expected_status": "partial",
+    "branch": "mech"
+  },
+  {
+    "id": 16,
+    "category": "comparison",
+    "sentence": "What is the difference between a motor and a generator?",
+    "expected_concepts": ["Motor", "Generator"],
+    "expected_status": "verified",
+    "branch": "eee"
+  },
+  {
+    "id": 17,
+    "category": "multi_concept",
+    "sentence": "The operating system coordinates memory allocation for the processor.",
+    "expected_concepts": ["Operating System", "Memory", "Processor"],
+    "expected_status": "explanation_needed",
+    "branch": "cs"
+  },
+  {
+    "id": 18,
+    "category": "multi_concept",
+    "sentence": "Voltage drives electric current through a circuit against resistance.",
+    "expected_concepts": ["Voltage", "Current", "Circuit", "Resistance"],
+    "expected_status": "partial",
+    "branch": "ece"
+  },
+  {
+    "id": 19,
+    "category": "multi_concept",
+    "sentence": "In an engine, torque and velocity determine output mechanical power.",
+    "expected_concepts": ["Engine", "Torque", "Velocity", "Power"],
+    "expected_status": "needs_review",
+    "branch": "mech"
+  },
+  {
+    "id": 20,
+    "category": "multi_concept",
+    "sentence": "The concrete beam transfers structural load directly to the vertical column.",
+    "expected_concepts": ["Concrete", "Beam", "Structure", "Load", "Column"],
+    "expected_status": "needs_review",
+    "branch": "civil"
+  },
+  {
+    "id": 21,
+    "category": "multi_concept",
+    "sentence": "Electricity flows from the generator through high voltage transmission to the substation.",
+    "expected_concepts": ["Electricity", "Generator", "Voltage", "Transmission", "Substation"],
+    "expected_status": "partial",
+    "branch": "eee"
+  },
+  {
+    "id": 22,
+    "category": "semantic_relationship",
+    "sentence": "Voltage provides potential difference that drives the flow of current.",
+    "expected_concepts": ["Voltage", "Current"],
+    "expected_status": "verified",
+    "branch": "ece"
+  },
+  {
+    "id": 23,
+    "category": "semantic_relationship",
+    "sentence": "Current flow through a conductor is opposed by resistance.",
+    "expected_concepts": ["Current", "Resistance"],
+    "expected_status": "verified",
+    "branch": "ece"
+  },
+  {
+    "id": 24,
+    "category": "semantic_relationship",
+    "sentence": "The operating system manages virtual memory and prevents deadlock.",
+    "expected_concepts": ["Operating System", "Virtual Memory", "Memory", "Deadlock"],
+    "expected_status": "unsupported",
+    "branch": "cs"
+  },
+  {
+    "id": 25,
+    "category": "semantic_relationship",
+    "sentence": "The horizontal beam transfers floor loads to the supporting column.",
+    "expected_concepts": ["Beam", "Load", "Column"],
+    "expected_status": "verified",
+    "branch": "civil"
+  },
+  {
+    "id": 26,
+    "category": "semantic_relationship",
+    "sentence": "The compiler translates software code into machine instructions for the processor.",
+    "expected_concepts": ["Compiler", "Software", "Machine", "Processor"],
+    "expected_status": "needs_review",
+    "branch": "cs"
+  },
+  {
+    "id": 27,
+    "category": "unsupported_concept",
+    "sentence": "What is a deadlock in concurrent operating systems?",
+    "expected_concepts": ["Deadlock", "Operating System"],
+    "expected_status": "unsupported",
+    "branch": "cs"
+  },
+  {
+    "id": 28,
+    "category": "unsupported_concept",
+    "sentence": "Explain how a pointer references memory in C programming.",
+    "expected_concepts": ["Pointer", "Memory", "Programming"],
+    "expected_status": "unsupported",
+    "branch": "cs"
+  },
+  {
+    "id": 29,
+    "category": "unsupported_concept",
+    "sentence": "How does high frequency carrier modulation work in wireless transmitters?",
+    "expected_concepts": ["Frequency", "Modulation"],
+    "expected_status": "unsupported",
+    "branch": "ece"
+  },
+  {
+    "id": 30,
+    "category": "unsupported_concept",
+    "sentence": "Steel cross bracing provides lateral stability against earthquake ground motion.",
+    "expected_concepts": ["Bracing", "Motion"],
+    "expected_status": "unsupported",
+    "branch": "civil"
+  },
+  {
+    "id": 31,
+    "category": "unsupported_concept",
+    "sentence": "The bridge abutment anchors the deck superstructure to the soil embankment.",
+    "expected_concepts": ["Abutment", "Structure", "Soil Mechanics"],
+    "expected_status": "unsupported",
+    "branch": "civil"
+  },
+  {
+    "id": 32,
+    "category": "unsupported_concept",
+    "sentence": "Calculate total electrical impedance and phasor angles in the AC transmission line.",
+    "expected_concepts": ["Electrical Impedance", "Phasor", "Transmission"],
+    "expected_status": "unsupported",
+    "branch": "eee"
+  },
+  {
+    "id": 33,
+    "category": "unsupported_concept",
+    "sentence": "How does momentum conservation govern inelastic collision between vehicles?",
+    "expected_concepts": ["Momentum"],
+    "expected_status": "unsupported",
+    "branch": "mech"
+  },
+  {
+    "id": 34,
+    "category": "contextual_disambiguation",
+    "sentence": "Current flows through a resistor in a closed circuit.",
+    "expected_concepts": ["Current", "Circuit", "Resistance"],
+    "expected_status": "partial",
+    "branch": "ece"
+  },
+  {
+    "id": 35,
+    "category": "contextual_disambiguation",
+    "sentence": "Current research focuses on artificial intelligence algorithms.",
+    "expected_concepts": ["Algorithm"],
+    "expected_status": "needs_review",
+    "branch": "cs"
+  },
+  {
+    "id": 36,
+    "category": "contextual_disambiguation",
+    "sentence": "High mechanical stress on the concrete pillar causes microcracking.",
+    "expected_concepts": ["Stress", "Concrete", "Column"],
+    "expected_status": "needs_review",
+    "branch": "civil"
+  },
+  {
+    "id": 37,
+    "category": "contextual_disambiguation",
+    "sentence": "The national power grid transmits electricity over hundreds of kilometers.",
+    "expected_concepts": ["Power Grid", "Electricity", "Transmission"],
+    "expected_status": "verified",
+    "branch": "eee"
+  },
+  {
+    "id": 38,
+    "category": "conditional_statement",
+    "sentence": "If circular wait occurs, the operating system enters a deadlock state.",
+    "expected_concepts": ["Operating System", "Deadlock"],
+    "expected_status": "unsupported",
+    "branch": "cs"
+  },
+  {
+    "id": 39,
+    "category": "conditional_statement",
+    "sentence": "If voltage exceeds breakdown limits, the diode conducts reverse current.",
+    "expected_concepts": ["Voltage", "Diode", "Current"],
+    "expected_status": "needs_review",
+    "branch": "ece"
+  },
+  {
+    "id": 40,
+    "category": "conditional_statement",
+    "sentence": "When compressive load exceeds column capacity, structural buckling occurs.",
+    "expected_concepts": ["Load", "Column", "Structure"],
+    "expected_status": "partial",
+    "branch": "civil"
+  },
+  {
+    "id": 41,
+    "category": "complex_systems",
+    "sentence": "Cloud computing distributes database storage across multiple network servers.",
+    "expected_concepts": ["Cloud Computing", "Database", "Computer Network"],
+    "expected_status": "verified",
+    "branch": "cs"
+  },
+  {
+    "id": 42,
+    "category": "complex_systems",
+    "sentence": "Integrated circuit microprocessors utilize transistors for digital logic gates.",
+    "expected_concepts": ["Circuit", "Microprocessor", "Transistor", "Logic Gate"],
+    "expected_status": "partial",
+    "branch": "ece"
+  },
+  {
+    "id": 43,
+    "category": "complex_systems",
+    "sentence": "A steam turbine drives the synchronous generator to supply electric power.",
+    "expected_concepts": ["Turbine", "Generator", "Electricity", "Power"],
+    "expected_status": "needs_review",
+    "branch": "mech"
+  },
+  {
+    "id": 44,
+    "category": "complex_systems",
+    "sentence": "Geotechnical soil mechanics investigations evaluate foundation settlement risks.",
+    "expected_concepts": ["Soil Mechanics", "Foundation", "Settlement"],
+    "expected_status": "needs_review",
+    "branch": "civil"
+  },
+  {
+    "id": 45,
+    "category": "complex_systems",
+    "sentence": "Protective relays monitor power systems to trigger circuit breakers during short circuits.",
+    "expected_concepts": ["Relay", "Power System", "Circuit Breaker", "Circuit"],
+    "expected_status": "partial",
+    "branch": "eee"
+  },
+  {
+    "id": 46,
+    "category": "complex_systems",
+    "sentence": "Cryptography encryption secures computer network communications.",
+    "expected_concepts": ["Encryption", "Computer Network"],
+    "expected_status": "needs_review",
+    "branch": "cs"
+  },
+  {
+    "id": 47,
+    "category": "complex_systems",
+    "sentence": "Fluid mechanics principles govern aerodynamic velocity and pressure drops.",
+    "expected_concepts": ["Fluid Mechanics", "Velocity", "Pressure"],
+    "expected_status": "partial",
+    "branch": "mech"
+  },
+  {
+    "id": 48,
+    "category": "complex_systems",
+    "sentence": "Stormwater drainage hydrology designs prevent foundation soil erosion.",
+    "expected_concepts": ["Drainage", "Hydrology", "Foundation", "Soil Mechanics"],
+    "expected_status": "partial",
+    "branch": "civil"
+  },
+  {
+    "id": 49,
+    "category": "complex_systems",
+    "sentence": "Solar inverters convert direct current from photovoltaic panels into alternating current.",
+    "expected_concepts": ["Inverter", "Direct Current", "Alternating Current"],
+    "expected_status": "needs_review",
+    "branch": "eee"
+  },
+  {
+    "id": 50,
+    "category": "complex_systems",
+    "sentence": "Recursion utilizes the call stack to solve divide and conquer algorithms.",
+    "expected_concepts": ["Recursion", "Stack", "Algorithm"],
+    "expected_status": "needs_review",
+    "branch": "cs"
+  }
+]
+

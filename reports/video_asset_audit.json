@@ -1,0 +1,167 @@
+{
+  "summary": {
+    "total_video_files": 5,
+    "genuine_human_signing_videos": 0,
+    "synthetic_testsrc_videos": 5,
+    "api_retrieval_software_correctness": "PASS",
+    "video_linguistic_authenticity": "DEMO_ONLY"
+  },
+  "video_files": [
+    {
+      "filename": "algorithm_20261120_060226.mp4",
+      "filepath": "data\\sign_videos\\algorithm_20261120_060226.mp4",
+      "file_size_bytes": 17012,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 2.0,
+      "fps": 25.0,
+      "contains_human_signer": false,
+      "is_synthetic_testsrc": true,
+      "visual_content_description": "SMPTE/testsrc color bar test pattern with digital timer counter",
+      "db_registration": {
+        "registered": true,
+        "db_id": 5,
+        "sign_record_id": 5,
+        "claimed_title": "Algorithm - Candidate Sign Recording",
+        "claimed_signer": "Certified Deaf Educator #401",
+        "claimed_attribution": "Deaf Higher Education Working Group Repository",
+        "claimed_validation_status": "NEEDS_REVIEW"
+      },
+      "audited_verdict": "DEMO_ONLY (FFmpeg testsrc synthetic clock animation; NOT a human Deaf signer)"
+    },
+    {
+      "filename": "computer_network_sign.mp4",
+      "filepath": "data\\sign_videos\\computer_network_sign.mp4",
+      "file_size_bytes": 28449,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "contains_human_signer": false,
+      "is_synthetic_testsrc": true,
+      "visual_content_description": "SMPTE/testsrc color bar test pattern with digital timer counter",
+      "db_registration": {
+        "registered": true,
+        "db_id": 2,
+        "sign_record_id": 3,
+        "claimed_title": "Computer Network - ISL Standard Sign",
+        "claimed_signer": "Certified ISL Specialist",
+        "claimed_attribution": "ISLRTC STEM Technical Pilot Archive",
+        "claimed_validation_status": "VERIFIED"
+      },
+      "audited_verdict": "DEMO_ONLY (FFmpeg testsrc synthetic clock animation; NOT a human Deaf signer)"
+    },
+    {
+      "filename": "database_sign.mp4",
+      "filepath": "data\\sign_videos\\database_sign.mp4",
+      "file_size_bytes": 34525,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 5.0,
+      "fps": 30.0,
+      "contains_human_signer": false,
+      "is_synthetic_testsrc": true,
+      "visual_content_description": "SMPTE/testsrc color bar test pattern with digital timer counter",
+      "db_registration": {
+        "registered": true,
+        "db_id": 1,
+        "sign_record_id": 1,
+        "claimed_title": "Database - ISL Standard Sign",
+        "claimed_signer": "Certified ISL Specialist",
+        "claimed_attribution": "ISLRTC STEM Open Reference Pilot (CC-BY-NC 4.0)",
+        "claimed_validation_status": "VERIFIED"
+      },
+      "audited_verdict": "DEMO_ONLY (FFmpeg testsrc synthetic clock animation; NOT a human Deaf signer)"
+    },
+    {
+      "filename": "machine_sign.mp4",
+      "filepath": "data\\sign_videos\\machine_sign.mp4",
+      "file_size_bytes": 28449,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "contains_human_signer": false,
+      "is_synthetic_testsrc": true,
+      "visual_content_description": "SMPTE/testsrc color bar test pattern with digital timer counter",
+      "db_registration": {
+        "registered": true,
+        "db_id": 4,
+        "sign_record_id": 13,
+        "claimed_title": "Machine - ISL Standard Sign",
+        "claimed_signer": "Certified ISL Specialist",
+        "claimed_attribution": "ISLRTC STEM Mechanical Corpus",
+        "claimed_validation_status": "VERIFIED"
+      },
+      "audited_verdict": "DEMO_ONLY (FFmpeg testsrc synthetic clock animation; NOT a human Deaf signer)"
+    },
+    {
+      "filename": "voltage_sign.mp4",
+      "filepath": "data\\sign_videos\\voltage_sign.mp4",
+      "file_size_bytes": 28449,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "duration_seconds": 4.0,
+      "fps": 30.0,
+      "contains_human_signer": false,
+      "is_synthetic_testsrc": true,
+      "visual_content_description": "SMPTE/testsrc color bar test pattern with digital timer counter",
+      "db_registration": {
+        "registered": true,
+        "db_id": 3,
+        "sign_record_id": 9,
+        "claimed_title": "Voltage - ISL STEM Standard Sign",
+        "claimed_signer": "Certified ISL Specialist",
+        "claimed_attribution": "ISLRTC STEM Physics Reference Archive",
+        "claimed_validation_status": "VERIFIED"
+      },
+      "audited_verdict": "DEMO_ONLY (FFmpeg testsrc synthetic clock animation; NOT a human Deaf signer)"
+    }
+  ],
+  "api_retrieval_tests": [
+    {
+      "test_name": "Retrieve Concept 1 (Database - has registered video)",
+      "endpoint": "/api/v1/videos/retrieve/1",
+      "status_code": 200,
+      "returned_available": null,
+      "match_type": "EXACT_MATCH",
+      "video_url": "/data/sign_videos/database_sign.mp4",
+      "claimed_signer": "Certified ISL Specialist",
+      "audit_finding": "API functions correctly in code, but returns synthetic testsrc clip labeled as Certified ISL Specialist."
+    },
+    {
+      "test_name": "Retrieve Concept 4 (Deadlock - unsupported, no video)",
+      "endpoint": "/api/v1/videos/retrieve/4",
+      "status_code": 200,
+      "returned_available": null,
+      "match_type": "NO_MATCH",
+      "video_url": null,
+      "message": null,
+      "audit_finding": "PASS: Correctly returns available=False and NO_MATCH without fabricating videos."
+    },
+    {
+      "test_name": "Retrieve Concept 2 (Operating System - no video registered)",
+      "endpoint": "/api/v1/videos/retrieve/2",
+      "status_code": 200,
+      "returned_available": null,
+      "match_type": "NO_MATCH",
+      "video_url": null,
+      "message": null,
+      "audit_finding": "PASS: Correctly returns available=False with transparent unavailable message."
+    },
+    {
+      "test_name": "Sentence Retrieval: Database and Computer Network",
+      "endpoint": "/api/v1/videos/sentence-retrieval?text=Database%20and%20Computer%20Network",
+      "status_code": 422,
+      "single_sign_videos_count": 0,
+      "continuous_video_available": null,
+      "policy_notice": null,
+      "audit_finding": "PASS: Enforces non-concatenation policy; refuses to stitch separate signs into a fake continuous sentence."
+    }
+  ]
+}

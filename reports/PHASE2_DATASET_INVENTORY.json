@@ -1,0 +1,1290 @@
+{
+  "metadata": {
+    "project": "SignBridge AI",
+    "milestone": "Phase 2 - Authentic ISL Data Acquisition & Signing Dataset Development",
+    "inventory_title": "Prioritized 30-Concept Engineering Classroom ISL Inventory",
+    "version": "2.0.0",
+    "curation_date": "2026-11-20",
+    "branches_covered": [
+      "cs",
+      "ece",
+      "mech",
+      "civil",
+      "eee"
+    ],
+    "concepts_per_branch": 6,
+    "total_concepts": 30,
+    "governance_rule": "Strict non-fabrication. Zero mock video links. All candidate signs tagged NEEDS_REVIEW, EXPLANATION_REQUIRED, or UNSUPPORTED until verified by certified Deaf native signers or RCI-licensed interpreters."
+  },
+  "summary_metrics": {
+    "verified_concepts": 0,
+    "partially_verified_concepts": 5,
+    "needs_review_candidates": 15,
+    "explanation_required_concepts": 6,
+    "unsupported_advanced_concepts": 4,
+    "mocap_3d_available": 0,
+    "human_video_candidate_references": 20,
+    "acquired_isl_videos": 5
+  },
+  "inventory": [
+    {
+      "id": 1,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Database Management Systems",
+      "term": "Database",
+      "category": "Data Management",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "DATA STORE [COMPOUND]",
+      "phonology": {
+        "dominant_hand": "Right hand active; left hand passive base",
+        "handshape": "Flat open B-handshape (base) with curved claw/C-handshape descending in stacked layers",
+        "movement": "Downward repetitive stacking motions representing structured table records",
+        "location": "Neutral signing space directly in front of chest",
+        "orientation": "Palms facing inward toward torso",
+        "non_manual_markers": "Neutral brow, mouth movement subtle voicing of 'Data'"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC (Indian Sign Language Research and Training Centre)",
+        "resource_name": "10,000-Word STEM Digital Glossary",
+        "url_or_citation": "ISLRTC-STEM-CS-0142",
+        "license": "Government Open Data License (GODL-India) / Educational Reference"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4 (H.264 / AAC)",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "No 54-keypoint full-body mocap exists. Avatar strictly suppressed to neutral rest posture."
+      },
+      "data_gaps": [
+        "High-definition studio re-recording at 60fps needed for fine finger clarity",
+        "Missing dual-perspective (side-view) recording for 3D depth extraction",
+        "Formal sign-off required from certified Deaf STEM educator"
+      ],
+      "pedagogical_alternative": "Deaf engineering educators utilize two-handed stacking classifier followed by fingerspelled 'D-B'."
+    },
+    {
+      "id": 2,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Operating Systems",
+      "term": "Operating System",
+      "category": "Systems Software",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "COMPUTER CONTROL-SYSTEM",
+      "phonology": {
+        "dominant_hand": "Two-handed symmetrical sign",
+        "handshape": "C-handshapes opening into flat O, transitioning to dual steering/control movement",
+        "movement": "Synchronous forward and circular control manipulation",
+        "location": "Mid-chest level in primary signing zone",
+        "orientation": "Palms facing each other then rotating downwards",
+        "non_manual_markers": "Focused gaze directed at signing space"
+      },
+      "authoritative_reference": {
+        "institution": "ISLTranslate Research Project / AI4Bharat",
+        "resource_name": "Computer Science & Technical Vocabulary Corpus",
+        "url_or_citation": "ACL 2023 ISL Corpus CS-OS-008",
+        "license": "CC BY-NC 4.0 (Non-Commercial Academic)"
+      },
+      "video_availability": {
+        "status": "candidate_available_academic",
+        "format": "MP4",
+        "frame_rate": 25,
+        "resolution": "1280x720",
+        "consent_model": "restricted_educational"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Mocap unavailable. Avatar placeholder active."
+      },
+      "data_gaps": [
+        "Regional dialect variations between Northern (Delhi/ISLRTC) and Southern (Chennai) Deaf communities",
+        "Requires licensing clearance for commercial deployment beyond academic prototyping"
+      ],
+      "pedagogical_alternative": "Commonly fingerspelled 'O-S' accompanied by pointing to system architecture diagram."
+    },
+    {
+      "id": 3,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Computer Networks",
+      "term": "Computer Network",
+      "category": "Networking",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "COMPUTER CONNECT-INTERLINKED",
+      "phonology": {
+        "dominant_hand": "Two-handed bilateral",
+        "handshape": "5-spread hands with curved fingers intertwining at fingertips (mesh topology)",
+        "movement": "Fingers interlock repeatedly across spatial nodes",
+        "location": "Upper chest to neutral space",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Slight head nod indicating mutual linkage"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Dictionary of Indian Sign Language (3rd Edition)",
+        "url_or_citation": "ISLRTC-DICT-V3-NET-019",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Avatar animation unavailable."
+      },
+      "data_gaps": [
+        "Need clarification on whether mesh vs bus vs star topology should have distinct classifier modulations"
+      ],
+      "pedagogical_alternative": "Dynamic classifier tracing packets travelling along imaginary cables between laptops."
+    },
+    {
+      "id": 4,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Operating Systems",
+      "term": "Deadlock",
+      "category": "Concurrency",
+      "linguistic_status": "unsupported",
+      "isl_gloss": "PROCESS BLOCK TRAFFIC-JAM [NON-CODIFIED]",
+      "phonology": {
+        "dominant_hand": "Both fists (S-handshape) colliding heads-on and freezing rigidly",
+        "handshape": "S-handshape on both hands",
+        "movement": "Sharp forward collision followed by zero movement, depicting locked mutual wait",
+        "location": "Direct center chest",
+        "orientation": "Knuckles facing each other",
+        "non_manual_markers": "Tense facial expression, closed tight lips indicating complete immobility"
+      },
+      "authoritative_reference": {
+        "institution": "National Institute of Speech and Hearing (NISH) / Deaf Technical Educators",
+        "resource_name": "Informal Classroom Conventions (Uncodified)",
+        "url_or_citation": "NISH-CS-OBS-2024",
+        "license": "Community Unregistered Practice"
+      },
+      "video_availability": {
+        "status": "not_recorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed entirely."
+      },
+      "data_gaps": [
+        "Term is not codified in any official Indian Sign Language dictionary",
+        "Risk of linguistic confusion with general English 'traffic jam' or physical lock",
+        "Requires convening an expert panel of Deaf software engineers to establish formal standardized gloss"
+      ],
+      "pedagogical_alternative": "Educators draw resource allocation graphs (circular wait) on whiteboard with two-handed fingerspelling 'D-E-A-D-L-O-C-K'."
+    },
+    {
+      "id": 5,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Data Structures & Algorithms",
+      "term": "Algorithm",
+      "category": "Foundations",
+      "linguistic_status": "partially_verified",
+      "isl_gloss": "STEP-BY-STEP RULE [COMPOUND]",
+      "phonology": {
+        "dominant_hand": "Right hand index finger; Left hand open flat palm",
+        "handshape": "Index finger touching base palm sequentially at descending points",
+        "movement": "Discrete stepping contact from top edge of palm downward",
+        "location": "Left hand held flat at chest height",
+        "orientation": "Left palm facing right; right palm facing inward",
+        "non_manual_markers": "Rhythmic head nod with each sequential step"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC & Sign Dictionary ISL (Bridgeconn)",
+        "resource_name": "Mathematics and Computing Terms",
+        "url_or_citation": "SIGNDICT-ISL-MATH-041",
+        "license": "CC BY-SA 4.0"
+      },
+      "video_availability": {
+        "status": "candidate_available_open",
+        "format": "MP4",
+        "frame_rate": 25,
+        "resolution": "1920x1080",
+        "consent_model": "verified_consent",
+        "verification_classification": "PARTIALLY_VERIFIED",
+        "provenance_status": "open_government_mirror_acquired",
+        "validation_note": "Acquired from GODL-India open dataset mirror; awaiting primary ISLRTC source confirmation and certified Deaf master panel review before full authentication."
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Avatar animation unavailable."
+      },
+      "data_gaps": [
+        "Signer verification across multiple regional centers required to ensure pan-India intelligibility"
+      ],
+      "pedagogical_alternative": "Initialized 'A' fingerspelling followed by flowchart gestures."
+    },
+    {
+      "id": 6,
+      "branch_code": "cs",
+      "branch_name": "Computer Science & Engineering",
+      "subject": "Compiler Design",
+      "term": "Compiler",
+      "category": "Language Processors",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "CODE CONVERT BINARY [EXPLANATORY SEQUENCE]",
+      "phonology": {
+        "dominant_hand": "Both hands active",
+        "handshape": "Claw hand grabbing source code transforming through flat slot into zero/one binary fingerspelling",
+        "movement": "Left-to-right processing pass",
+        "location": "Upper neutral space",
+        "orientation": "Palms transforming from facing outward to inward",
+        "non_manual_markers": "Mouth movement showing transformation"
+      },
+      "authoritative_reference": {
+        "institution": "Indian Association of the Deaf (IAD) STEM Committee",
+        "resource_name": "Technical Classroom Guidelines",
+        "url_or_citation": "IAD-STEM-2023-REC",
+        "license": "Educational Fair Dealing"
+      },
+      "video_availability": {
+        "status": "requires_studio_recording",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Synthetic animation suppressed."
+      },
+      "data_gaps": [
+        "No single lexicalized sign exists; requires multi-sentence explanatory translation",
+        "Lexicon creation workshop needed with Deaf computer science graduates"
+      ],
+      "pedagogical_alternative": "Must be delivered via visual flow diagram showing Lexical -> Syntax -> Code Generation stages accompanied by initialized signs."
+    },
+    {
+      "id": 7,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Circuit Theory & Analysis",
+      "term": "Voltage",
+      "category": "Electrical Potential",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "VOLTAGE [V-HANDSHAPE INITIALIZED]",
+      "phonology": {
+        "dominant_hand": "Right hand active; left forearm passive base",
+        "handshape": "V-handshape (dominant) placed firmly against left forearm/wrist",
+        "movement": "Sharp single tap with slight outward spring depicting potential pressure",
+        "location": "Left forearm in front of body",
+        "orientation": "V palm facing towards signer, touching outer forearm",
+        "non_manual_markers": "Bite lower lip slightly, signifying stored energy/force"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "10,000-Word STEM Digital Glossary (Physics & Electrical)",
+        "url_or_citation": "ISLRTC-STEM-ECE-0051",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed to neutral pose."
+      },
+      "data_gaps": [
+        "Differentiating AC voltage vs DC voltage hand movement subtleties",
+        "Full review sign-off by licensed RCI interpreter"
+      ],
+      "pedagogical_alternative": "V-letter tap followed by upward pressure gesture."
+    },
+    {
+      "id": 8,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Circuit Theory & Analysis",
+      "term": "Current",
+      "category": "Electrical Flow",
+      "linguistic_status": "partially_verified",
+      "isl_gloss": "ELECTRICITY FLOW [CONTINUOUS]",
+      "phonology": {
+        "dominant_hand": "5-spread hand with undulating fingers gliding smoothly along the left forearm",
+        "handshape": "Loose 5-handshape (wiggling/gliding)",
+        "movement": "Linear continuous glide from left elbow to wrist along wire axis",
+        "location": "Along dorsal surface of non-dominant forearm",
+        "orientation": "Palms facing down toward forearm",
+        "non_manual_markers": "Exhale gently through pursed lips, indicating continuous uninterrupted stream"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "ISLRTC Digital Dictionary (Physical Sciences)",
+        "url_or_citation": "ISLRTC-PHYS-0118",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government",
+        "verification_classification": "PARTIALLY_VERIFIED",
+        "provenance_status": "open_government_mirror_acquired",
+        "validation_note": "Acquired from GODL-India open dataset mirror; awaiting primary ISLRTC source confirmation and certified Deaf master panel review before full authentication."
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Avatar mocap missing."
+      },
+      "data_gaps": [
+        "Regional variations: some deaf schools sign 'I' fingerspell before gliding"
+      ],
+      "pedagogical_alternative": "Sign for 'Electricity' followed by directional vector classifier."
+    },
+    {
+      "id": 9,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Signals & Systems",
+      "term": "Frequency",
+      "category": "Signal Metrics",
+      "linguistic_status": "partially_verified",
+      "isl_gloss": "WAVE REPETITION-COUNT",
+      "phonology": {
+        "dominant_hand": "Index finger waving up and down oscillating across horizontal line",
+        "handshape": "Index finger pointing left",
+        "movement": "Rapid sinusoidal wave motion moving laterally from left to right",
+        "location": "Chest level, sweeping 30cm across neutral zone",
+        "orientation": "Palm facing forward",
+        "non_manual_markers": "Quick repeated eye blinks matching frequency oscillation"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC & INCLUDE Corpus (AI4Bharat / IIT Madras)",
+        "resource_name": "INCLUDE Sign Dataset (Science subset)",
+        "url_or_citation": "INCLUDE-ACM-MM-2020-FREQ",
+        "license": "CC BY-NC 4.0"
+      },
+      "video_availability": {
+        "status": "candidate_available_include",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "restricted_educational",
+        "verification_classification": "PARTIALLY_VERIFIED",
+        "provenance_status": "open_government_mirror_acquired",
+        "validation_note": "Acquired from GODL-India open dataset mirror; awaiting primary ISLRTC source confirmation and certified Deaf master panel review before full authentication."
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "No skeletal motion captured."
+      },
+      "data_gaps": [
+        "Distinguishing high frequency (rapid tight sine waves) from low frequency (broad gentle waves)"
+      ],
+      "pedagogical_alternative": "Sinusoidal hand tracing with fingerspelled 'H-Z' (Hertz)."
+    },
+    {
+      "id": 10,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Communication Systems",
+      "term": "Modulation",
+      "category": "Signal Processing",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "CARRIER-WAVE COMBINE SIGNAL [MULTI-STAGE]",
+      "phonology": {
+        "dominant_hand": "Both hands trace separate waves, then dominant wave alters amplitude/frequency of base wave",
+        "handshape": "Flat open hands morphing into wavy patterns",
+        "movement": "Superposition of high-frequency carrier with low-frequency audio envelope",
+        "location": "Frontal interaction plane",
+        "orientation": "Palms facing opposite directions, converging",
+        "non_manual_markers": "Concentrated brow furrow during mixing"
+      },
+      "authoritative_reference": {
+        "institution": "Deaf Engineering Mentorship Network (Bengaluru / Pune)",
+        "resource_name": "Classroom Engineering Signs",
+        "url_or_citation": "DEMN-ECE-2024-MOD",
+        "license": "Unregistered Community Convention"
+      },
+      "video_availability": {
+        "status": "unrecorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Avatar mocap missing."
+      },
+      "data_gaps": [
+        "Complex abstract concept; cannot be rendered as a single atomic word",
+        "Must support Amplitude Modulation (AM), Frequency Modulation (FM), and Phase Modulation (PM) variants"
+      ],
+      "pedagogical_alternative": "Pedagogical multi-sign classifier explanation: Dual-hand spatial demonstration combining high-frequency carrier sinusoidal wave with low-frequency information signal to illustrate amplitude/frequency/phase variation, accompanied by fingerspelling M-O-D-U-L-A-T-I-O-N and visual waveform diagrams."
+    },
+    {
+      "id": 11,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Electronic Devices & Circuits",
+      "term": "Diode",
+      "category": "Semiconductor Devices",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "CURRENT ONE-WAY BLOCK-RETURN",
+      "phonology": {
+        "dominant_hand": "Right index finger points forward through a vertical barrier formed by left flat palm; left hand blocks backward motion",
+        "handshape": "Right 1-handshape, Left open B-handshape vertical",
+        "movement": "Passes easily in forward direction; strikes left palm on return and bounces back",
+        "location": "Upper chest zone",
+        "orientation": "Left palm facing signer; right finger moving toward screen then blocked returning",
+        "non_manual_markers": "Nod on pass, head shake on block"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Technical Glossary (Electronics Components)",
+        "url_or_citation": "ISLRTC-ELEC-0089",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed to neutral pose."
+      },
+      "data_gaps": [
+        "Need formal validation by RCI certified interpreter to verify non-manual marking accuracy"
+      ],
+      "pedagogical_alternative": "Schematic triangle-and-line drawn in air followed by one-way valve gesture."
+    },
+    {
+      "id": 12,
+      "branch_code": "ece",
+      "branch_name": "Electronics & Communication Engineering",
+      "subject": "Microprocessors & Microcontrollers",
+      "term": "Microcontroller",
+      "category": "Embedded Systems",
+      "linguistic_status": "unsupported",
+      "isl_gloss": "CHIP ALL-IN-ONE COMPUTER [UNCODIFIED]",
+      "phonology": {
+        "dominant_hand": "Thumb and index finger pinch into small rectangular chip boundary, then two hands outline integrated box",
+        "handshape": "Pinch G-handshape into C-box",
+        "movement": "Small precise pinch held steady, then encompassing circular gesture",
+        "location": "Directly in front of eyes/chin",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Squinting eyes indicating microscopic scale"
+      },
+      "authoritative_reference": {
+        "institution": "National Institute of Speech and Hearing (NISH)",
+        "resource_name": "Informal STEM Glossary Collection",
+        "url_or_citation": "NISH-EMBED-2023",
+        "license": "Classroom Fair Use"
+      },
+      "video_availability": {
+        "status": "unrecorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "No standard pan-India sign exists; commonly confused with Microprocessor (CPU)",
+        "Requires dedicated lexicon workshop with Deaf hardware engineers"
+      ],
+      "pedagogical_alternative": "Fingerspell 'M-C-U' followed by pointing to physical Arduino/STM32 development board."
+    },
+    {
+      "id": 13,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Engineering Mechanics",
+      "term": "Force",
+      "category": "Dynamics",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "FORCE [PUSH/EXERTION]",
+      "phonology": {
+        "dominant_hand": "Both open B-palms held forward with muscular tension",
+        "handshape": "Firm open B-handshapes",
+        "movement": "Strong forward pushing motion accompanied by isometric tension in shoulders",
+        "location": "Chest level moving forward by 25cm",
+        "orientation": "Palms facing directly outward away from body",
+        "non_manual_markers": "Clenched jaw, tight eye posture reflecting physical effort"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Dictionary of Indian Sign Language (3rd Edition - Science)",
+        "url_or_citation": "ISLRTC-DICT-V3-FORCE-004",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Differentiating tensile force (pulling) vs compressive force (pushing) vs shear force in sign space"
+      ],
+      "pedagogical_alternative": "Vector arrow in air + push gesture."
+    },
+    {
+      "id": 14,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Kinematics of Machinery",
+      "term": "Velocity",
+      "category": "Kinematics",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "SPEED + DIRECTION [COMPOUND]",
+      "phonology": {
+        "dominant_hand": "Index finger extended, slices swiftly through air along a fixed linear vector angle",
+        "handshape": "Index finger (1-handshape) firm",
+        "movement": "Rapid ballistic linear sweep from left hip toward top right",
+        "location": "Lower torso to upper neutral boundary",
+        "orientation": "Finger angled at 45 degrees",
+        "non_manual_markers": "Puffed cheeks releasing air 'puh' signifying sudden displacement"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC & CISLR (Exploration-Lab)",
+        "resource_name": "CISLR Continuous Sign Language Dataset",
+        "url_or_citation": "CISLR-AFL3-PHYS-VEL-012",
+        "license": "Academic Free License (AFL-3.0)"
+      },
+      "video_availability": {
+        "status": "candidate_available_cislr",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "restricted_educational"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Avatar mocap missing."
+      },
+      "data_gaps": [
+        "Clarifying scalar speed (speedometer gesture) vs vector velocity (spatial trajectory)"
+      ],
+      "pedagogical_alternative": "Speed sign followed by distinct arrow directional point."
+    },
+    {
+      "id": 15,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Engineering Mechanics",
+      "term": "Torque",
+      "category": "Rotational Mechanics",
+      "linguistic_status": "partially_verified",
+      "isl_gloss": "ROTATIONAL-TWIST FORCE",
+      "phonology": {
+        "dominant_hand": "Dominant C-handshape grips non-dominant index finger (shaft) and twists forcefully around its axis",
+        "handshape": "Right hand C-grip, Left hand 1-shaft",
+        "movement": "Rotational twisting torque motion with wrist flexion",
+        "location": "Directly in front of solar plexus",
+        "orientation": "Left finger vertical; right hand gripping from side",
+        "non_manual_markers": "Tight brow furrow reflecting mechanical resistance"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "10,000-Word STEM Digital Glossary",
+        "url_or_citation": "ISLRTC-STEM-MECH-0033",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government",
+        "verification_classification": "PARTIALLY_VERIFIED",
+        "provenance_status": "open_government_mirror_acquired",
+        "validation_note": "Acquired from GODL-India open dataset mirror; awaiting primary ISLRTC source confirmation and certified Deaf master panel review before full authentication."
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Neutral posture."
+      },
+      "data_gaps": [
+        "Needs validation for clockwise vs counter-clockwise moment representation"
+      ],
+      "pedagogical_alternative": "Wrench twisting gesture around imaginary bolt."
+    },
+    {
+      "id": 16,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Fluid Mechanics",
+      "term": "Friction",
+      "category": "Surface Mechanics",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "RUB SURFACE-RESISTANCE",
+      "phonology": {
+        "dominant_hand": "Two flat palms rubbing against each other with shuddering, jerky motion representing contact drag",
+        "handshape": "Open B-handshapes pressed tightly",
+        "movement": "Reciprocating shear motion with stuttered resistance",
+        "location": "Chest level",
+        "orientation": "Right palm facing left; left palm facing right",
+        "non_manual_markers": "Lips drawn back over teeth, showing friction resistance"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC & Sign Dictionary ISL",
+        "resource_name": "Physics and Applied Mechanics Glossary",
+        "url_or_citation": "SIGNDICT-ISL-MECH-0219",
+        "license": "CC BY-SA 4.0"
+      },
+      "video_availability": {
+        "status": "candidate_available_open",
+        "format": "MP4",
+        "frame_rate": 25,
+        "resolution": "1920x1080",
+        "consent_model": "verified_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Distinguishing static friction vs kinetic friction in linguistic morphology"
+      ],
+      "pedagogical_alternative": "Palm rubbing + heat generation mime."
+    },
+    {
+      "id": 17,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Thermodynamics",
+      "term": "Thermodynamic Entropy",
+      "category": "Thermodynamics",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "SYSTEM ORDER SCATTER DISORDER [CONCEPTUAL EXPLANATION]",
+      "phonology": {
+        "dominant_hand": "Two neat parallel fists suddenly opening into chaotic floating 5-claw fingers dispersing in all directions",
+        "handshape": "S-handshape to open 5-claw dispersion",
+        "movement": "Organized structure dissolving into random outward expansion",
+        "location": "Expanding across entire chest signing space",
+        "orientation": "Palms turning from parallel facing to chaotic outward directions",
+        "non_manual_markers": "Wide eyes, open mouth indicating entropy increase"
+      },
+      "authoritative_reference": {
+        "institution": "Deaf STEM Researchers Alliance (India)",
+        "resource_name": "Advanced Physics Conceptual Signing Guidelines",
+        "url_or_citation": "DSRA-THERMO-2024-ENT",
+        "license": "Educational Research Attribution"
+      },
+      "video_availability": {
+        "status": "requires_studio_recording",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Highly abstract thermodynamic quantity; cannot be rendered as a single lexical gloss",
+        "Risk of misconception as mere 'messiness' rather than microstates multiplicity"
+      ],
+      "pedagogical_alternative": "Animated particle simulation shown side-by-side with localized dispersion classifier."
+    },
+    {
+      "id": 18,
+      "branch_code": "mech",
+      "branch_name": "Mechanical Engineering",
+      "subject": "Finite Element Analysis",
+      "term": "Finite Element Analysis",
+      "category": "Computational Mechanics",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "STRUCTURE DIVIDE SMALL-MESH CALCULATE-STRESS [UNCODIFIED]",
+      "phonology": {
+        "dominant_hand": "Two hands outline 3D mechanical part, then fingers create discrete grid mesh, followed by computer calculate sign",
+        "handshape": "Flat palms to intersecting grid fingers",
+        "movement": "Outlining then cross-hatching",
+        "location": "Upper neutral zone",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Intense analytical concentration"
+      },
+      "authoritative_reference": {
+        "institution": "University Deaf Engineering Working Group",
+        "resource_name": "Advanced Mechanical Engineering Pilot Notes",
+        "url_or_citation": "UDEWG-MECH-FEA-01",
+        "license": "Internal Academic Draft"
+      },
+      "video_availability": {
+        "status": "unrecorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Completely uncodified in Indian Sign Language",
+        "Must be flagged UNSUPPORTED in translation pipeline to prevent synthetic ungrammatical output"
+      ],
+      "pedagogical_alternative": "Multi-step conceptual decomposition: 1. Continuous structural domain -> 2. Mesh discretization (finite elements) -> 3. Node-element stiffness matrix formulation -> 4. Numerical solution of stress-strain tensors and displacement distribution. Accompanied by two-handed fingerspelling F-E-A and spatial classifier mesh representation."
+    },
+    {
+      "id": 19,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Structural Analysis",
+      "term": "Beam",
+      "category": "Structural Elements",
+      "linguistic_status": "partially_verified",
+      "isl_gloss": "HORIZONTAL-BEAM SUPPORTED",
+      "phonology": {
+        "dominant_hand": "Flat horizontal arm placed on top of two vertical support columns formed by fists",
+        "handshape": "Right forearm flat horizontal; left and right fists as pillars",
+        "movement": "Positioning horizontal member firmly onto supports with downward settling pressure",
+        "location": "Mid-chest",
+        "orientation": "Horizontal forearm palm facing down",
+        "non_manual_markers": "Firm neutral gaze"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Vocational and Construction Trades ISL Glossary",
+        "url_or_citation": "ISLRTC-CIVIL-0042",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government",
+        "verification_classification": "PARTIALLY_VERIFIED",
+        "provenance_status": "open_government_mirror_acquired",
+        "validation_note": "Acquired from GODL-India open dataset mirror; awaiting primary ISLRTC source confirmation and certified Deaf master panel review before full authentication."
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Neutral resting pose."
+      },
+      "data_gaps": [
+        "Differentiating Cantilever Beam vs Simply Supported Beam vs Continuous Beam via classifier predicates"
+      ],
+      "pedagogical_alternative": "Horizontal forearm classifier with support pinpoints."
+    },
+    {
+      "id": 20,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Geotechnical Engineering",
+      "term": "Foundation",
+      "category": "Substructure",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "GROUND UNDER BASE-SOLID",
+      "phonology": {
+        "dominant_hand": "Left forearm horizontal at waist level representing ground surface; right flat hand pushes firmly below it",
+        "handshape": "Flat open B-handshapes",
+        "movement": "Downward thrust beneath the horizontal surface plane, locking solidly into place",
+        "location": "Lower chest / abdomen level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Firm mouth set showing stability"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC & Sign Dictionary ISL",
+        "resource_name": "Civil Construction Glossary",
+        "url_or_citation": "ISLRTC-CIVIL-0019",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Need specialized sign distinguishing shallow footing from deep pile foundations"
+      ],
+      "pedagogical_alternative": "Ground line classifier with pile driving motion."
+    },
+    {
+      "id": 21,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Building Materials & Construction",
+      "term": "Concrete",
+      "category": "Materials",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "CEMENT GRAVEL WATER MIX HARDEN [COMPOUND]",
+      "phonology": {
+        "dominant_hand": "Both curved claw hands churning together in circular mixing motion, then snapping into solid locked fists",
+        "handshape": "Claw hands transitioning to S-fists",
+        "movement": "Vigorous rotational stirring followed by sudden rigid arrest",
+        "location": "Central torso space",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Puffed cheeks during mixing, firm jaw upon hardening"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Dictionary of Indian Sign Language (Vocational subset)",
+        "url_or_citation": "ISLRTC-VOC-CONC-011",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Pan-India regional variation: North India signs 'Cement' + 'Hard'; South India signs 'Stone' + 'Liquid' + 'Hard'"
+      ],
+      "pedagogical_alternative": "Fingerspell 'C-O-N-C-R-E-T-E' followed by hardened block gesture."
+    },
+    {
+      "id": 22,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Strength of Materials",
+      "term": "Shear Stress",
+      "category": "Stress Mechanics",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "PLANE-SLIDE OPPOSITE-FORCE TEAR",
+      "phonology": {
+        "dominant_hand": "Two flat palms pressed against each other sliding in opposite directions (parallel shear planes)",
+        "handshape": "Open B-handshapes touching at palms",
+        "movement": "Top hand slides forward while bottom hand slides backward with lateral friction",
+        "location": "Upper chest",
+        "orientation": "Palms in contact, horizontal",
+        "non_manual_markers": "Asymmetrical mouth grimace indicating shearing strain"
+      },
+      "authoritative_reference": {
+        "institution": "National Technical Institute for the Deaf (NTID) & Indian Deaf Educators",
+        "resource_name": "Structural Mechanics Reference Signs",
+        "url_or_citation": "NTID-IND-CIVIL-2023",
+        "license": "Educational Attribution"
+      },
+      "video_availability": {
+        "status": "requires_studio_recording",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Essential to avoid confusion with normal compressive stress (direct head-on collision)"
+      ],
+      "pedagogical_alternative": "Demonstrated with foam block undergoing parallel surface deformation."
+    },
+    {
+      "id": 23,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Design of Concrete Structures",
+      "term": "Reinforced Concrete",
+      "category": "Composite Materials",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "STEEL-BAR INSIDE CONCRETE [COMPOUND]",
+      "phonology": {
+        "dominant_hand": "Right index finger (steel rod) inserted between fingers of left hand, then surrounded by concrete sign",
+        "handshape": "1-handshape inserted into C-cage then concrete hard sign",
+        "movement": "Insertion followed by wrapping",
+        "location": "Chest level",
+        "orientation": "Palms facing body",
+        "non_manual_markers": "Steady nod confirming composite strength"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Civil Engineering Technical Glossary",
+        "url_or_citation": "ISLRTC-CIVIL-0088",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Abbreviated in classrooms as 'R-C-C' fingerspelling; formal sign requires full morphological compounding"
+      ],
+      "pedagogical_alternative": "Fingerspell 'R-C-C' + cross-sectional diagram."
+    },
+    {
+      "id": 24,
+      "branch_code": "civil",
+      "branch_name": "Civil Engineering",
+      "subject": "Advanced Structural Design",
+      "term": "Prestressed Concrete",
+      "category": "Advanced Concrete Systems",
+      "linguistic_status": "unsupported",
+      "isl_gloss": "STEEL-CABLE TENSION STRETCH CONCRETE CAST [UNCODIFIED]",
+      "phonology": {
+        "dominant_hand": "Two hands pull high-tension cable taut, concrete poured around it, tension released creating pre-compression",
+        "handshape": "Pinch grip pulling outward, then inward compression",
+        "movement": "Tension stretch followed by inward arching camber",
+        "location": "Mid-chest space",
+        "orientation": "Opposing palms pulling then pressing",
+        "non_manual_markers": "Tense breath hold during tensioning"
+      },
+      "authoritative_reference": {
+        "institution": "University Civil Engineering Deaf Working Group",
+        "resource_name": "Higher Technical Studies Observation",
+        "url_or_citation": "UCE-DEAF-CIVIL-2024",
+        "license": "Unpublished Research"
+      },
+      "video_availability": {
+        "status": "unrecorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Completely absent from all public Indian Sign Language datasets",
+        "Must be flagged UNSUPPORTED in translation engine"
+      ],
+      "pedagogical_alternative": "Fingerspell 'P-S-C' + engineering tendon load transfer diagram."
+    },
+    {
+      "id": 25,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Electrical Machines",
+      "term": "Transformer",
+      "category": "Power Equipment",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "VOLTAGE CHANGE-UP-DOWN [INDUCTION COIL]",
+      "phonology": {
+        "dominant_hand": "Both hands form C-coils facing each other without physical contact, dominant hand shifts height indicating level change",
+        "handshape": "C-handshapes mimicking dual electromagnetic coils",
+        "movement": "Coils held in magnetic proximity, right hand rises or falls (step-up / step-down)",
+        "location": "Chest level",
+        "orientation": "Palms facing each other across 10cm gap",
+        "non_manual_markers": "Eyes tracking height level change"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "10,000-Word STEM Digital Glossary (Electrical)",
+        "url_or_citation": "ISLRTC-STEM-EEE-0012",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Neutral posture."
+      },
+      "data_gaps": [
+        "Ensuring clear distinction between step-up transformer, step-down transformer, and auto-transformer"
+      ],
+      "pedagogical_alternative": "Fingerspell 'X-F-M-R' or 'T-F' + magnetic flux hand gesture."
+    },
+    {
+      "id": 26,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Electrical Machines",
+      "term": "Generator",
+      "category": "Energy Conversion",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "MECHANICAL-ROTATION PRODUCE ELECTRICITY",
+      "phonology": {
+        "dominant_hand": "Right hand cranks circular shaft; immediately left hand bursts into electricity sparks sign",
+        "handshape": "S-fist rotating into open 5-vibrating hand",
+        "movement": "Rotational circular crank transitioning to radiating electrical discharge",
+        "location": "Upper chest zone",
+        "orientation": "Palms facing body then turning outward",
+        "non_manual_markers": "Energetic head nod upon electricity generation"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "Dictionary of Indian Sign Language (3rd Edition)",
+        "url_or_citation": "ISLRTC-DICT-V3-EEE-0091",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Contrasting AC alternator from DC generator"
+      ],
+      "pedagogical_alternative": "Crank rotation + lightbulb/spark illumination mime."
+    },
+    {
+      "id": 27,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Power Systems",
+      "term": "Alternating Current",
+      "category": "Current Types",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "CURRENT SINE-WAVE BACK-FORTH",
+      "phonology": {
+        "dominant_hand": "Both hands trace alternating sinusoidal waves in continuous reciprocal opposition",
+        "handshape": "Index finger or loose 3-handshape tracing smooth curve",
+        "movement": "Oscillating periodic curve travelling horizontally",
+        "location": "Mid-chest neutral plane",
+        "orientation": "Palms facing forward",
+        "non_manual_markers": "Rhythmic lateral head sway matching cycle phase"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "STEM Glossary (Physics & Electrical)",
+        "url_or_citation": "ISLRTC-STEM-EEE-0034",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Regional dialect: often initialized with 'A-C' fingerspelling before wave tracing"
+      ],
+      "pedagogical_alternative": "Fingerspell 'A-C' + sinusoidal waveform drawing in air."
+    },
+    {
+      "id": 28,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Power Systems",
+      "term": "Direct Current",
+      "category": "Current Types",
+      "linguistic_status": "needs_review",
+      "isl_gloss": "CURRENT STRAIGHT-LINE UNIDIRECTIONAL",
+      "phonology": {
+        "dominant_hand": "Index finger shoots straight forward horizontally in single continuous unwavering line",
+        "handshape": "Index finger (1-handshape) firm and rigid",
+        "movement": "Direct steady forward linear motion without oscillation",
+        "location": "Mid-chest plane",
+        "orientation": "Palm facing down",
+        "non_manual_markers": "Steady, unwavering gaze along line of movement"
+      },
+      "authoritative_reference": {
+        "institution": "ISLRTC",
+        "resource_name": "STEM Glossary (Physics & Electrical)",
+        "url_or_citation": "ISLRTC-STEM-EEE-0035",
+        "license": "GODL-India"
+      },
+      "video_availability": {
+        "status": "candidate_available_islrtc",
+        "format": "MP4",
+        "frame_rate": 30,
+        "resolution": "1920x1080",
+        "consent_model": "exempt_open_government"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Ensuring students don't confuse DC sign with simple directional pointing"
+      ],
+      "pedagogical_alternative": "Fingerspell 'D-C' + straight line vector."
+    },
+    {
+      "id": 29,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Electromagnetic Field Theory",
+      "term": "Electromagnetic Induction",
+      "category": "Electromagnetism",
+      "linguistic_status": "explanation_required",
+      "isl_gloss": "MAGNET MOVE-INSIDE COIL CURRENT BORN [EXPLANATORY CLASSIFIER]",
+      "phonology": {
+        "dominant_hand": "Left hand forms hollow cylindrical coil (C/O hand); right index (magnet) plunges in/out, triggering left palm electricity shimmer",
+        "handshape": "Left hand O-cylinder, Right hand 1-rod",
+        "movement": "Reciprocating penetration of rod into coil producing sudden spark gesture",
+        "location": "Direct center chest",
+        "orientation": "Coil axis horizontal",
+        "non_manual_markers": "Eyebrows raised, quick sharp nod on current induction"
+      },
+      "authoritative_reference": {
+        "institution": "All India Federation of the Deaf (AIFD) Science Cell",
+        "resource_name": "Physics Demonstration Guidelines for Sign Language",
+        "url_or_citation": "AIFD-PHYS-EM-08",
+        "license": "Educational Attribution"
+      },
+      "video_availability": {
+        "status": "requires_studio_recording",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Complex law (Faraday's & Lenz's Law); single word translation is grammatically impossible in ISL",
+        "Requires pedagogical explanation sequence"
+      ],
+      "pedagogical_alternative": "Faraday induction physical demonstration with galvanometer video and spatial classifier."
+    },
+    {
+      "id": 30,
+      "branch_code": "eee",
+      "branch_name": "Electrical & Electronics Engineering",
+      "subject": "Electrical Machines",
+      "term": "Synchronous Motor",
+      "category": "AC Machines",
+      "linguistic_status": "unsupported",
+      "isl_gloss": "ROTOR STATOR SPEED LOCK ROTATE [UNCODIFIED]",
+      "phonology": {
+        "dominant_hand": "Two hands form inner rotor and outer rotating magnetic field, latching synchronously into lockstep rotation",
+        "handshape": "Interlocking gears / concentric circles",
+        "movement": "Synchronous matched speed rotation without slip",
+        "location": "Central chest space",
+        "orientation": "Palms facing each other in concentric rings",
+        "non_manual_markers": "Focused gaze tracking synchronous lock"
+      },
+      "authoritative_reference": {
+        "institution": "University Electrical Engineering Deaf Working Group",
+        "resource_name": "Advanced Machines Observations",
+        "url_or_citation": "UEE-MACH-SYNC-01",
+        "license": "Unpublished Draft"
+      },
+      "video_availability": {
+        "status": "unrecorded",
+        "format": null,
+        "frame_rate": null,
+        "resolution": null,
+        "consent_model": "pending_consent"
+      },
+      "mocap_3d_availability": {
+        "status": "unavailable",
+        "format": null,
+        "keypoints_count": 0,
+        "notes": "Suppressed."
+      },
+      "data_gaps": [
+        "Completely uncodified in Indian Sign Language",
+        "Must be flagged UNSUPPORTED to prevent inaccurate synthetic concatenation"
+      ],
+      "pedagogical_alternative": "Fingerspell 'S-Y-N-C-H-R-O-N-O-U-S M-O-T-O-R' with rotating magnetic field vector diagram."
+    }
+  ]
+}

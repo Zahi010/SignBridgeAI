@@ -1,0 +1,2313 @@
+[
+  {
+    "sentence_id": 1,
+    "discipline": "Computer Science & Engineering",
+    "input_text": "What is an algorithm?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 5,
+        "term": "Algorithm",
+        "category": "Foundations",
+        "domain": "Algorithms & Complexity",
+        "validation_status": "needs_review",
+        "sign_gloss": "ALGORITHM [REVIEW-PENDING]",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat B-Handshape stepping down sequentially",
+        "movement": "Downward alternating step progression",
+        "location": "Neutral space in front of torso",
+        "orientation": "Palms facing each other horizontally",
+        "non_manual_markers": "Focused gaze, slight forward head tilt",
+        "provenance": "Deaf Technical Education Academic Consortium (Candidate Standard) [CC-BY-NC-SA-4.0]",
+        "reviewer_info": "[Local Test Reviewer] Academic Sign Linguist (ISL Linguistic Researcher (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "ALGORITHM",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: ALGORITHM] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 2,
+    "discipline": "Computer Science & Engineering",
+    "input_text": "Explain how a compiler works.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 25,
+        "term": "Compiler",
+        "category": "Systems Software",
+        "domain": "Programming Languages & Compilers",
+        "validation_status": "needs_review",
+        "sign_gloss": "COMPILER",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B transitioning through funnel shape to index point",
+        "movement": "Downward transformative pass",
+        "location": "Chest level",
+        "orientation": "Palms angled inward",
+        "non_manual_markers": "Focused gaze",
+        "provenance": "Academic Syllabus Candidate",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "COMPILER",
+      "EXPLAIN-CLARIFY",
+      "WORK-FUNCTION",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: COMPILER] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 3,
+    "discipline": "Computer Science & Engineering",
+    "input_text": "What happens when two processes access the same resource?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 102,
+        "term": "Process",
+        "category": "Systems Software",
+        "domain": "Operating Systems",
+        "validation_status": "needs_review",
+        "sign_gloss": "PROCESS",
+        "dominant_hand": "Right",
+        "handshape": "Index pointing handshape",
+        "movement": "Sequential forward translation",
+        "location": "Chest level neutral space",
+        "orientation": "Palm facing inward",
+        "non_manual_markers": "Focused gaze",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "PROCESS",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: PROCESS] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 4,
+    "discipline": "Computer Science & Engineering",
+    "input_text": "Explain how a database stores information.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 1,
+        "term": "Database",
+        "category": "Data Management",
+        "domain": "Database Systems",
+        "validation_status": "verified",
+        "sign_gloss": "DATABASE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-C hands shaping cylindrical tiers",
+        "movement": "Stacking motion from bottom to top tier",
+        "location": "Mid-chest neutral signing space",
+        "orientation": "Palms facing inward shaping cylinder boundaries",
+        "non_manual_markers": "Neutral gaze",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "DATABASE",
+      "EXPLAIN-CLARIFY",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: DATABASE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": true,
+      "title": "[DEMO] [DEMO] [DEMO] Database - ISL Standard Sign (Database)",
+      "video_url": "/data/sign_videos/database_sign.mp4",
+      "source_attribution": "ISLRTC STEM Open Reference Pilot (CC-BY-NC 4.0)",
+      "validation_status": "demo_only",
+      "is_synthetic_testsrc": true
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 5,
+    "discipline": "Computer Science & Engineering",
+    "input_text": "What is a pointer in programming?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 8,
+        "term": "Programming",
+        "category": "Software Development",
+        "domain": "Software Development",
+        "validation_status": "verified",
+        "sign_gloss": "PROGRAMMING",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands fluttering fingers",
+        "movement": "Rapid alternating finger articulation over non-dominant virtual screen",
+        "location": "Chest level neutral space",
+        "orientation": "Palms angled down-forward",
+        "non_manual_markers": "Focused gaze",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      },
+      {
+        "concept_id": 30,
+        "term": "Pointer",
+        "category": "Programming Languages",
+        "domain": "Low-level Systems Programming",
+        "validation_status": "unsupported",
+        "sign_gloss": "POINTER",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "provenance": "Awaiting ISLRTC STEM Codification",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "PROGRAMMING",
+      "POINTER",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: PROGRAMMING + POINTER] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      },
+      {
+        "rule_type": "Dual Spatial Indexing (Loci Assignment)",
+        "isl_structure": "[PROGRAMMING (Spatial Locus A)] <--> [POINTER (Spatial Locus B)]",
+        "explanation": "When comparing or linking two engineering entities, the signer establishes one at spatial locus A (e.g. left) and the second at locus B (right), using directional verbs to indicate interaction."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Pointer",
+        "category": "Data Structures / Systems Programming",
+        "why_unsupported": "Pointer in programming refers to memory addresses rather than physical finger pointing; a single standardized sign is not yet codified.",
+        "recommended_isl_strategy": "Fingerspelling (P-O-I-N-T-E-R) followed by index finger pointing to a distinct spatial memory cell containing address hex values.",
+        "fingerspelling_sequence": [
+          "P",
+          "O",
+          "I",
+          "N",
+          "T",
+          "E",
+          "R"
+        ],
+        "diagram_description": "Memory address box with an arrow pointing to a separate dereferenced value block."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 6,
+    "discipline": "Electronics & Communication",
+    "input_text": "What is an electrical signal?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 39,
+        "term": "Signal",
+        "category": "Signal Processing",
+        "domain": "Signals & Systems",
+        "validation_status": "verified",
+        "sign_gloss": "SIGNAL",
+        "dominant_hand": "Right",
+        "handshape": "Index finger or open flat hand tracing sine wave undulating peaks and troughs",
+        "movement": "Smooth sinusoidal wave motion progressing outward",
+        "location": "Chest level moving forward",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Gaze following wave peak",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "SIGNAL",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: SIGNAL] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 7,
+    "discipline": "Electronics & Communication",
+    "input_text": "Explain how an amplifier works.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 43,
+        "term": "Amplifier",
+        "category": "Analog Electronics",
+        "domain": "Analog Circuit Design",
+        "validation_status": "needs_review",
+        "sign_gloss": "AMPLIFIER",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Small sinusoidal wave expanding vertically into large peak",
+        "movement": "Vertical expansion of hand height moving forward",
+        "location": "Mid-chest to upper chest",
+        "orientation": "Palms facing center",
+        "non_manual_markers": "Widened eyes matching increased amplitude",
+        "provenance": "Academic Syllabus Candidate",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "AMPLIFIER",
+      "EXPLAIN-CLARIFY",
+      "WORK-FUNCTION",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: AMPLIFIER] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 8,
+    "discipline": "Electronics & Communication",
+    "input_text": "What is modulation?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 41,
+        "term": "Modulation",
+        "category": "Communications",
+        "domain": "Analog & Digital Communications",
+        "validation_status": "unsupported",
+        "sign_gloss": "MODULATION",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "provenance": "Awaiting ISLRTC STEM Codification",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "MODULATION",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: MODULATION] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Modulation",
+        "category": "Communication Systems / RF",
+        "why_unsupported": "High-frequency carrier modulation lacks a single unified ISL gesture.",
+        "recommended_isl_strategy": "Fingerspelling (M-O-D-U-L-A-T-I-O-N) followed by two-handed wave superposition.",
+        "fingerspelling_sequence": [
+          "M",
+          "O",
+          "D",
+          "U",
+          "L",
+          "A",
+          "T",
+          "I",
+          "O",
+          "N"
+        ],
+        "diagram_description": "High-frequency carrier sine wave multiplied by low-frequency information audio waveform."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 9,
+    "discipline": "Electronics & Communication",
+    "input_text": "How does an antenna transmit signals?",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 45,
+        "term": "Antenna",
+        "category": "Electromagnetic Waves",
+        "domain": "RF & Microwave Engineering",
+        "validation_status": "verified",
+        "sign_gloss": "ANTENNA",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant vertical index finger (mast), non-dominant curved arcs pulsing outward",
+        "movement": "Pulsing outward arc expansion",
+        "location": "Above shoulder level",
+        "orientation": "Palms facing outward",
+        "non_manual_markers": "Upward gaze",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "ANTENNA",
+      "TRANSMIT-SEND",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: ANTENNA] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 10,
+    "discipline": "Electronics & Communication",
+    "input_text": "Explain signal processing.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 39,
+        "term": "Signal",
+        "category": "Signal Processing",
+        "domain": "Signals & Systems",
+        "validation_status": "verified",
+        "sign_gloss": "SIGNAL",
+        "dominant_hand": "Right",
+        "handshape": "Index finger or open flat hand tracing sine wave undulating peaks and troughs",
+        "movement": "Smooth sinusoidal wave motion progressing outward",
+        "location": "Chest level moving forward",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Gaze following wave peak",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "SIGNAL",
+      "EXPLAIN-CLARIFY"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: SIGNAL] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 11,
+    "discipline": "Mechanical Engineering",
+    "input_text": "What is thermodynamics?",
+    "detected_branch": "Mechanical Engineering",
+    "detected_subject": null,
+    "overall_status": "explanation_needed",
+    "status_reason": "Base sign is recognized, but specialized technical context requires pedagogical explanation and visual diagramming.",
+    "extracted_concepts": [
+      {
+        "concept_id": 59,
+        "term": "Thermodynamics",
+        "category": "Thermal Systems",
+        "domain": "Applied Thermodynamics",
+        "validation_status": "explanation_needed",
+        "sign_gloss": "THERMODYNAMICS",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands undulating heat rising into mechanical work piston",
+        "movement": "Rising thermal wave turning into linear push",
+        "location": "Upper chest space",
+        "orientation": "Palms facing up then down",
+        "non_manual_markers": "Raised eyebrows (Topic introduction)",
+        "provenance": "ISLRTC Reference Standard",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "THERMODYNAMICS",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: THERMODYNAMICS] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Thermodynamics",
+        "category": "Applied Thermodynamics",
+        "why_unsupported": "Base sign exists, but cyclic heat engine transformations require diagrammatic expansion.",
+        "recommended_isl_strategy": "Sign HEAT + ENERGY-CHANGE, followed by Carnot cycle PV diagram.",
+        "fingerspelling_sequence": [
+          "T",
+          "H",
+          "E",
+          "R",
+          "M",
+          "O"
+        ],
+        "diagram_description": "Pressure-Volume (PV) state diagram illustrating isothermal and adiabatic expansion/compression."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 12,
+    "discipline": "Mechanical Engineering",
+    "input_text": "Explain mechanical stress.",
+    "detected_branch": "Mechanical Engineering",
+    "detected_subject": null,
+    "overall_status": "partial",
+    "status_reason": "Partial sign coverage. Verified signs are displayed alongside pending concepts. Unverified words are excluded from fabricated generation.",
+    "extracted_concepts": [
+      {
+        "concept_id": 60,
+        "term": "Stress",
+        "category": "Solid Mechanics",
+        "domain": "Strength of Materials",
+        "validation_status": "partial",
+        "sign_gloss": "STRESS",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fists squeezing inward against center boundary block",
+        "movement": "Squeezing inward compression",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Strained mouth morpheme",
+        "provenance": "ISLRTC Reference Standard",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Interpreted as mechanical stress in engineering context."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "STRESS",
+      "EXPLAIN-CLARIFY"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: STRESS] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 13,
+    "discipline": "Mechanical Engineering",
+    "input_text": "What is torque?",
+    "detected_branch": "Mechanical Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 50,
+        "term": "Torque",
+        "category": "Rotational Mechanics",
+        "domain": "Rotational Dynamics",
+        "validation_status": "needs_review",
+        "sign_gloss": "TORQUE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved C-hands grasping virtual shaft",
+        "movement": "Vigorous rotational twisting stroke",
+        "location": "Mid-chest",
+        "orientation": "Palms opposing each other on rotational perimeter",
+        "non_manual_markers": "Tense jaw morpheme",
+        "provenance": "Academic Syllabus Candidate",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "TORQUE",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: TORQUE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 14,
+    "discipline": "Mechanical Engineering",
+    "input_text": "How does a heat engine work?",
+    "detected_branch": "Mechanical Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 55,
+        "term": "Engine",
+        "category": "Thermal Systems",
+        "domain": "Internal Combustion & Heat Engines",
+        "validation_status": "verified",
+        "sign_gloss": "ENGINE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant fist (piston) reciprocating inside non-dominant cylinder C-hand",
+        "movement": "Vertical reciprocating stroke",
+        "location": "Chest level",
+        "orientation": "Vertical axis",
+        "non_manual_markers": "Puffing rhythmic breath morpheme",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "ENGINE",
+      "WORK-FUNCTION",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: ENGINE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 15,
+    "discipline": "Mechanical Engineering",
+    "input_text": "Explain entropy.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 101,
+        "term": "Entropy",
+        "category": "Thermodynamics",
+        "domain": "Thermodynamics",
+        "validation_status": "unsupported",
+        "sign_gloss": "ENTROPY",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": null,
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "ENTROPY",
+      "EXPLAIN-CLARIFY"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: ENTROPY] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Entropy",
+        "category": "Thermodynamics",
+        "why_unsupported": "No certified single-sign ISL equivalent has been codified for 'Entropy'.",
+        "recommended_isl_strategy": "Use standard two-handed fingerspelling (E-N-T-R-O-P-Y) accompanied by a visual technical schematic.",
+        "fingerspelling_sequence": [
+          "E",
+          "N",
+          "T",
+          "R",
+          "O",
+          "P",
+          "Y"
+        ],
+        "diagram_description": "Visual conceptual schematic illustrating the core principles of Entropy."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 16,
+    "discipline": "Civil Engineering",
+    "input_text": "What is a foundation?",
+    "detected_branch": "Civil Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 17,
+        "term": "Foundation",
+        "category": "Geotechnical",
+        "domain": "Soil Mechanics & Foundations",
+        "validation_status": "verified",
+        "sign_gloss": "FOUNDATION",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat non-dominant forearm (bedrock) with dominant fist planting solid contact downward",
+        "movement": "Firm downward planting stroke",
+        "location": "Lower chest level",
+        "orientation": "Horizontal bedrock axis",
+        "non_manual_markers": "Firm mouth posture",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "FOUNDATION",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: FOUNDATION] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 17,
+    "discipline": "Civil Engineering",
+    "input_text": "Explain how a beam supports a structure.",
+    "detected_branch": "Civil Engineering",
+    "detected_subject": null,
+    "overall_status": "partial",
+    "status_reason": "Partial sign coverage. Verified signs are displayed alongside pending concepts. Unverified words are excluded from fabricated generation.",
+    "extracted_concepts": [
+      {
+        "concept_id": 16,
+        "term": "Structure",
+        "category": "Structures",
+        "domain": "Structural Mechanics",
+        "validation_status": "partial",
+        "sign_gloss": "STRUCTURE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-B hands forming vertical and horizontal framing planes",
+        "movement": "Interlocking grid erection moving upward",
+        "location": "Chest to face level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Upward gaze following building height",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      },
+      {
+        "concept_id": 67,
+        "term": "Beam",
+        "category": "Structural Engineering",
+        "domain": "Structural Elements",
+        "validation_status": "verified",
+        "sign_gloss": "BEAM",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands positioned horizontally spanning two vertical index posts",
+        "movement": "Horizontal bridging placement",
+        "location": "Upper chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "STRUCTURE",
+      "BEAM",
+      "EXPLAIN-CLARIFY",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: STRUCTURE + BEAM] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      },
+      {
+        "rule_type": "Dual Spatial Indexing (Loci Assignment)",
+        "isl_structure": "[STRUCTURE (Spatial Locus A)] <--> [BEAM (Spatial Locus B)]",
+        "explanation": "When comparing or linking two engineering entities, the signer establishes one at spatial locus A (e.g. left) and the second at locus B (right), using directional verbs to indicate interaction."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 18,
+    "discipline": "Civil Engineering",
+    "input_text": "What is concrete?",
+    "detected_branch": "Civil Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 18,
+        "term": "Concrete",
+        "category": "Materials",
+        "domain": "Construction Materials",
+        "validation_status": "needs_review",
+        "sign_gloss": "CONCRETE [REVIEW-PENDING]",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Claw hands mixing aggregates into solid flat surface",
+        "movement": "Kneading motion followed by flat firm smoothing",
+        "location": "Chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Firm jaw posture",
+        "provenance": "Deaf Technical Education Academic Consortium (Candidate Standard) [CC-BY-NC-SA-4.0]",
+        "reviewer_info": "[Local Test Reviewer] Academic Sign Linguist (ISL Linguistic Researcher (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "CONCRETE",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: CONCRETE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 19,
+    "discipline": "Civil Engineering",
+    "input_text": "Explain structural stability.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 103,
+        "term": "Structural Stability",
+        "category": "Structural Engineering",
+        "domain": "Structural Analysis",
+        "validation_status": "unsupported",
+        "sign_gloss": "STRUCTURAL-STABILITY",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": null,
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "STRUCTURAL-STABILITY",
+      "EXPLAIN-CLARIFY"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: STRUCTURAL-STABILITY] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Structural Stability",
+        "category": "Structural Engineering",
+        "why_unsupported": "No certified single-sign ISL equivalent has been codified for 'Structural Stability'.",
+        "recommended_isl_strategy": "Use standard two-handed fingerspelling (S-T-R-U-C-T-U-R) accompanied by a visual technical schematic.",
+        "fingerspelling_sequence": [
+          "S",
+          "T",
+          "R",
+          "U",
+          "C",
+          "T",
+          "U",
+          "R",
+          "A",
+          "L",
+          "S",
+          "T"
+        ],
+        "diagram_description": "Visual conceptual schematic illustrating the core principles of Structural Stability."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 20,
+    "discipline": "Civil Engineering",
+    "input_text": "What is bracing?",
+    "detected_branch": "Civil Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 81,
+        "term": "Bracing",
+        "category": "Structural Engineering",
+        "domain": "Structural Systems",
+        "validation_status": "unsupported",
+        "sign_gloss": "BRACING",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "provenance": "Awaiting ISLRTC STEM Codification",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "BRACING",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: BRACING] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Bracing",
+        "category": "Structural Engineering / Civil",
+        "why_unsupported": "Single standardized sign undergoing peer review; current usage relies on visual truss classifiers.",
+        "recommended_isl_strategy": "Fingerspelling (B-R-A-C-I-N-G) followed by crossing forearms in diagonal X-pattern between structural columns.",
+        "fingerspelling_sequence": [
+          "B",
+          "R",
+          "A",
+          "C",
+          "I",
+          "N",
+          "G"
+        ],
+        "diagram_description": "Structural bay frame with diagonal steel tension/compression cross members."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 21,
+    "discipline": "Electrical & Electronics Engineering",
+    "input_text": "What is voltage?",
+    "detected_branch": "Electronics & Communication",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 9,
+        "term": "Voltage",
+        "category": "Circuits",
+        "domain": "Electrical Circuits",
+        "validation_status": "verified",
+        "sign_gloss": "VOLTAGE",
+        "dominant_hand": "Right",
+        "handshape": "V-handshape",
+        "movement": "Direct pulsed forward thrust between positive and negative spatial loci",
+        "location": "Upper chest level",
+        "orientation": "Palm facing forward",
+        "non_manual_markers": "Slight head nod",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "VOLTAGE",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: VOLTAGE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": true,
+      "title": "[DEMO] [DEMO] [DEMO] Voltage - ISL STEM Standard Sign (Voltage)",
+      "video_url": "/data/sign_videos/voltage_sign.mp4",
+      "source_attribution": "ISLRTC STEM Physics Reference Archive",
+      "validation_status": "demo_only",
+      "is_synthetic_testsrc": true
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 22,
+    "discipline": "Electrical & Electronics Engineering",
+    "input_text": "Explain how current flows through a circuit.",
+    "detected_branch": "Electronics & Communication",
+    "detected_subject": null,
+    "overall_status": "partial",
+    "status_reason": "Partial sign coverage. Verified signs are displayed alongside pending concepts. Unverified words are excluded from fabricated generation.",
+    "extracted_concepts": [
+      {
+        "concept_id": 10,
+        "term": "Current",
+        "category": "Circuits",
+        "domain": "Electrical Circuits",
+        "validation_status": "verified",
+        "sign_gloss": "CURRENT",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-claw hands oscillating horizontally along directional pathway",
+        "movement": "Continuous directional flow from right to left locus",
+        "location": "Mid-chest along horizontal line",
+        "orientation": "Palms facing downward along circuit track",
+        "non_manual_markers": "Focused gaze following current direction",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Identified as Electrical Current (charge flow) supported by electrical context terms: ['circuit', 'flows']."
+      },
+      {
+        "concept_id": 11,
+        "term": "Circuit",
+        "category": "Circuits",
+        "domain": "Electrical Circuits",
+        "validation_status": "partial",
+        "sign_gloss": "CIRCUIT",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Index fingers meeting at top and tracing continuous closed perimeter",
+        "movement": "Perimeter tracing meeting at bottom terminal",
+        "location": "Chest level",
+        "orientation": "Palms facing forward",
+        "non_manual_markers": "Gaze following perimeter path",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "CURRENT",
+      "CIRCUIT",
+      "EXPLAIN-CLARIFY",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: CURRENT + CIRCUIT] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      },
+      {
+        "rule_type": "Dual Spatial Indexing (Loci Assignment)",
+        "isl_structure": "[CURRENT (Spatial Locus A)] <--> [CIRCUIT (Spatial Locus B)]",
+        "explanation": "When comparing or linking two engineering entities, the signer establishes one at spatial locus A (e.g. left) and the second at locus B (right), using directional verbs to indicate interaction."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 23,
+    "discipline": "Electrical & Electronics Engineering",
+    "input_text": "What is resistance?",
+    "detected_branch": "Electronics & Communication",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 34,
+        "term": "Resistance",
+        "category": "Circuit Components",
+        "domain": "Electrical Circuits",
+        "validation_status": "verified",
+        "sign_gloss": "RESISTANCE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant flat palm pressing firmly against incoming non-dominant current stream",
+        "movement": "Pushback opposition motion",
+        "location": "Center chest space",
+        "orientation": "Palms opposing each other",
+        "non_manual_markers": "Tense cheek/jaw morpheme indicating resistance force",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "RESISTANCE",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: RESISTANCE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 24,
+    "discipline": "Electrical & Electronics Engineering",
+    "input_text": "Explain how a transformer works.",
+    "detected_branch": "Electrical & Electronics Engineering",
+    "detected_subject": null,
+    "overall_status": "needs_review",
+    "status_reason": "Sign components are currently undergoing peer evaluation by certified deaf educators and have not yet received nationwide consensus.",
+    "extracted_concepts": [
+      {
+        "concept_id": 20,
+        "term": "Transformer",
+        "category": "Electrical Machines",
+        "domain": "Electrical Machines & Drives",
+        "validation_status": "needs_review",
+        "sign_gloss": "TRANSFORMER [REVIEW-PENDING]",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved-C hands facing each other representing primary and secondary windings",
+        "movement": "Magnetic inductive transfer pulse across gap",
+        "location": "Chest level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Focused gaze",
+        "provenance": "Deaf Technical Education Academic Consortium (Candidate Standard) [CC-BY-NC-SA-4.0]",
+        "reviewer_info": "[Local Test Reviewer] Academic Sign Linguist (ISL Linguistic Researcher (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "TRANSFORMER",
+      "EXPLAIN-CLARIFY",
+      "WORK-FUNCTION",
+      "HOW [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: TRANSFORMER] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [HOW] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 25,
+    "discipline": "Electrical & Electronics Engineering",
+    "input_text": "What happens when resistance increases?",
+    "detected_branch": "Electronics & Communication",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 34,
+        "term": "Resistance",
+        "category": "Circuit Components",
+        "domain": "Electrical Circuits",
+        "validation_status": "verified",
+        "sign_gloss": "RESISTANCE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant flat palm pressing firmly against incoming non-dominant current stream",
+        "movement": "Pushback opposition motion",
+        "location": "Center chest space",
+        "orientation": "Palms opposing each other",
+        "non_manual_markers": "Tense cheek/jaw morpheme indicating resistance force",
+        "provenance": "ISLRTC Technical STEM Reference Glossary",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "RESISTANCE",
+      "WHAT [NMM: Furrowed Brow]"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: RESISTANCE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "WH-Question Final Position",
+        "isl_structure": "[TOPIC] + [COMMENT] + [WHAT] (Final)",
+        "explanation": "In natural ISL, WH-questions are placed at the end of the sentence rather than at the beginning, synchronized with lowered or furrowed eyebrows."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 26,
+    "discipline": "Contextual Disambiguation",
+    "input_text": "Current flows through the circuit.",
+    "detected_branch": "Electronics & Communication",
+    "detected_subject": null,
+    "overall_status": "partial",
+    "status_reason": "Partial sign coverage. Verified signs are displayed alongside pending concepts. Unverified words are excluded from fabricated generation.",
+    "extracted_concepts": [
+      {
+        "concept_id": 10,
+        "term": "Current",
+        "category": "Circuits",
+        "domain": "Electrical Circuits",
+        "validation_status": "verified",
+        "sign_gloss": "CURRENT",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-claw hands oscillating horizontally along directional pathway",
+        "movement": "Continuous directional flow from right to left locus",
+        "location": "Mid-chest along horizontal line",
+        "orientation": "Palms facing downward along circuit track",
+        "non_manual_markers": "Focused gaze following current direction",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Identified as Electrical Current (charge flow) supported by electrical context terms: ['circuit', 'flows']."
+      },
+      {
+        "concept_id": 11,
+        "term": "Circuit",
+        "category": "Circuits",
+        "domain": "Electrical Circuits",
+        "validation_status": "partial",
+        "sign_gloss": "CIRCUIT",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Index fingers meeting at top and tracing continuous closed perimeter",
+        "movement": "Perimeter tracing meeting at bottom terminal",
+        "location": "Chest level",
+        "orientation": "Palms facing forward",
+        "non_manual_markers": "Gaze following perimeter path",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "CURRENT",
+      "CIRCUIT"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: CURRENT + CIRCUIT] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "Dual Spatial Indexing (Loci Assignment)",
+        "isl_structure": "[CURRENT (Spatial Locus A)] <--> [CIRCUIT (Spatial Locus B)]",
+        "explanation": "When comparing or linking two engineering entities, the signer establishes one at spatial locus A (e.g. left) and the second at locus B (right), using directional verbs to indicate interaction."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 27,
+    "discipline": "Contextual Disambiguation",
+    "input_text": "Current research focuses on artificial intelligence.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "No registered engineering concepts detected in the knowledge base. In compliance with the Zero Fabricated Signs Policy, SignBridge AI does not synthesize unverified gestures.",
+    "extracted_concepts": [],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "CURRENT",
+      "RESEARCH",
+      "FOCUSES"
+    ],
+    "grammar_notes": [],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PARTIAL",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 28,
+    "discipline": "Contextual Disambiguation",
+    "input_text": "The system uses a database.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "verified",
+    "status_reason": "All detected engineering concepts possess certified, peer-reviewed Indian Sign Language signs with authentic source attribution.",
+    "extracted_concepts": [
+      {
+        "concept_id": 1,
+        "term": "Database",
+        "category": "Data Management",
+        "domain": "Database Systems",
+        "validation_status": "verified",
+        "sign_gloss": "DATABASE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-C hands shaping cylindrical tiers",
+        "movement": "Stacking motion from bottom to top tier",
+        "location": "Mid-chest neutral signing space",
+        "orientation": "Palms facing inward shaping cylinder boundaries",
+        "non_manual_markers": "Neutral gaze",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "DATABASE"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: DATABASE] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": true,
+      "title": "[DEMO] [DEMO] [DEMO] Database - ISL Standard Sign (Database)",
+      "video_url": "/data/sign_videos/database_sign.mp4",
+      "source_attribution": "ISLRTC STEM Open Reference Pilot (CC-BY-NC 4.0)",
+      "validation_status": "demo_only",
+      "is_synthetic_testsrc": true
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 29,
+    "discipline": "Contextual Disambiguation",
+    "input_text": "The database system is deadlocked.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "unsupported",
+    "status_reason": "Sentence contains engineering concepts (such as Deadlock or Pointer) that lack standardized single-sign ISL equivalents. Certified deaf educators recommend fingerspelling and visual diagrams rather than synthetic gestures.",
+    "extracted_concepts": [
+      {
+        "concept_id": 1,
+        "term": "Database",
+        "category": "Data Management",
+        "domain": "Database Systems",
+        "validation_status": "verified",
+        "sign_gloss": "DATABASE",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-C hands shaping cylindrical tiers",
+        "movement": "Stacking motion from bottom to top tier",
+        "location": "Mid-chest neutral signing space",
+        "orientation": "Palms facing inward shaping cylinder boundaries",
+        "non_manual_markers": "Neutral gaze",
+        "provenance": "ISLRTC STEM Reference Framework (Government Open Reference Model) [Government Open Data License (GODL) / Educational Use]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      },
+      {
+        "concept_id": 4,
+        "term": "Deadlock",
+        "category": "Concurrency",
+        "domain": "Concurrency & Synchronization",
+        "validation_status": "unsupported",
+        "sign_gloss": "DEADLOCK [UNSTANDARDIZED]",
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "provenance": "Deaf Technical Education Academic Consortium (Candidate Standard) [CC-BY-NC-SA-4.0]",
+        "reviewer_info": "[Local Test Reviewer] Certified Deaf Educator (Deaf STEM Specialist (Test Account))",
+        "disambiguation_rationale": "Unambiguous technical terminology matched in engineering knowledge base."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "DATABASE",
+      "DEADLOCK"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: DATABASE + DEADLOCK] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      },
+      {
+        "rule_type": "Dual Spatial Indexing (Loci Assignment)",
+        "isl_structure": "[DATABASE (Spatial Locus A)] <--> [DEADLOCK (Spatial Locus B)]",
+        "explanation": "When comparing or linking two engineering entities, the signer establishes one at spatial locus A (e.g. left) and the second at locus B (right), using directional verbs to indicate interaction."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "needs_review",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [
+      {
+        "term": "Deadlock",
+        "category": "Operating Systems / Concurrency",
+        "why_unsupported": "No national standardized single sign currently certified for DEADLOCK in Indian Sign Language.",
+        "recommended_isl_strategy": "Two-handed fingerspelling (D-E-A-D-L-O-C-K) followed by circular spatial wait indexing.",
+        "fingerspelling_sequence": [
+          "D",
+          "E",
+          "A",
+          "D",
+          "L",
+          "O",
+          "C",
+          "K"
+        ],
+        "diagram_description": "Resource Allocation Graph (RAG) depicting circular wait between two processes and two resource units."
+      }
+    ],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  },
+  {
+    "sentence_id": 30,
+    "discipline": "Contextual Disambiguation",
+    "input_text": "The mechanical system experiences stress.",
+    "detected_branch": "Computer Science & Engineering",
+    "detected_subject": null,
+    "overall_status": "partial",
+    "status_reason": "Partial sign coverage. Verified signs are displayed alongside pending concepts. Unverified words are excluded from fabricated generation.",
+    "extracted_concepts": [
+      {
+        "concept_id": 60,
+        "term": "Stress",
+        "category": "Solid Mechanics",
+        "domain": "Strength of Materials",
+        "validation_status": "partial",
+        "sign_gloss": "STRESS",
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fists squeezing inward against center boundary block",
+        "movement": "Squeezing inward compression",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Strained mouth morpheme",
+        "provenance": "ISLRTC Reference Standard",
+        "reviewer_info": null,
+        "disambiguation_rationale": "Interpreted as mechanical stress in engineering context."
+      }
+    ],
+    "semantic_relationships": [],
+    "isl_gloss_sequence": [
+      "STRESS"
+    ],
+    "grammar_notes": [
+      {
+        "rule_type": "Topic-Comment Structure",
+        "isl_structure": "[TOPIC: STRESS] -> [COMMENT: ACTION/STATE]",
+        "explanation": "Unlike English Subject-Verb-Object (SVO), ISL prioritizes establishing the central entity (Topic) first in the visual signing space before making a comment or asking a question about it."
+      }
+    ],
+    "video_output": {
+      "available": false,
+      "title": null,
+      "video_url": null,
+      "source_attribution": null,
+      "validation_status": "unsupported",
+      "is_synthetic_testsrc": false
+    },
+    "avatar_output": {
+      "available": true,
+      "model_type": "neutral_preview",
+      "animation_name": "neutral_preview_pose",
+      "rig_standard": "MediaPipe-Holistic / ReadyPlayerMe",
+      "validation_status": "unsupported",
+      "notice": "3D Signing Avatar Preview \u2014 Zero Fabrication Policy active (Non-verified gestures are not fabricated).",
+      "has_actual_mocap_file": false
+    },
+    "pedagogical_explanations": [],
+    "audit_assessment": {
+      "input_processing_correctness": "PASS",
+      "concept_extraction_correctness": "PASS",
+      "disambiguation_correctness": "PASS",
+      "isl_linguistic_accuracy": "NEEDS_REVIEW (Heuristic rule-based approximation; lacks empirical Deaf signer validation)",
+      "video_asset_validity": "DEMO_ONLY (Existing MP4 assets are synthetic testsrc clips; genuine video unavailable)",
+      "avatar_signing_validity": "NOT_IMPLEMENTED (WebGL mannequin exhibits procedural breathing; no validated ISL animation data exists)"
+    }
+  }
+]

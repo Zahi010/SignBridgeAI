@@ -1,0 +1,4728 @@
+{
+  "audit_metadata": {
+    "total_concepts_audited": 100,
+    "status_distribution_before_audit": {
+      "NEEDS_REVIEW": 35,
+      "VERIFIED": 40,
+      "EXPLANATION_NEEDED": 3,
+      "PARTIAL": 13,
+      "UNSUPPORTED": 9
+    },
+    "status_distribution_after_audit": {
+      "NEEDS_REVIEW": 75,
+      "EXPLANATION_REQUIRED": 3,
+      "PARTIAL": 13,
+      "UNSUPPORTED": 9
+    },
+    "zero_fabrication_policy_enforced": true
+  },
+  "concepts": [
+    {
+      "concept_id": 1,
+      "sign_id": "ISL-CS-001",
+      "term": "Algorithm",
+      "aliases": [
+        "algorithmic procedure",
+        "computational steps",
+        "step-by-step logic"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Theoretical Computer Science",
+      "domain": "Algorithms & Complexity",
+      "sign_gloss": "ALGORITHM",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat B-Handshape stepping down sequentially",
+        "movement": "Downward alternating step progression",
+        "location": "Neutral space in front of torso",
+        "orientation": "Palms facing each other horizontally",
+        "non_manual_markers": "Focused gaze, slight forward head tilt",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard / Academic Syllabus Candidate",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": true,
+        "file_path": "/data/sign_videos/algorithm_20261120_060226.mp4",
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": true,
+        "audit_verdict": "DEMO_ONLY (Digital clock test pattern; not human signing)"
+      },
+      "avatar_animation": {
+        "registered_in_db": true,
+        "asset_path": "/data/avatar_animations/neutral_avatar.glb",
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 2,
+      "sign_id": "ISL-CS-002",
+      "term": "Database",
+      "aliases": [
+        "DBMS",
+        "relational database",
+        "data store",
+        "RDBMS"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS302",
+      "subject_name": "Database Management Systems",
+      "category": "Data Management",
+      "domain": "Database Systems",
+      "sign_gloss": "DATABASE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-C hands shaping cylindrical tiers",
+        "movement": "Stacking motion from bottom to top tier",
+        "location": "Mid-chest neutral signing space",
+        "orientation": "Palms facing inward shaping cylinder boundaries",
+        "non_manual_markers": "Neutral gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": true,
+        "file_path": "/data/sign_videos/database_sign.mp4",
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": true,
+        "audit_verdict": "DEMO_ONLY (Digital clock test pattern; not human signing)"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 3,
+      "sign_id": "ISL-CS-003",
+      "term": "Operating System",
+      "aliases": [
+        "OS",
+        "system platform",
+        "kernel manager"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Systems Software",
+      "domain": "Systems Software",
+      "sign_gloss": "OPERATING-SYSTEM",
+      "current_claimed_status": "EXPLANATION_NEEDED",
+      "audited_linguistic_status": "EXPLANATION_REQUIRED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open-5 hands transitioning to interlocking C-shapes",
+        "movement": "Rotational coordinating motion",
+        "location": "Chest level neutral space",
+        "orientation": "Palms facing center with inward rotation",
+        "non_manual_markers": "Raised brow during topic introduction",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 4,
+      "sign_id": "ISL-CS-004",
+      "term": "Processor",
+      "aliases": [
+        "CPU",
+        "central processing unit",
+        "microchip core"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Hardware Architecture",
+      "domain": "Computer Architecture",
+      "sign_gloss": "PROCESSOR",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Index and middle fingers extended forming rectangular chip contact",
+        "movement": "Tapping contact on non-dominant palm followed by outward calculation flutter",
+        "location": "Non-dominant open palm base",
+        "orientation": "Dominant palm down, non-dominant palm up",
+        "non_manual_markers": "Concentrated eye gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 5,
+      "sign_id": "ISL-CS-005",
+      "term": "Memory",
+      "aliases": [
+        "RAM",
+        "main memory",
+        "primary storage",
+        "system memory"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Hardware Architecture",
+      "domain": "Memory Hierarchy",
+      "sign_gloss": "MEMORY",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Modified L-handshape indicating storage grid",
+        "movement": "Parallel grid-placement motion",
+        "location": "Neutral chest level",
+        "orientation": "Palms facing down toward horizontal plane",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 6,
+      "sign_id": "ISL-CS-006",
+      "term": "Computer Network",
+      "aliases": [
+        "network",
+        "telecommunication network",
+        "data network",
+        "LAN",
+        "WAN"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS303",
+      "subject_name": "Computer Networks",
+      "category": "Networking",
+      "domain": "Telecommunications & Networks",
+      "sign_gloss": "COMPUTER-NETWORK",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open-5 hands with fingertips meeting and linking",
+        "movement": "Oscillating link-and-spread motion across horizontal space",
+        "location": "Upper chest neutral space",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Spatial indexing to left and right loci",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": true,
+        "file_path": "/data/sign_videos/computer_network_sign.mp4",
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": true,
+        "audit_verdict": "DEMO_ONLY (Digital clock test pattern; not human signing)"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 7,
+      "sign_id": "ISL-CS-007",
+      "term": "Programming",
+      "aliases": [
+        "coding",
+        "software development",
+        "software programming"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Software Engineering",
+      "domain": "Software Development",
+      "sign_gloss": "PROGRAMMING",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands fluttering fingers",
+        "movement": "Rapid alternating finger articulation over non-dominant virtual screen",
+        "location": "Chest level neutral space",
+        "orientation": "Palms angled down-forward",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 8,
+      "sign_id": "ISL-CS-008",
+      "term": "Deadlock",
+      "aliases": [
+        "deadlock condition",
+        "mutual lock",
+        "circular wait"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Systems Software",
+      "domain": "Concurrency & Synchronization",
+      "sign_gloss": "DEADLOCK",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Technical Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 9,
+      "sign_id": "ISL-CS-009",
+      "term": "Software",
+      "aliases": [
+        "computer program",
+        "applications",
+        "system software"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Computer Systems",
+      "domain": "Software Architecture",
+      "sign_gloss": "SOFTWARE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "S-handshape",
+        "movement": "Smooth horizontal glide across open non-dominant palm",
+        "location": "Non-dominant palm base",
+        "orientation": "Dominant palm down, non-dominant palm up",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 10,
+      "sign_id": "ISL-CS-010",
+      "term": "Hardware",
+      "aliases": [
+        "physical hardware",
+        "electronic components",
+        "machinery"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Computer Systems",
+      "domain": "Computer Architecture",
+      "sign_gloss": "HARDWARE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Closed S-fist contacting open forearm",
+        "movement": "Firm double-tap contact",
+        "location": "Forearm level",
+        "orientation": "Palms perpendicular",
+        "non_manual_markers": "Firm mouth morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 11,
+      "sign_id": "ISL-CS-011",
+      "term": "Encryption",
+      "aliases": [
+        "cryptographic encryption",
+        "data ciphering",
+        "cryptography"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS401",
+      "subject_name": "Cryptography & Network Security",
+      "category": "Information Security",
+      "domain": "Cryptography",
+      "sign_gloss": "ENCRYPTION",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open-C hands closing to interlocked fist",
+        "movement": "Twisting locking rotation",
+        "location": "Chest level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Tightened lips",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 12,
+      "sign_id": "ISL-CS-012",
+      "term": "Compiler",
+      "aliases": [
+        "code compiler",
+        "language translator"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS304",
+      "subject_name": "Compiler Design & Systems",
+      "category": "Systems Software",
+      "domain": "Programming Languages & Compilers",
+      "sign_gloss": "COMPILER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B transitioning through funnel shape to index point",
+        "movement": "Downward transformative pass",
+        "location": "Chest level",
+        "orientation": "Palms angled inward",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 13,
+      "sign_id": "ISL-CS-013",
+      "term": "Data Structure",
+      "aliases": [
+        "data organization",
+        "data schema",
+        "structured data"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Computer Science Core",
+      "domain": "Data Management & Architecture",
+      "sign_gloss": "DATA-STRUCTURE",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-B hands forming rectangular grid cells",
+        "movement": "Systematic horizontal and vertical placement",
+        "location": "Chest neutral space",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 14,
+      "sign_id": "ISL-CS-014",
+      "term": "Cloud Computing",
+      "aliases": [
+        "cloud",
+        "on-demand computing",
+        "cloud infrastructure"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS401",
+      "subject_name": "Distributed Systems & Cloud",
+      "category": "Distributed Systems",
+      "domain": "Cloud Infrastructure",
+      "sign_gloss": "CLOUD-COMPUTING",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands shaping cloud perimeter",
+        "movement": "Puffing circular trace outward, then down-pointing wireless rays",
+        "location": "Above head level down to chest",
+        "orientation": "Palms facing each other then down",
+        "non_manual_markers": "Upward gaze transitioning to neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 15,
+      "sign_id": "ISL-CS-015",
+      "term": "Cache",
+      "aliases": [
+        "cache memory",
+        "CPU cache",
+        "fast buffer"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Hardware Architecture",
+      "domain": "Memory Hierarchy",
+      "sign_gloss": "CACHE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Flat-C hand grasping rapid sliver",
+        "movement": "Swift inward snap into pocket space",
+        "location": "Chest level near dominant shoulder",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Quick head nod",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 16,
+      "sign_id": "ISL-CS-016",
+      "term": "Thread",
+      "aliases": [
+        "execution thread",
+        "lightweight process",
+        "multithreading"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Systems Software",
+      "domain": "Concurrency & Synchronization",
+      "sign_gloss": "THREAD",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Index fingers extended as thin parallel execution tracks",
+        "movement": "Simultaneous parallel forward glide",
+        "location": "Chest level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 17,
+      "sign_id": "ISL-CS-017",
+      "term": "Pointer",
+      "aliases": [
+        "memory address pointer",
+        "memory reference"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Programming Languages",
+      "domain": "Low-level Systems Programming",
+      "sign_gloss": "POINTER",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 18,
+      "sign_id": "ISL-CS-018",
+      "term": "Virtual Memory",
+      "aliases": [
+        "paging",
+        "swap space",
+        "virtual address space"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS301",
+      "subject_name": "Operating Systems",
+      "category": "Systems Software",
+      "domain": "Memory Management",
+      "sign_gloss": "VIRTUAL-MEMORY",
+      "current_claimed_status": "EXPLANATION_NEEDED",
+      "audited_linguistic_status": "EXPLANATION_REQUIRED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open-5 fingers spreading into abstract space over RAM base",
+        "movement": "Expanding outward expansion",
+        "location": "Upper chest space",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Raised eyebrows (Topic introduction)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 19,
+      "sign_id": "ISL-CS-019",
+      "term": "Recursion",
+      "aliases": [
+        "recursive function",
+        "self-referential algorithm"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Computer Science Core",
+      "domain": "Algorithms & Complexity",
+      "sign_gloss": "RECURSION",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Index finger pointing back toward dominant wrist",
+        "movement": "Inward spiral looping arc",
+        "location": "Mid-chest",
+        "orientation": "Palm facing self",
+        "non_manual_markers": "Focused gaze tracing loop",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 20,
+      "sign_id": "ISL-CS-020",
+      "term": "Stack",
+      "aliases": [
+        "call stack",
+        "LIFO data structure",
+        "stack memory"
+      ],
+      "branch_code": "cs",
+      "branch_name": "CS",
+      "subject_code": "CS201",
+      "subject_name": "Data Structures & Algorithms",
+      "category": "Data Structures",
+      "domain": "Linear Data Structures",
+      "sign_gloss": "STACK",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands horizontally oriented",
+        "movement": "Placing dominant hand atop non-dominant hand repeatedly",
+        "location": "Mid-chest vertical column",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 21,
+      "sign_id": "ISL-ECE-021",
+      "term": "Voltage",
+      "aliases": [
+        "potential difference",
+        "electric potential",
+        "EMF",
+        "electromotive force"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Electromagnetism",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "VOLTAGE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "V-handshape",
+        "movement": "Direct pulsed forward thrust between positive and negative spatial loci",
+        "location": "Upper chest level",
+        "orientation": "Palm facing forward",
+        "non_manual_markers": "Slight head nod",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": true,
+        "file_path": "/data/sign_videos/voltage_sign.mp4",
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": true,
+        "audit_verdict": "DEMO_ONLY (Digital clock test pattern; not human signing)"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 22,
+      "sign_id": "ISL-ECE-022",
+      "term": "Current",
+      "aliases": [
+        "electric current",
+        "amperage",
+        "charge flow"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Electromagnetism",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "CURRENT",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-claw hands oscillating horizontally along directional pathway",
+        "movement": "Continuous directional flow from right to left locus",
+        "location": "Mid-chest along horizontal line",
+        "orientation": "Palms facing downward along circuit track",
+        "non_manual_markers": "Focused gaze following current direction",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 23,
+      "sign_id": "ISL-ECE-023",
+      "term": "Resistance",
+      "aliases": [
+        "electrical resistance",
+        "impedance real part",
+        "resistor value"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Circuit Components",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "RESISTANCE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant flat palm pressing firmly against incoming non-dominant current stream",
+        "movement": "Pushback opposition motion",
+        "location": "Center chest space",
+        "orientation": "Palms opposing each other",
+        "non_manual_markers": "Tense cheek/jaw morpheme indicating resistance force",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 24,
+      "sign_id": "ISL-ECE-024",
+      "term": "Capacitance",
+      "aliases": [
+        "capacitor",
+        "electric charge storage"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Circuit Components",
+      "domain": "Passive Electronic Components",
+      "sign_gloss": "CAPACITANCE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands parallel to each other",
+        "movement": "Approaching parallel motion without physical contact, pulsing charge",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 25,
+      "sign_id": "ISL-ECE-025",
+      "term": "Inductance",
+      "aliases": [
+        "inductor",
+        "magnetic coil inductance",
+        "self-inductance"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Circuit Components",
+      "domain": "Electromagnetic Circuits",
+      "sign_gloss": "INDUCTANCE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Curved index finger tracing coiled spiral",
+        "movement": "Spiral looping forward progression",
+        "location": "Neutral chest space",
+        "orientation": "Palm facing self",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 26,
+      "sign_id": "ISL-ECE-026",
+      "term": "Circuit",
+      "aliases": [
+        "electric circuit",
+        "electronic circuit",
+        "closed loop"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC201",
+      "subject_name": "Circuit Theory & Analysis",
+      "category": "Circuit Fundamentals",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "CIRCUIT",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Index fingers meeting at top and tracing continuous closed perimeter",
+        "movement": "Perimeter tracing meeting at bottom terminal",
+        "location": "Chest level",
+        "orientation": "Palms facing forward",
+        "non_manual_markers": "Gaze following perimeter path",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 27,
+      "sign_id": "ISL-ECE-027",
+      "term": "Diode",
+      "aliases": [
+        "semiconductor diode",
+        "p-n junction diode",
+        "rectifying diode"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Semiconductor Devices",
+      "domain": "Semiconductor Electronics",
+      "sign_gloss": "DIODE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant V/arrow pointing through non-dominant flat barrier",
+        "movement": "Unidirectional pass-through motion",
+        "location": "Mid-chest",
+        "orientation": "Dominant palm forward, non-dominant palm inward",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 28,
+      "sign_id": "ISL-ECE-028",
+      "term": "Transistor",
+      "aliases": [
+        "BJT",
+        "MOSFET",
+        "semiconductor switch"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Semiconductor Devices",
+      "domain": "Solid-State Electronics",
+      "sign_gloss": "TRANSISTOR",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Three fingers extended (E-B-C) with gating pulse",
+        "movement": "Small gate activation snap",
+        "location": "Mid-chest",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 29,
+      "sign_id": "ISL-ECE-029",
+      "term": "Microprocessor",
+      "aliases": [
+        "microcontroller core",
+        "embedded processor",
+        "8085",
+        "8086",
+        "ARM processor"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC301",
+      "subject_name": "Microprocessors & Microcontrollers",
+      "category": "Embedded Systems",
+      "domain": "Digital VLSI & Architecture",
+      "sign_gloss": "MICROPROCESSOR",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fingertips forming small square chip boundary",
+        "movement": "Placement onto circuit board followed by clock pulse",
+        "location": "Non-dominant palm base",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 30,
+      "sign_id": "ISL-ECE-030",
+      "term": "Signal",
+      "aliases": [
+        "analog signal",
+        "digital signal",
+        "waveform"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC302",
+      "subject_name": "Communication Systems & Signals",
+      "category": "Signal Processing",
+      "domain": "Signals & Systems",
+      "sign_gloss": "SIGNAL",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Index finger or open flat hand tracing sine wave undulating peaks and troughs",
+        "movement": "Smooth sinusoidal wave motion progressing outward",
+        "location": "Chest level moving forward",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Gaze following wave peak",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 31,
+      "sign_id": "ISL-ECE-031",
+      "term": "Frequency",
+      "aliases": [
+        "oscillation frequency",
+        "Hertz",
+        "operating frequency"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC302",
+      "subject_name": "Communication Systems & Signals",
+      "category": "Signal Processing",
+      "domain": "Signals & Systems",
+      "sign_gloss": "FREQUENCY",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Bent-index finger pulsing cycles",
+        "movement": "Fast rhythmic lateral oscillation",
+        "location": "Upper chest space",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Slight repeated head pulse",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 32,
+      "sign_id": "ISL-ECE-032",
+      "term": "Modulation",
+      "aliases": [
+        "carrier modulation",
+        "AM",
+        "FM",
+        "QAM",
+        "digital modulation"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC302",
+      "subject_name": "Communication Systems & Signals",
+      "category": "Communications",
+      "domain": "Analog & Digital Communications",
+      "sign_gloss": "MODULATION",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 33,
+      "sign_id": "ISL-ECE-033",
+      "term": "Logic Gate",
+      "aliases": [
+        "AND gate",
+        "OR gate",
+        "NAND gate",
+        "boolean gate"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC301",
+      "subject_name": "Digital Electronics",
+      "category": "Digital Electronics",
+      "domain": "Digital Logic",
+      "sign_gloss": "LOGIC-GATE",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Index fingers converging into dominant flat gate",
+        "movement": "Inward convergence followed by conditional pass-through",
+        "location": "Chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 34,
+      "sign_id": "ISL-ECE-034",
+      "term": "Amplifier",
+      "aliases": [
+        "op-amp",
+        "operational amplifier",
+        "signal booster"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Analog Electronics",
+      "domain": "Analog Circuit Design",
+      "sign_gloss": "AMPLIFIER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Small sinusoidal wave expanding vertically into large peak",
+        "movement": "Vertical expansion of hand height moving forward",
+        "location": "Mid-chest to upper chest",
+        "orientation": "Palms facing center",
+        "non_manual_markers": "Widened eyes matching increased amplitude",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 35,
+      "sign_id": "ISL-ECE-035",
+      "term": "Semiconductor",
+      "aliases": [
+        "silicon substrate",
+        "doped semiconductor",
+        "germanium"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Materials Science",
+      "domain": "Solid-State Physics",
+      "sign_gloss": "SEMICONDUCTOR",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat hands oscillating between open (conduct) and closed (insulate)",
+        "movement": "Balanced partial passage motion",
+        "location": "Chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 36,
+      "sign_id": "ISL-ECE-036",
+      "term": "Antenna",
+      "aliases": [
+        "aerial",
+        "transmitting antenna",
+        "receiving antenna"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC302",
+      "subject_name": "Communication Systems & Signals",
+      "category": "Electromagnetic Waves",
+      "domain": "RF & Microwave Engineering",
+      "sign_gloss": "ANTENNA",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant vertical index finger (mast), non-dominant curved arcs pulsing outward",
+        "movement": "Pulsing outward arc expansion",
+        "location": "Above shoulder level",
+        "orientation": "Palms facing outward",
+        "non_manual_markers": "Upward gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 37,
+      "sign_id": "ISL-ECE-037",
+      "term": "Bandwidth",
+      "aliases": [
+        "channel bandwidth",
+        "frequency band",
+        "spectral width"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC302",
+      "subject_name": "Communication Systems & Signals",
+      "category": "Communications",
+      "domain": "RF & Network Communications",
+      "sign_gloss": "BANDWIDTH",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands defining left (f1) and right (f2) limits",
+        "movement": "Spreading horizontally to indicate wide vs narrow spectrum",
+        "location": "Chest level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Pursed lips if narrow, open eyes if wide",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 38,
+      "sign_id": "ISL-ECE-038",
+      "term": "Oscillator",
+      "aliases": [
+        "clock generator",
+        "RF oscillator",
+        "waveform generator"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Analog Electronics",
+      "domain": "Analog Circuit Design",
+      "sign_gloss": "OSCILLATOR",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 39,
+      "sign_id": "ISL-ECE-039",
+      "term": "Rectifier",
+      "aliases": [
+        "AC-DC converter",
+        "bridge rectifier",
+        "half-wave rectifier"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC202",
+      "subject_name": "Electronic Devices & Semiconductors",
+      "category": "Power Electronics",
+      "domain": "Power Electronics & Conversion",
+      "sign_gloss": "RECTIFIER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Oscillating wave hand transforming into straight level glide",
+        "movement": "Left-to-right transformation pass",
+        "location": "Chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 40,
+      "sign_id": "ISL-ECE-040",
+      "term": "Sensor",
+      "aliases": [
+        "transducer",
+        "measuring probe",
+        "detector"
+      ],
+      "branch_code": "ece",
+      "branch_name": "ECE",
+      "subject_code": "EC301",
+      "subject_name": "Instrumentation & Sensors",
+      "category": "Instrumentation",
+      "domain": "Instrumentation & Measurement",
+      "sign_gloss": "SENSOR",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Curved claw hand feeling environmental field",
+        "movement": "Sensitive inward pulse toward sensor plate",
+        "location": "Chest level neutral space",
+        "orientation": "Palm facing outward",
+        "non_manual_markers": "Inquisitive gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 41,
+      "sign_id": "ISL-MECH-041",
+      "term": "Force",
+      "aliases": [
+        "mechanical force",
+        "vector force",
+        "load force"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Classical Mechanics",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "FORCE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Closed S-fist",
+        "movement": "Powerful forward thrust along directional vector",
+        "location": "Mid-chest pushing forward",
+        "orientation": "Palm facing inward",
+        "non_manual_markers": "Tightened lips, firm body posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 42,
+      "sign_id": "ISL-MECH-042",
+      "term": "Motion",
+      "aliases": [
+        "movement",
+        "kinematic motion",
+        "displacement"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Kinematics",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "MOTION",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open flat-B hands",
+        "movement": "Continuous forward lateral glide",
+        "location": "Chest level moving forward",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Gaze tracking path of motion",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 43,
+      "sign_id": "ISL-MECH-043",
+      "term": "Torque",
+      "aliases": [
+        "moment of force",
+        "rotational force",
+        "torsional moment"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Rotational Mechanics",
+      "domain": "Rotational Dynamics",
+      "sign_gloss": "TORQUE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved C-hands grasping virtual shaft",
+        "movement": "Vigorous rotational twisting stroke",
+        "location": "Mid-chest",
+        "orientation": "Palms opposing each other on rotational perimeter",
+        "non_manual_markers": "Tense jaw morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 44,
+      "sign_id": "ISL-MECH-044",
+      "term": "Friction",
+      "aliases": [
+        "frictional force",
+        "kinetic friction",
+        "static friction"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Tribology",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "FRICTION",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat open palms contacting firmly",
+        "movement": "Reciprocating shear rubbing stroke",
+        "location": "Chest level",
+        "orientation": "Palms touching surface-to-surface",
+        "non_manual_markers": "Frictional teeth-contact mouth morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 45,
+      "sign_id": "ISL-MECH-045",
+      "term": "Energy",
+      "aliases": [
+        "mechanical energy",
+        "kinetic energy",
+        "potential energy"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME202",
+      "subject_name": "Thermodynamics & Heat Transfer",
+      "category": "Thermodynamics",
+      "domain": "Applied Thermodynamics",
+      "sign_gloss": "ENERGY",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Closed fists bursting open to explosive 5-hands",
+        "movement": "Upward outward dynamic expansion",
+        "location": "Chest level bursting outward",
+        "orientation": "Palms facing inward then forward",
+        "non_manual_markers": "Energized facial expression",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 46,
+      "sign_id": "ISL-MECH-046",
+      "term": "Power",
+      "aliases": [
+        "mechanical power",
+        "rate of work"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Mechanics",
+      "domain": "Machine Dynamics",
+      "sign_gloss": "POWER",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Curved C-hand contacting non-dominant flexed bicep",
+        "movement": "Firm double contact on bicep",
+        "location": "Upper arm",
+        "orientation": "Palm facing inward",
+        "non_manual_markers": "Firm mouth posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 47,
+      "sign_id": "ISL-MECH-047",
+      "term": "Machine",
+      "aliases": [
+        "mechanical device",
+        "mechanism",
+        "apparatus"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME301",
+      "subject_name": "Theory of Machines",
+      "category": "Machine Design",
+      "domain": "Theory of Machines",
+      "sign_gloss": "MACHINE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent claw-5 hands with interlocked fingers",
+        "movement": "Up-down reciprocating interlocking rotation",
+        "location": "Mid-chest neutral space",
+        "orientation": "Palms facing body with intermeshed fingers",
+        "non_manual_markers": "Rhythmic head nod",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": true,
+        "file_path": "/data/sign_videos/machine_sign.mp4",
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": true,
+        "audit_verdict": "DEMO_ONLY (Digital clock test pattern; not human signing)"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 48,
+      "sign_id": "ISL-MECH-048",
+      "term": "Gear",
+      "aliases": [
+        "cogwheel",
+        "spur gear",
+        "gear train",
+        "pinion"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME301",
+      "subject_name": "Theory of Machines",
+      "category": "Kinematics",
+      "domain": "Machine Elements",
+      "sign_gloss": "GEAR",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent fingers meshed as gear teeth",
+        "movement": "Continuous circular meshing rotation",
+        "location": "Chest level",
+        "orientation": "Palms facing chest",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 49,
+      "sign_id": "ISL-MECH-049",
+      "term": "Engine",
+      "aliases": [
+        "internal combustion engine",
+        "motor drive",
+        "piston engine"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME301",
+      "subject_name": "Theory of Machines",
+      "category": "Thermal Systems",
+      "domain": "Internal Combustion & Heat Engines",
+      "sign_gloss": "ENGINE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant fist (piston) reciprocating inside non-dominant cylinder C-hand",
+        "movement": "Vertical reciprocating stroke",
+        "location": "Chest level",
+        "orientation": "Vertical axis",
+        "non_manual_markers": "Puffing rhythmic breath morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 50,
+      "sign_id": "ISL-MECH-050",
+      "term": "Pressure",
+      "aliases": [
+        "fluid pressure",
+        "hydrostatic pressure",
+        "compressive pressure"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME302",
+      "subject_name": "Fluid Mechanics & Turbomachinery",
+      "category": "Fluid Mechanics",
+      "domain": "Fluid Mechanics",
+      "sign_gloss": "PRESSURE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Dominant flat palm pressing downward onto non-dominant flat palm",
+        "movement": "Firm downward compressive force stroke",
+        "location": "Mid-chest",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Compressed lips indicating force load",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 51,
+      "sign_id": "ISL-MECH-051",
+      "term": "Velocity",
+      "aliases": [
+        "speed with direction",
+        "vector velocity"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Kinematics",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "VELOCITY",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "V-handshape or flat-B darting forward swiftly",
+        "movement": "Accelerated forward linear dart",
+        "location": "Chest level moving forward",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Focused darting gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 52,
+      "sign_id": "ISL-MECH-052",
+      "term": "Acceleration",
+      "aliases": [
+        "rate of velocity change",
+        "linear acceleration"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Kinematics",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "ACCELERATION",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Flat-B hand transitioning from slow drift to rapid surge",
+        "movement": "Nonlinear accelerating sweep forward",
+        "location": "Chest level moving forward",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Head accelerating forward with hand",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 53,
+      "sign_id": "ISL-MECH-053",
+      "term": "Thermodynamics",
+      "aliases": [
+        "heat energy science",
+        "thermal physics"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME202",
+      "subject_name": "Thermodynamics & Heat Transfer",
+      "category": "Thermal Systems",
+      "domain": "Applied Thermodynamics",
+      "sign_gloss": "THERMODYNAMICS",
+      "current_claimed_status": "EXPLANATION_NEEDED",
+      "audited_linguistic_status": "EXPLANATION_REQUIRED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands undulating heat rising into mechanical work piston",
+        "movement": "Rising thermal wave turning into linear push",
+        "location": "Upper chest space",
+        "orientation": "Palms facing up then down",
+        "non_manual_markers": "Raised eyebrows (Topic introduction)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 54,
+      "sign_id": "ISL-MECH-054",
+      "term": "Stress",
+      "aliases": [
+        "mechanical stress",
+        "normal stress",
+        "shear stress"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Solid Mechanics",
+      "domain": "Strength of Materials",
+      "sign_gloss": "STRESS",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fists squeezing inward against center boundary block",
+        "movement": "Squeezing inward compression",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Strained mouth morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 55,
+      "sign_id": "ISL-MECH-055",
+      "term": "Strain",
+      "aliases": [
+        "engineering strain",
+        "deformation ratio",
+        "axial strain"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Solid Mechanics",
+      "domain": "Strength of Materials",
+      "sign_gloss": "STRAIN",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-index fingers hooked together and stretching outward",
+        "movement": "Lateral elongation pull",
+        "location": "Chest level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 56,
+      "sign_id": "ISL-MECH-056",
+      "term": "Turbine",
+      "aliases": [
+        "steam turbine",
+        "gas turbine",
+        "hydro turbine"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME302",
+      "subject_name": "Fluid Mechanics & Turbomachinery",
+      "category": "Turbomachinery",
+      "domain": "Turbomachinery",
+      "sign_gloss": "TURBINE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved open-5 hands spinning rapidly around index finger shaft",
+        "movement": "Rapid axial rotation",
+        "location": "Chest level",
+        "orientation": "Palms facing inward toward rotor",
+        "non_manual_markers": "Blowing mouth morpheme representing fluid flow",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 57,
+      "sign_id": "ISL-MECH-057",
+      "term": "Viscosity",
+      "aliases": [
+        "fluid friction",
+        "dynamic viscosity",
+        "kinematic viscosity"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME302",
+      "subject_name": "Fluid Mechanics & Turbomachinery",
+      "category": "Fluid Mechanics",
+      "domain": "Fluid Mechanics",
+      "sign_gloss": "VISCOSITY",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved claw hands pulling apart slowly with sticky resistance",
+        "movement": "Slow resistant vertical separation",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Pursed lips indicating drag",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 58,
+      "sign_id": "ISL-MECH-058",
+      "term": "Momentum",
+      "aliases": [
+        "linear momentum",
+        "mass in motion"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME201",
+      "subject_name": "Engineering Mechanics",
+      "category": "Dynamics",
+      "domain": "Statics & Dynamics",
+      "sign_gloss": "MOMENTUM",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 59,
+      "sign_id": "ISL-MECH-059",
+      "term": "Heat Transfer",
+      "aliases": [
+        "thermal conduction",
+        "convection",
+        "radiation",
+        "thermal transport"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME202",
+      "subject_name": "Thermodynamics & Heat Transfer",
+      "category": "Thermal Systems",
+      "domain": "Heat Transfer",
+      "sign_gloss": "HEAT-TRANSFER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved thermal hands migrating across temperature gradient",
+        "movement": "Left-to-right gradient migration",
+        "location": "Chest level",
+        "orientation": "Palms facing right",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 60,
+      "sign_id": "ISL-MECH-060",
+      "term": "Fluid Mechanics",
+      "aliases": [
+        "hydraulics",
+        "hydrodynamics",
+        "aerodynamics"
+      ],
+      "branch_code": "mech",
+      "branch_name": "MECH",
+      "subject_code": "ME302",
+      "subject_name": "Fluid Mechanics & Turbomachinery",
+      "category": "Continuum Mechanics",
+      "domain": "Fluid Mechanics",
+      "sign_gloss": "FLUID-MECHANICS",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Wavy fluid ripple transitioning into gear interlocking",
+        "movement": "Horizontal wave into circular gear lock",
+        "location": "Chest level",
+        "orientation": "Palms down to inward",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 61,
+      "sign_id": "ISL-CIVIL-061",
+      "term": "Structure",
+      "aliases": [
+        "civil structure",
+        "load-bearing structure",
+        "framework"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Engineering",
+      "domain": "Structural Mechanics",
+      "sign_gloss": "STRUCTURE",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-B hands forming vertical and horizontal framing planes",
+        "movement": "Interlocking grid erection moving upward",
+        "location": "Chest to face level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Upward gaze following building height",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 62,
+      "sign_id": "ISL-CIVIL-062",
+      "term": "Foundation",
+      "aliases": [
+        "substructure",
+        "footing",
+        "deep foundation",
+        "pile foundation"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE302",
+      "subject_name": "Geotechnical Engineering",
+      "category": "Geotechnical Engineering",
+      "domain": "Soil Mechanics & Foundations",
+      "sign_gloss": "FOUNDATION",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat non-dominant forearm (bedrock) with dominant fist planting solid contact downward",
+        "movement": "Firm downward planting stroke",
+        "location": "Lower chest level",
+        "orientation": "Horizontal bedrock axis",
+        "non_manual_markers": "Firm mouth posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 63,
+      "sign_id": "ISL-CIVIL-063",
+      "term": "Concrete",
+      "aliases": [
+        "reinforced concrete",
+        "cement aggregate mix",
+        "RCC"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE201",
+      "subject_name": "Building Materials",
+      "category": "Construction Materials",
+      "domain": "Construction Materials",
+      "sign_gloss": "CONCRETE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Claw hands mixing aggregates into solid flat surface",
+        "movement": "Kneading motion followed by flat firm smoothing",
+        "location": "Chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Firm jaw posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 64,
+      "sign_id": "ISL-CIVIL-064",
+      "term": "Beam",
+      "aliases": [
+        "structural beam",
+        "girder",
+        "horizontal support",
+        "I-beam"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Engineering",
+      "domain": "Structural Elements",
+      "sign_gloss": "BEAM",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands positioned horizontally spanning two vertical index posts",
+        "movement": "Horizontal bridging placement",
+        "location": "Upper chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 65,
+      "sign_id": "ISL-CIVIL-065",
+      "term": "Column",
+      "aliases": [
+        "structural pillar",
+        "compression member",
+        "pier"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Engineering",
+      "domain": "Structural Elements",
+      "sign_gloss": "COLUMN",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved-C hands outlining vertical cylinder perimeter",
+        "movement": "Upward vertical stroke",
+        "location": "Chest to eye level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Upward gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 66,
+      "sign_id": "ISL-CIVIL-066",
+      "term": "Load",
+      "aliases": [
+        "dead load",
+        "live load",
+        "structural burden",
+        "environmental load"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Analysis",
+      "domain": "Structural Mechanics",
+      "sign_gloss": "LOAD",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Cupped heavy hands pressing downward",
+        "movement": "Weighty downward compression stroke",
+        "location": "Upper chest",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Puffed cheeks indicating heavy weight",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 67,
+      "sign_id": "ISL-CIVIL-067",
+      "term": "Shear",
+      "aliases": [
+        "shear force",
+        "shear failure",
+        "transverse shear"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Analysis",
+      "domain": "Strength of Materials",
+      "sign_gloss": "SHEAR",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat-B hands touching edge to edge",
+        "movement": "Opposing sliding displacement shear stroke",
+        "location": "Mid-chest",
+        "orientation": "Palms facing each other horizontally",
+        "non_manual_markers": "Quick firm head snap",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 68,
+      "sign_id": "ISL-CIVIL-068",
+      "term": "Soil Mechanics",
+      "aliases": [
+        "geotechnical engineering",
+        "soil physics",
+        "earth mechanics"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE302",
+      "subject_name": "Geotechnical Engineering",
+      "category": "Geotechnical Engineering",
+      "domain": "Soil Mechanics & Foundations",
+      "sign_gloss": "SOIL-MECHANICS",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fingers rubbing earth texture then forming stability frame",
+        "movement": "Textural crumble then structural base placement",
+        "location": "Low chest level",
+        "orientation": "Palms facing up then down",
+        "non_manual_markers": "Focused downward gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 69,
+      "sign_id": "ISL-CIVIL-069",
+      "term": "Surveying",
+      "aliases": [
+        "land surveying",
+        "theodolite survey",
+        "total station",
+        "geodesy"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE202",
+      "subject_name": "Surveying & Geomatics",
+      "category": "Geomatics",
+      "domain": "Geomatics & Geospatial",
+      "sign_gloss": "SURVEYING",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Curved C-hand forming optical eye telescope",
+        "movement": "Sightline alignment toward distant target stake",
+        "location": "Eye level",
+        "orientation": "Palm facing self",
+        "non_manual_markers": "Squinting one eye (sightline alignment)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 70,
+      "sign_id": "ISL-CIVIL-070",
+      "term": "Reinforcement",
+      "aliases": [
+        "rebar",
+        "steel reinforcement",
+        "reinforcing steel"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE201",
+      "subject_name": "Building Materials",
+      "category": "Structural Elements",
+      "domain": "Reinforced Concrete Structures",
+      "sign_gloss": "REINFORCEMENT",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Interlocking grid fingers locking inside concrete casing",
+        "movement": "Firm insertion and locking mesh motion",
+        "location": "Mid-chest",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Firm mouth posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 71,
+      "sign_id": "ISL-CIVIL-071",
+      "term": "Cement",
+      "aliases": [
+        "Portland cement",
+        "hydraulic cement",
+        "binding matrix"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE201",
+      "subject_name": "Building Materials",
+      "category": "Building Materials",
+      "domain": "Construction Materials",
+      "sign_gloss": "CEMENT",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Sprinkling fingertips followed by flat adhesive smoothing",
+        "movement": "Powder sprinkle into paste sweep",
+        "location": "Low chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 72,
+      "sign_id": "ISL-CIVIL-072",
+      "term": "Mortar",
+      "aliases": [
+        "masonry mortar",
+        "cement mortar",
+        "joint paste"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE201",
+      "subject_name": "Building Materials",
+      "category": "Masonry Materials",
+      "domain": "Masonry Construction",
+      "sign_gloss": "MORTAR",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Flat trowel hand sweeping paste between stacked brick blocks",
+        "movement": "Horizontal spreading sweep",
+        "location": "Chest level",
+        "orientation": "Palm facing down",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 73,
+      "sign_id": "ISL-CIVIL-073",
+      "term": "Retaining Wall",
+      "aliases": [
+        "earth retention wall",
+        "cantilever retaining wall",
+        "gravity wall"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE302",
+      "subject_name": "Geotechnical Engineering",
+      "category": "Geotechnical Structures",
+      "domain": "Soil Mechanics & Foundations",
+      "sign_gloss": "RETAINING-WALL",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Vertical dominant palm resisting lateral soil push from non-dominant hand",
+        "movement": "Firm pushback barrier hold",
+        "location": "Mid-chest",
+        "orientation": "Dominant palm facing sideways to block",
+        "non_manual_markers": "Firm resistance facial morpheme",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 74,
+      "sign_id": "ISL-CIVIL-074",
+      "term": "Hydrology",
+      "aliases": [
+        "hydrologic cycle",
+        "water engineering",
+        "catchment hydrology"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE303",
+      "subject_name": "Hydraulics & Water Resources",
+      "category": "Water Resources",
+      "domain": "Hydraulics & Hydrology",
+      "sign_gloss": "HYDROLOGY",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "W-hand at chin then undulating river flow lines",
+        "movement": "Chin tap into flowing stream progression",
+        "location": "Chin to chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 75,
+      "sign_id": "ISL-CIVIL-075",
+      "term": "Drainage",
+      "aliases": [
+        "stormwater drainage",
+        "surface runoff drainage",
+        "culvert system"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE303",
+      "subject_name": "Hydraulics & Water Resources",
+      "category": "Water Resources",
+      "domain": "Hydraulics & Drainage",
+      "sign_gloss": "DRAINAGE",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open-5 hands funneling downward into narrow stream channel",
+        "movement": "Downward channeling drainage glide",
+        "location": "Chest level moving downward",
+        "orientation": "Palms funneling inward",
+        "non_manual_markers": "Pursed lips (channeling fluid)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 76,
+      "sign_id": "ISL-CIVIL-076",
+      "term": "Compaction",
+      "aliases": [
+        "soil compaction",
+        "proctor compaction",
+        "roller tamping"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE302",
+      "subject_name": "Geotechnical Engineering",
+      "category": "Soil Engineering",
+      "domain": "Soil Mechanics & Foundations",
+      "sign_gloss": "COMPACTION",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Heavy flat fists tamping down repeatedly",
+        "movement": "Rhythmic downward compressive pounding",
+        "location": "Lower chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Firm compressed jaw",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 77,
+      "sign_id": "ISL-CIVIL-077",
+      "term": "Tensile Strength",
+      "aliases": [
+        "ultimate tensile strength",
+        "UTS",
+        "tension resistance"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE201",
+      "subject_name": "Building Materials",
+      "category": "Materials Testing",
+      "domain": "Strength of Materials",
+      "sign_gloss": "TENSILE-STRENGTH",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Hooked fingers pulling outward with high tension",
+        "movement": "Outward lateral pulling stroke",
+        "location": "Chest level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Tense cheek/jaw indicating strength threshold",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 78,
+      "sign_id": "ISL-CIVIL-078",
+      "term": "Bracing",
+      "aliases": [
+        "cross-bracing",
+        "diagonal bracing",
+        "lateral restraint"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Structural Engineering",
+      "domain": "Structural Systems",
+      "sign_gloss": "BRACING",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 79,
+      "sign_id": "ISL-CIVIL-079",
+      "term": "Settlement",
+      "aliases": [
+        "foundation settlement",
+        "differential settlement",
+        "consolidation settlement"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE302",
+      "subject_name": "Geotechnical Engineering",
+      "category": "Geotechnical Engineering",
+      "domain": "Soil Mechanics & Foundations",
+      "sign_gloss": "SETTLEMENT",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Flat horizontal foundation settling unevenly downward",
+        "movement": "Slow downward sinking subsidence",
+        "location": "Lower chest level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Concerned facial expression",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 80,
+      "sign_id": "ISL-CIVIL-080",
+      "term": "Abutment",
+      "aliases": [
+        "bridge abutment",
+        "end support",
+        "retaining substructure"
+      ],
+      "branch_code": "civil",
+      "branch_name": "CIVIL",
+      "subject_code": "CE301",
+      "subject_name": "Structural Analysis",
+      "category": "Bridge Engineering",
+      "domain": "Bridge Engineering",
+      "sign_gloss": "ABUTMENT",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 81,
+      "sign_id": "ISL-EEE-081",
+      "term": "Electricity",
+      "aliases": [
+        "electric power",
+        "electrical energy",
+        "power supply"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Electromagnetism",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "ELECTRICITY",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Bent-X fingers meeting rapidly",
+        "movement": "Rapid alternating knuckle tapping pulse",
+        "location": "Chest level",
+        "orientation": "Palms facing inward",
+        "non_manual_markers": "Slight mouth vibration",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 82,
+      "sign_id": "ISL-EEE-082",
+      "term": "Transformer",
+      "aliases": [
+        "step-up transformer",
+        "step-down transformer",
+        "power transformer"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE301",
+      "subject_name": "Electrical Machines",
+      "category": "Electrical Machines",
+      "domain": "Electrical Machines & Drives",
+      "sign_gloss": "TRANSFORMER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Curved-C hands facing each other representing primary and secondary windings",
+        "movement": "Magnetic inductive transfer pulse across gap",
+        "location": "Chest level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 83,
+      "sign_id": "ISL-EEE-083",
+      "term": "Motor",
+      "aliases": [
+        "electric motor",
+        "induction motor",
+        "DC motor"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE301",
+      "subject_name": "Electrical Machines",
+      "category": "Electrical Machines",
+      "domain": "Electrical Machines & Drives",
+      "sign_gloss": "MOTOR",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Fist rotating around central axis inside open stator palm",
+        "movement": "Continuous circular shaft rotation",
+        "location": "Chest level",
+        "orientation": "Horizontal rotational axis",
+        "non_manual_markers": "Vibrating mouth posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 84,
+      "sign_id": "ISL-EEE-084",
+      "term": "Generator",
+      "aliases": [
+        "alternator",
+        "electrical dynamo",
+        "power generator"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE301",
+      "subject_name": "Electrical Machines",
+      "category": "Electrical Machines",
+      "domain": "Electrical Machines & Drives",
+      "sign_gloss": "GENERATOR",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Hand cranking rotation followed by electric sparks radiating out",
+        "movement": "Crank rotation into electric pulse",
+        "location": "Chest level",
+        "orientation": "Palms outward",
+        "non_manual_markers": "Energetic expression",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 85,
+      "sign_id": "ISL-EEE-085",
+      "term": "Power System",
+      "aliases": [
+        "electrical power grid",
+        "bulk power system"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Power Systems",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "POWER-SYSTEM",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Electricity sparks transitioning to widespread linked power towers",
+        "movement": "Spark tap into expansive grid network layout",
+        "location": "Chest to shoulder level",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Spatial indexing",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 86,
+      "sign_id": "ISL-EEE-086",
+      "term": "Alternating Current",
+      "aliases": [
+        "AC",
+        "sinusoidal current",
+        "AC power"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "Power Fundamentals",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "ALTERNATING-CURRENT",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "V-hands or flat hands undulating in periodic alternating cycle",
+        "movement": "Periodic back-and-forth oscillation along wire",
+        "location": "Chest level",
+        "orientation": "Palms facing each other",
+        "non_manual_markers": "Rhythmic head oscillation",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 87,
+      "sign_id": "ISL-EEE-087",
+      "term": "Direct Current",
+      "aliases": [
+        "DC",
+        "constant current",
+        "DC electricity"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "Power Fundamentals",
+      "domain": "Electrical Circuits",
+      "sign_gloss": "DIRECT-CURRENT",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Index finger tracing dead-straight horizontal line",
+        "movement": "Unbroken straight forward glide",
+        "location": "Chest level",
+        "orientation": "Palm facing left",
+        "non_manual_markers": "Focused steady gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 88,
+      "sign_id": "ISL-EEE-088",
+      "term": "Distribution",
+      "aliases": [
+        "power distribution",
+        "distribution network",
+        "distribution substation"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Power Transmission",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "DISTRIBUTION",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Fingers spreading outward from single point into multiple branch directions",
+        "movement": "Expanding outward branch allocation",
+        "location": "Chest level spreading outward",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Spatial indexing",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 89,
+      "sign_id": "ISL-EEE-089",
+      "term": "Transmission",
+      "aliases": [
+        "high voltage transmission",
+        "transmission lines",
+        "power grid transmission"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Power Transmission",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "TRANSMISSION",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "High towers represented by vertical hand, other hand shooting long wire beams forward",
+        "movement": "Long forward horizontal trajectory",
+        "location": "Head level moving far forward",
+        "orientation": "Palms forward",
+        "non_manual_markers": "Far distance gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 90,
+      "sign_id": "ISL-EEE-090",
+      "term": "Circuit Breaker",
+      "aliases": [
+        "breaker",
+        "SF6 breaker",
+        "vacuum breaker",
+        "MCB"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Switchgear & Protection",
+      "domain": "Power Protection & Switchgear",
+      "sign_gloss": "CIRCUIT-BREAKER",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Contacting knuckles snapping apart forcefully to break connection",
+        "movement": "Forceful outward trip snap",
+        "location": "Chest level",
+        "orientation": "Palms inward then separating",
+        "non_manual_markers": "Sharp head snap matching trip instant",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 91,
+      "sign_id": "ISL-EEE-091",
+      "term": "Relay",
+      "aliases": [
+        "protective relay",
+        "numerical relay",
+        "distance relay"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Switchgear & Protection",
+      "domain": "Power Protection & Switchgear",
+      "sign_gloss": "RELAY",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Sensing coil triggering switch contact",
+        "movement": "Sense followed by rapid contact switch",
+        "location": "Mid-chest",
+        "orientation": "Palms facing down",
+        "non_manual_markers": "Alert facial posture",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 92,
+      "sign_id": "ISL-EEE-092",
+      "term": "Induction",
+      "aliases": [
+        "electromagnetic induction",
+        "Faraday induction"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "Electromagnetism",
+      "domain": "Electromagnetic Fields",
+      "sign_gloss": "INDUCTION",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Oscillating magnetic field hovering over conductor loop causing circular current",
+        "movement": "Field hover causing circular internal flow",
+        "location": "Chest level",
+        "orientation": "Palms facing each other across air gap",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 93,
+      "sign_id": "ISL-EEE-093",
+      "term": "Magnetic Flux",
+      "aliases": [
+        "flux lines",
+        "magnetic field lines",
+        "Weber"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "Electromagnetism",
+      "domain": "Electromagnetic Fields",
+      "sign_gloss": "MAGNETIC-FLUX",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Open fingers representing flux lines penetrating non-dominant flat loop",
+        "movement": "Penetrating forward pass through perimeter",
+        "location": "Chest level",
+        "orientation": "Palms forward through loop",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 94,
+      "sign_id": "ISL-EEE-094",
+      "term": "Substation",
+      "aliases": [
+        "electrical substation",
+        "grid substation",
+        "transformer yard"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Power Systems",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "SUBSTATION",
+      "current_claimed_status": "PARTIAL",
+      "audited_linguistic_status": "PARTIAL",
+      "status_downgrade_reason": "Compound technical sign with partial colloquial alignment; awaiting full domain standardization.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Square yard perimeter holding central transformer and power towers",
+        "movement": "Perimeter outline and incoming wire links",
+        "location": "Chest level",
+        "orientation": "Palms down",
+        "non_manual_markers": "Spatial indexing",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Reference Standard",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 95,
+      "sign_id": "ISL-EEE-095",
+      "term": "Inverter",
+      "aliases": [
+        "DC-AC converter",
+        "solar inverter",
+        "power inverter"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE303",
+      "subject_name": "Power Electronics & Drives",
+      "category": "Power Electronics",
+      "domain": "Power Electronics & Conversion",
+      "sign_gloss": "INVERTER",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Straight line hand turning 180 degrees into sine wave oscillation",
+        "movement": "Horizontal flip transformation",
+        "location": "Mid-chest",
+        "orientation": "Palms flipping from down to waving",
+        "non_manual_markers": "Neutral",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 96,
+      "sign_id": "ISL-EEE-096",
+      "term": "Power Grid",
+      "aliases": [
+        "national grid",
+        "electrical grid",
+        "transmission grid"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Power Systems",
+      "domain": "Electrical Power Systems",
+      "sign_gloss": "POWER-GRID",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Interlocking grid fingers linking across broad horizontal space",
+        "movement": "Interlocking and expanding network mesh",
+        "location": "Chest to shoulder level",
+        "orientation": "Palms facing body",
+        "non_manual_markers": "Broad eye gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 97,
+      "sign_id": "ISL-EEE-097",
+      "term": "Electrical Impedance",
+      "aliases": [
+        "impedance",
+        "complex resistance",
+        "Z parameter"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "Circuit Fundamentals",
+      "domain": "AC Circuit Analysis",
+      "sign_gloss": "ELECTRICAL-IMPEDANCE",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 98,
+      "sign_id": "ISL-EEE-098",
+      "term": "Phasor",
+      "aliases": [
+        "phasor vector",
+        "phase angle vector",
+        "complex sinusoidal representation"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE201",
+      "subject_name": "Electromagnetic Fields & Circuits",
+      "category": "AC Circuit Analysis",
+      "domain": "AC Circuit Analysis",
+      "sign_gloss": "PHASOR",
+      "current_claimed_status": "UNSUPPORTED",
+      "audited_linguistic_status": "UNSUPPORTED",
+      "status_downgrade_reason": "Concept confirmed unstandardized in technical ISL; pedagogical explainer and fingerspelling required.",
+      "phonological_parameters": {
+        "dominant_hand": null,
+        "handshape": null,
+        "movement": null,
+        "location": null,
+        "orientation": null,
+        "non_manual_markers": "Brow furrow (advisory)",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "Awaiting ISLRTC STEM Codification",
+      "license": "Pending Formal Codification",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 99,
+      "sign_id": "ISL-EEE-099",
+      "term": "Electrical Grounding",
+      "aliases": [
+        "earthing",
+        "ground connection",
+        "safety ground",
+        "protective earth"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE302",
+      "subject_name": "Power Systems",
+      "category": "Electrical Safety",
+      "domain": "Electrical Safety & Earthing",
+      "sign_gloss": "ELECTRICAL-GROUNDING",
+      "current_claimed_status": "VERIFIED",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Downgraded from VERIFIED to NEEDS_REVIEW: No authentic human signing video asset exists; validation was recorded by local test accounts rather than certified external Deaf evaluators.",
+      "phonological_parameters": {
+        "dominant_hand": "Right",
+        "handshape": "Index finger driving downward into flat non-dominant earth palm",
+        "movement": "Direct vertical downward contact stroke into ground",
+        "location": "Lower chest level",
+        "orientation": "Downward vertical axis",
+        "non_manual_markers": "Down-directed gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": true
+      },
+      "source_institution": "ISLRTC Technical STEM Reference Glossary",
+      "license": "Government Educational Reference / Fair Dealing",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    },
+    {
+      "concept_id": 100,
+      "sign_id": "ISL-EEE-100",
+      "term": "Armature",
+      "aliases": [
+        "rotor winding",
+        "armature coil",
+        "commutator assembly"
+      ],
+      "branch_code": "eee",
+      "branch_name": "EEE",
+      "subject_code": "EE301",
+      "subject_name": "Electrical Machines",
+      "category": "Electrical Machines",
+      "domain": "Electrical Machines & Drives",
+      "sign_gloss": "ARMATURE",
+      "current_claimed_status": "NEEDS_REVIEW",
+      "audited_linguistic_status": "NEEDS_REVIEW",
+      "status_downgrade_reason": "Candidate sign awaiting empirical evaluation by accredited Deaf STEM educators.",
+      "phonological_parameters": {
+        "dominant_hand": "Two-Handed",
+        "handshape": "Cylindrical rotor frame with wire wraps rotating in air gap",
+        "movement": "Coil winding motion around central cylinder",
+        "location": "Mid-chest",
+        "orientation": "Palms facing center",
+        "non_manual_markers": "Focused gaze",
+        "is_heuristically_assigned": true,
+        "documented_in_islrtc_print": false
+      },
+      "source_institution": "Academic Syllabus Candidate",
+      "license": "Academic Research Use",
+      "signer_attribution": "None (No authentic signer recorded; video assets are synthetic FFmpeg testsrc)",
+      "consent_documentation": "Not Applicable (No human subjects recorded)",
+      "video_asset": {
+        "registered_in_db": false,
+        "file_path": null,
+        "is_authentic_human": false,
+        "is_synthetic_testsrc": false,
+        "audit_verdict": "UNAVAILABLE"
+      },
+      "avatar_animation": {
+        "registered_in_db": false,
+        "asset_path": null,
+        "file_exists_on_disk": false,
+        "audit_verdict": "NOT_IMPLEMENTED (Missing GLB asset; viewer performs procedural sinusoidal breathing only)"
+      }
+    }
+  ]
+}
