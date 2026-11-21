@@ -72,3 +72,4 @@ backend/tests/test_phase6_security_privacy.py::test_right_to_erasure_complete_pu
 
 ## 4. Privacy Audit Conclusion
 The SignBridge AI participant data deletion and anonymization architecture now fully satisfies the stringent irreversible erasure standards of GDPR Article 17 and DPDP Act 2023. Backup resurrection is categorically prevented.
+

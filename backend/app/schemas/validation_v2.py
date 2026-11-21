@@ -12,7 +12,9 @@ from backend.app.models.validation_models import (
     CredentialType,
     ValidationTaskStatus,
     RubricCriterionRating,
-    AdjudicationDecisionEnum
+    AdjudicationDecisionEnum,
+    RemediationCategory,
+    RemediationStatus
 )
 
 
@@ -290,3 +292,76 @@ class ValidationDashboardStatsResponse(BaseModel):
     community_participants_count: int
     technical_vs_linguistic_status: Dict[str, Any]
     critical_issues_summary: List[Dict[str, Any]]
+
+
+# --- PHASE 7: PILOT MANAGEMENT & FEEDBACK REMEDIATION SCHEMAS ---
+
+class ReviewerInvitationCreateRequest(BaseModel):
+    invited_email: str = Field(..., min_length=5, max_length=150)
+    invited_name: str = Field(..., min_length=2, max_length=150)
+    intended_role: ReviewerRole = ReviewerRole.EXPERT_REVIEWER
+    institutional_affiliation: Optional[str] = None
+    project_id: Optional[int] = None
+    valid_days: int = Field(default=30, ge=1, le=180)
+
+
+class ReviewerInvitationResponse(BaseModel):
+    id: int
+    invitation_code: str
+    invited_email: str
+    invited_name: str
+    intended_role: ReviewerRole
+    institutional_affiliation: Optional[str]
+    is_used: bool
+    expires_at: datetime
+    created_at: datetime
+
+
+class PilotProjectStatusResponse(BaseModel):
+    project_id: int
+    name: str
+    protocol_reference: str
+    status: str
+    institutional_partner: Optional[str]
+    irb_approval_ref: Optional[str]
+    total_pilot_tasks: int
+    completed_reviews_count: int
+    active_expert_reviewers: int
+    open_remediation_tickets: int
+    resolved_remediation_tickets: int
+    pilot_gate_message: str
+
+
+class RemediationTicketCreateRequest(BaseModel):
+    task_id: int
+    evaluation_id: Optional[int] = None
+    criterion_name: str
+    category: RemediationCategory
+    severity: str = "major"
+    issue_description: str
+    reviewer_notes: Optional[str] = None
+    timestamp_ms: Optional[int] = None
+    proposed_remediation: Optional[str] = None
+
+
+class RemediationTicketUpdateRequest(BaseModel):
+    status: RemediationStatus
+    resolution_notes: Optional[str] = None
+
+
+class RemediationTicketResponse(BaseModel):
+    id: int
+    task_id: int
+    evaluation_id: Optional[int]
+    criterion_name: str
+    category: RemediationCategory
+    status: RemediationStatus
+    severity: str
+    issue_description: str
+    reviewer_notes: Optional[str]
+    timestamp_ms: Optional[int]
+    proposed_remediation: Optional[str]
+    resolution_notes: Optional[str]
+    created_at: datetime
+    resolved_at: Optional[datetime]
+

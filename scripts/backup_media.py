@@ -97,3 +97,4 @@ def run_media_backup() -> Path:
 
 if __name__ == "__main__":
     run_media_backup()
+

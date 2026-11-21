@@ -79,3 +79,4 @@ permissions-policy: camera=(), microphone=(self), geolocation=()
 
 ## 5. Security Verdict
 The SignBridge AI backend exhibits a robust defensive posture with zero critical or high vulnerabilities. Pre-pilot deployment to external reviewers is verified secure.
+

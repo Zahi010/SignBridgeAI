@@ -1,0 +1,215 @@
+{
+  "pilot_metadata": {
+    "protocol_id": "SB-PILOT-2026-v1.0",
+    "pilot_name": "SignBridge AI First External Validation Pilot",
+    "target_cohort": "Accredited ISL Interpreters & Deaf Master Signers",
+    "status": "PREPARATION",
+    "zero_fabrication_declaration": "No signs in this package are synthetically fabricated. All 5 candidate signs are extracted from authentic master recordings published by the Indian Sign Language Research and Training Centre (ISLRTC) under the Government Open Data License - India (GODL-India). Current linguistic verification status is PARTIALLY_VERIFIED pending external multi-center review.",
+    "evaluation_criteria_count": 12
+  },
+  "signs": [
+    {
+      "concept_id": 1,
+      "term": "Algorithm",
+      "code": "ISL-CS-001",
+      "discipline": "Computer Science & Engineering",
+      "subject": "Data Structures & Algorithms",
+      "definition": "A step-by-step procedure, finite sequence of rigorous instructions, typically used to solve a specific class of problems or perform a computation.",
+      "linguistic_status": "PARTIALLY_VERIFIED",
+      "source_provenance": {
+        "institution": "Indian Sign Language Research and Training Centre (ISLRTC)",
+        "governing_body": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+        "license": "Government Open Data License - India (GODL-India)",
+        "source_url": "https://data.gov.in (Official ISLRTC Academic Dictionary)",
+        "raw_video_path": "/data/sign_videos/islrtc_algorithm.mp4",
+        "thumbnail_path": "/data/sign_videos/thumbnails/islrtc_algorithm_thumb.jpg",
+        "sha256": "3eb2019b88cfbbbf4a45119df956ef198e0e09210287ee3b4e9e0da1931ea4ad",
+        "duration_seconds": 3.48,
+        "resolution": "1920x1080",
+        "fps": 25.0
+      },
+      "mocap_metadata": {
+        "mocap_json_path": "/data/isl_motion/processed/islrtc_algorithm_mocap.json",
+        "tracker": "MediaPipe Holistic / Vision Lite (Pose 33, Hands 21x2, Face 468)",
+        "total_frames": 87,
+        "mean_tracking_confidence": 0.942,
+        "dominant_hand": "Right",
+        "handshape": "Open-B handshape with progressive sequential tapping",
+        "movement_type": "Sequential planar step translation (left to right)",
+        "signing_location": "Neutral chest space (mid-torso)"
+      },
+      "known_limitations": [
+        "Slight smoothing latency in ring and pinky finger distal interphalangeal (DIP) joints during rapid step transitions.",
+        "Facial non-manual marker mouthing is neutral in avatar, whereas original signer displays subtle lip rounding for 'step'."
+      ],
+      "reviewer_instructions": "Observe the step-wise hand movement in the synchronized video. Verify whether the 3D avatar's finger articulation and left-to-right progression preserve the semantic concept of a 'sequential step procedure' in standard ISL without requiring English captions."
+    },
+    {
+      "concept_id": 13,
+      "term": "Frequency",
+      "code": "ISL-ECE-013",
+      "discipline": "Electronics & Communication Engineering",
+      "subject": "Signals & Systems / Communication Systems",
+      "definition": "The rate at which a vibration occurs that constitutes a wave, either in a material or in an electromagnetic field, measured in hertz (cycles per second).",
+      "linguistic_status": "PARTIALLY_VERIFIED",
+      "source_provenance": {
+        "institution": "Indian Sign Language Research and Training Centre (ISLRTC)",
+        "governing_body": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+        "license": "Government Open Data License - India (GODL-India)",
+        "source_url": "https://data.gov.in (Official ISLRTC Academic Dictionary)",
+        "raw_video_path": "/data/sign_videos/islrtc_frequency.mp4",
+        "thumbnail_path": "/data/sign_videos/thumbnails/islrtc_frequency_thumb.jpg",
+        "sha256": "4b5d018ac064ad7223b9cb84e7ad2634e29ecdfdff7fbe6089d311029ba42617",
+        "duration_seconds": 2.72,
+        "resolution": "1920x1080",
+        "fps": 25.0
+      },
+      "mocap_metadata": {
+        "mocap_json_path": "/data/isl_motion/processed/islrtc_frequency_mocap.json",
+        "tracker": "MediaPipe Holistic / Vision Lite",
+        "total_frames": 68,
+        "mean_tracking_confidence": 0.958,
+        "dominant_hand": "Right",
+        "handshape": "Index finger extended (1-handshape) undulating in sinusoidal wave",
+        "movement_type": "Oscillatory wave trajectory",
+        "signing_location": "Neutral chest signing space"
+      },
+      "known_limitations": [
+        "Avatar wrist pitch angle during high-frequency cresting exhibits minor angular stiffness compared to human wrist fluidity.",
+        "Speed variation: Original signer accelerates toward end of stroke to indicate rapid frequency."
+      ],
+      "reviewer_instructions": "Evaluate whether the avatar's oscillatory wave motion accurately distinguishes electrical wave frequency from general repetitive motion or vibration."
+    },
+    {
+      "concept_id": 25,
+      "term": "Current",
+      "code": "ISL-EEE-025",
+      "discipline": "Electrical & Electronics Engineering",
+      "subject": "Circuit Theory & Power Systems",
+      "definition": "The rate of flow of electric charge past a point or region in an electric circuit, measured in amperes.",
+      "linguistic_status": "PARTIALLY_VERIFIED",
+      "source_provenance": {
+        "institution": "Indian Sign Language Research and Training Centre (ISLRTC)",
+        "governing_body": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+        "license": "Government Open Data License - India (GODL-India)",
+        "source_url": "https://data.gov.in (Official ISLRTC Academic Dictionary)",
+        "raw_video_path": "/data/sign_videos/islrtc_current.mp4",
+        "thumbnail_path": "/data/sign_videos/thumbnails/islrtc_current_thumb.jpg",
+        "sha256": "bb3c28ad68da0f9941198533cf23aeb962883f3ba9e8f49896324b172a6b240b",
+        "duration_seconds": 2.68,
+        "resolution": "1920x1080",
+        "fps": 25.0
+      },
+      "mocap_metadata": {
+        "mocap_json_path": "/data/isl_motion/processed/islrtc_current_mocap.json",
+        "tracker": "MediaPipe Holistic / Vision Lite",
+        "total_frames": 67,
+        "mean_tracking_confidence": 0.965,
+        "dominant_hand": "Two-Handed (Symmetric)",
+        "handshape": "Bent-V / Claw handshape moving forward along conducting path",
+        "movement_type": "Linear directional forward flow along forearm conduit",
+        "signing_location": "Mid-chest extending outward"
+      },
+      "known_limitations": [
+        "Dual-hand coordination: Base hand acts as stationary wire/conduit; avatar base hand tracking shows minimal drift.",
+        "Potential polysemic confusion with temporal 'current' (present time) if isolated without technical context."
+      ],
+      "reviewer_instructions": "Inspect whether the sign clearly denotes electrical current (electron flow) and avoids ambiguity with temporal 'now/current time'."
+    },
+    {
+      "concept_id": 37,
+      "term": "Beam",
+      "code": "ISL-CIV-037",
+      "discipline": "Civil Engineering",
+      "subject": "Structural Analysis & Mechanics of Solids",
+      "definition": "A structural element that primarily resists loads applied laterally to the beam's axis, creating bending moments and shear stresses.",
+      "linguistic_status": "PARTIALLY_VERIFIED",
+      "source_provenance": {
+        "institution": "Indian Sign Language Research and Training Centre (ISLRTC)",
+        "governing_body": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+        "license": "Government Open Data License - India (GODL-India)",
+        "source_url": "https://data.gov.in (Official ISLRTC Academic Dictionary)",
+        "raw_video_path": "/data/sign_videos/islrtc_beam.mp4",
+        "thumbnail_path": "/data/sign_videos/thumbnails/islrtc_beam_thumb.jpg",
+        "sha256": "4b68ff0cfebaa9a7b7a8aa3a78c93717df3d40cbfe774b7cbf5a1118fb208221",
+        "duration_seconds": 2.80,
+        "resolution": "1920x1080",
+        "fps": 25.0
+      },
+      "mocap_metadata": {
+        "mocap_json_path": "/data/isl_motion/processed/islrtc_beam_mocap.json",
+        "tracker": "MediaPipe Holistic / Vision Lite",
+        "total_frames": 70,
+        "mean_tracking_confidence": 0.971,
+        "dominant_hand": "Two-Handed (Dominant + Base)",
+        "handshape": "Flat horizontal Open-B palm resting across vertical support columns",
+        "movement_type": "Horizontal positioning followed by downward load indication",
+        "signing_location": "Upper chest level"
+      },
+      "known_limitations": [
+        "Spatial orientation: Avatar palm downward flat plane must remain strictly parallel to floor; minor tilt observed at frame 42.",
+        "Sign distinguishes civil structural beam from light/laser beam; verify structural classifier correctness."
+      ],
+      "reviewer_instructions": "Verify whether the two-handed structural support classifier accurately represents a horizontal load-bearing beam in civil engineering ISL."
+    },
+    {
+      "concept_id": 49,
+      "term": "Torque",
+      "code": "ISL-MEC-049",
+      "discipline": "Mechanical Engineering",
+      "subject": "Theory of Machines & Applied Mechanics",
+      "definition": "The rotational equivalent of linear force; a measure of the force that can cause an object to rotate about an axis.",
+      "linguistic_status": "PARTIALLY_VERIFIED",
+      "source_provenance": {
+        "institution": "Indian Sign Language Research and Training Centre (ISLRTC)",
+        "governing_body": "Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment, Government of India",
+        "license": "Government Open Data License - India (GODL-India)",
+        "source_url": "https://data.gov.in (Official ISLRTC Academic Dictionary)",
+        "raw_video_path": "/data/sign_videos/islrtc_torque.mp4",
+        "thumbnail_path": "/data/sign_videos/thumbnails/islrtc_torque_thumb.jpg",
+        "sha256": "df06187799b6fc70c175f73d42b938ef557161b4742a0fe0076a4ba2ba61c9e2",
+        "duration_seconds": 3.76,
+        "resolution": "1920x1080",
+        "fps": 25.0
+      },
+      "mocap_metadata": {
+        "mocap_json_path": "/data/isl_motion/processed/islrtc_torque_mocap.json",
+        "tracker": "MediaPipe Holistic / Vision Lite",
+        "total_frames": 94,
+        "mean_tracking_confidence": 0.951,
+        "dominant_hand": "Two-Handed",
+        "handshape": "C-handshape / Gripping fist rotating tangentially around axis finger",
+        "movement_type": "Rotational torsional twisting stroke",
+        "signing_location": "Mid-chest center axis"
+      },
+      "known_limitations": [
+        "Twisting velocity: Rotational acceleration around the stationary axis finger is sharp; avatar wrist rotation exhibits minor damping.",
+        "Signer displays effort morpheme (puffed cheeks/tensed jaw) indicating mechanical torque resistance."
+      ],
+      "reviewer_instructions": "Observe the torsional twisting motion. Evaluate whether the avatar captures both the rotational direction and the physical force quality of torque."
+    }
+  ],
+  "rubric_framework": {
+    "dimensions": [
+      "lexical_correctness",
+      "handshape",
+      "orientation",
+      "location",
+      "movement",
+      "coordination",
+      "facial_nmm",
+      "grammatical_correctness",
+      "contextual_meaning",
+      "naturalness",
+      "regional_variation",
+      "ambiguity"
+    ],
+    "ratings": [
+      "pass",
+      "minor_issue",
+      "major_issue",
+      "incorrect",
+      "not_applicable"
+    ]
+  }
+}

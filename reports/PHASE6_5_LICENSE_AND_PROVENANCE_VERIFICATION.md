@@ -55,3 +55,4 @@ The export eligibility service was updated to evaluate individual asset provenan
 
 ## 4. Verification Verdict
 All assets in the SignBridge AI repository are accounted for, correctly licensed, and shielded by programmatic export guards. No unlicensed or fabricated assets can escape into academic export packages.
+

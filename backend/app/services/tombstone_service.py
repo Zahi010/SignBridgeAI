@@ -119,3 +119,4 @@ def enforce_tombstones(db: Session) -> int:
         db.commit()
 
     return re_purged_count
+

@@ -147,6 +147,13 @@ class ValidationProject(Base):
     target_domain = Column(String(100), default="Engineering Education")
     rubric_config_json = Column(Text, nullable=True) # JSON criteria configurations
     is_active = Column(Boolean, default=True)
+    
+    # Phase 7 Pilot Governance Fields
+    protocol_reference = Column(String(100), default="SB-PILOT-2026-v1.0")
+    status = Column(String(50), default="PREPARATION") # PREPARATION, ACTIVE, PAUSED, COMPLETED
+    institutional_partner = Column(String(200), nullable=True)
+    irb_approval_ref = Column(String(100), nullable=True)
+    target_completion_date = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=get_utc_now)
 
     tasks = relationship("ValidationTask", back_populates="project", cascade="all, delete-orphan")
@@ -161,6 +168,11 @@ class ValidationTask(Base):
     concept_id = Column(Integer, ForeignKey("concepts.id"), nullable=False)
     status = Column(SQLEnum(ValidationTaskStatus), default=ValidationTaskStatus.UNREVIEWED, nullable=False)
     
+    # Phase 7 Pilot Assignment Fields
+    assigned_reviewer_id = Column(Integer, ForeignKey("phase5_reviewers.id"), nullable=True)
+    deadline = Column(DateTime, nullable=True)
+    is_pilot_task = Column(Boolean, default=False)
+
     assigned_reviewers_count = Column(Integer, default=0)
     completed_reviews_count = Column(Integer, default=0)
     created_at = Column(DateTime, default=get_utc_now)
@@ -318,5 +330,64 @@ class RevokedToken(Base):
     revoked_at = Column(DateTime, default=get_utc_now)
     expires_at = Column(DateTime, nullable=False)
     revoked_by_user_id = Column(Integer, nullable=True)
+
+
+# --- PHASE 7: PILOT MANAGEMENT & FEEDBACK REMEDIATION ---
+
+class ReviewerInvitation(Base):
+    __tablename__ = "phase7_reviewer_invitations"
+
+    id = Column(Integer, primary_key=True, index=True)
+    invitation_code = Column(String(64), unique=True, index=True, nullable=False) # e.g. "INV-ISLRTC-2026-A1B2C3"
+    invited_email = Column(String(150), nullable=False)
+    invited_name = Column(String(150), nullable=False)
+    intended_role = Column(SQLEnum(ReviewerRole), default=ReviewerRole.EXPERT_REVIEWER, nullable=False)
+    institutional_affiliation = Column(String(200), nullable=True)
+    project_id = Column(Integer, ForeignKey("phase5_validation_projects.id"), nullable=True)
+    created_by_admin_id = Column(Integer, ForeignKey("phase5_reviewers.id"), nullable=True)
+    
+    is_used = Column(Boolean, default=False)
+    used_by_reviewer_id = Column(Integer, ForeignKey("phase5_reviewers.id"), nullable=True)
+    expires_at = Column(DateTime, nullable=False)
+    created_at = Column(DateTime, default=get_utc_now)
+
+
+class RemediationCategory(str, enum.Enum):
+    HAND_ARTICULATION = "hand_articulation"
+    ORIENTATION_SOLVER = "orientation_solver"
+    MOTION_RETARGETING = "motion_retargeting"
+    NMM_MAPPING = "nmm_mapping"
+    LEXICON_INVESTIGATION = "lexicon_investigation"
+    GRAMMAR_SEQUENCING = "grammar_sequencing"
+    GENERAL_PHONOLOGY = "general_phonology"
+
+
+class RemediationStatus(str, enum.Enum):
+    OPEN = "open"
+    IN_PROGRESS = "in_progress"
+    RESOLVED = "resolved"
+    DISMISSED = "dismissed"
+
+
+class FeedbackRemediationTicket(Base):
+    __tablename__ = "phase7_remediation_tickets"
+
+    id = Column(Integer, primary_key=True, index=True)
+    task_id = Column(Integer, ForeignKey("phase5_validation_tasks.id"), nullable=False)
+    evaluation_id = Column(Integer, ForeignKey("phase5_sign_evaluations.id"), nullable=True)
+    criterion_name = Column(String(100), nullable=False)
+    category = Column(SQLEnum(RemediationCategory), nullable=False)
+    status = Column(SQLEnum(RemediationStatus), default=RemediationStatus.OPEN, nullable=False)
+    severity = Column(String(50), default="major") # "critical", "major", "minor"
+    
+    issue_description = Column(Text, nullable=False)
+    reviewer_notes = Column(Text, nullable=True)
+    timestamp_ms = Column(Integer, nullable=True)
+    proposed_remediation = Column(Text, nullable=True)
+    resolution_notes = Column(Text, nullable=True)
+    
+    created_at = Column(DateTime, default=get_utc_now)
+    resolved_at = Column(DateTime, nullable=True)
+
 
 

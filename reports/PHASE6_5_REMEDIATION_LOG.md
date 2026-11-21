@@ -77,3 +77,4 @@ All remediations were tested with automated suites:
 - **Backend Tests:** 107/107 passed (`pytest backend/tests`).
 - **Deprecation Warnings:** Reduced from 195 to 1 upstream testclient warning.
 - **Frontend Build:** Succeeded with 0 errors (`npm run build`).
+

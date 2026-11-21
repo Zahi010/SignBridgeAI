@@ -72,3 +72,4 @@ pytest backend/tests
 ======================= 107 passed, 1 warning in 6.98s ========================
 ```
 Zero application warnings remain across all 107 test cases.
+

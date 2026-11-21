@@ -41,3 +41,4 @@
 $$\mathbf{PRE\text{-}PILOT\ READINESS:\ APPROVED\ WITH\ ETHICAL\ PREREQUISITES}$$
 
 The software engineering, security hardening, privacy compliance, and statistical evaluation components of SignBridge AI are **production-ready for an accredited research pilot**. Live human participant recruitment may proceed once formal Institutional Ethics Committee (IRB) protocol clearance is obtained.
+

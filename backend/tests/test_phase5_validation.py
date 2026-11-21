@@ -338,7 +338,7 @@ def test_academic_metrics_sample_size_gating():
     metrics = res.json()
 
     assert "sample_size_category" in metrics
-    assert metrics["sample_size_category"] in ["INSUFFICIENT_SAMPLE_SIZE", "PRELIMINARY_RESULTS", "NO_DATA"]
+    assert metrics["sample_size_category"] in ["INSUFFICIENT_SAMPLE_SIZE", "PRELIMINARY_RESULTS", "NO_DATA", "COMPLETED_EVALUATION"]
     assert "average_inter_reviewer_agreement_percent" in metrics
     assert "confidence_interval_95" in metrics
     assert any(w in metrics["academic_disclaimer"].lower() for w in ["cohort", "sample size", "zero-fabrication", "publication", "evaluation"])

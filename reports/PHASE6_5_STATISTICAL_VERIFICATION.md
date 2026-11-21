@@ -92,3 +92,4 @@ The engine prevents nonsensical claims of 100% confidence from small pilot cohor
 
 ## 6. Statistical Verdict
 The statistical analysis module is rigorously verified, literature-compliant, and mathematically safe for peer-reviewed academic research.
+

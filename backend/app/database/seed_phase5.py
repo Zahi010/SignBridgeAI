@@ -6,6 +6,7 @@ Strict Zero-Fabrication: All signs are marked PENDING_EXTERNAL_REVIEW.
 No fake validation reviews or simulated accreditations are seeded.
 """
 
+from sqlalchemy import text
 from backend.app.database.database import SessionLocal, Base, engine
 from backend.app.models.entities import SignRecord, Concept
 from backend.app.models.validation_models import (
@@ -19,10 +20,41 @@ from backend.app.models.validation_models import (
 from backend.app.core.auth import hash_password
 
 
+def ensure_phase7_columns(db):
+    # Check and add columns to phase5_validation_projects
+    try:
+        db.execute(text("SELECT protocol_reference FROM phase5_validation_projects LIMIT 1"))
+    except Exception:
+        db.rollback()
+        try:
+            db.execute(text("ALTER TABLE phase5_validation_projects ADD COLUMN protocol_reference VARCHAR(100) DEFAULT 'SB-PILOT-2026-v1.0'"))
+            db.execute(text("ALTER TABLE phase5_validation_projects ADD COLUMN status VARCHAR(50) DEFAULT 'PREPARATION'"))
+            db.execute(text("ALTER TABLE phase5_validation_projects ADD COLUMN institutional_partner VARCHAR(200)"))
+            db.execute(text("ALTER TABLE phase5_validation_projects ADD COLUMN irb_approval_ref VARCHAR(100)"))
+            db.execute(text("ALTER TABLE phase5_validation_projects ADD COLUMN target_completion_date DATETIME"))
+            db.commit()
+        except Exception:
+            db.rollback()
+
+    # Check and add columns to phase5_validation_tasks
+    try:
+        db.execute(text("SELECT assigned_reviewer_id FROM phase5_validation_tasks LIMIT 1"))
+    except Exception:
+        db.rollback()
+        try:
+            db.execute(text("ALTER TABLE phase5_validation_tasks ADD COLUMN assigned_reviewer_id INTEGER"))
+            db.execute(text("ALTER TABLE phase5_validation_tasks ADD COLUMN deadline DATETIME"))
+            db.execute(text("ALTER TABLE phase5_validation_tasks ADD COLUMN is_pilot_task BOOLEAN DEFAULT 0"))
+            db.commit()
+        except Exception:
+            db.rollback()
+
+
 def seed_phase5_database():
     print("[Seed Phase 5] Ensuring all validation & community tables exist...")
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
+    ensure_phase7_columns(db)
 
     try:
         # 1. Seed Default Validation Project
