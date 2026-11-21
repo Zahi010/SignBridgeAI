@@ -68,3 +68,4 @@
 - **Issue:** No automated online backup or cryptographic integrity verification scripts existed.
 - **Fix:** Developed `backup_database.py` and `restore_database.py` with SQLite backup API, SHA-256 sidecar checksums, and pre-restore rollback snapshots.
 - **Verification:** `backend/tests/test_phase6_security_privacy.py::test_database_backup_and_restore_cycle` PASSED.
+

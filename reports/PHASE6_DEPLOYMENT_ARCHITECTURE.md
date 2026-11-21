@@ -67,3 +67,4 @@ SignBridge AI provides standard Kubernetes and Docker container health probes:
 | **RAM** | 4 GB | 8 GB |
 | **Storage** | 20 GB SSD | 50 GB NVMe SSD |
 | **OS** | Ubuntu 24.04 LTS / Debian 12 | Ubuntu 24.04 LTS / Debian 12 |
+

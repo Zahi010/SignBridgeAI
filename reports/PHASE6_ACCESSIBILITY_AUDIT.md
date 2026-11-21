@@ -48,3 +48,4 @@ The Phase 6 accessibility audit inspected visual affordances, video playback con
    Prior to live participant sessions, embed short (30-second) ISL signed video prompts alongside written English instruction boxes for participant consent.
 2. **Keyboard Shortcut Legend:**
    Add a quick-reference modal for keyboard shortcuts (`J` = rewind 5s, `K` = pause/play, `L` = forward 5s, `[` = decrease speed, `]` = increase speed).
+

@@ -52,3 +52,4 @@ flowchart LR
 ## 4. Zero-Fabrication Safeguard Reminder
 
 At no stage should automated algorithms or synthetic LLMs replace human ISL experts in certifying signs as `VERIFIED_ISL_MOTION`. The integrity and credibility of SignBridge AI depends entirely on preserving authentic, human-validated linguistic evidence.
+

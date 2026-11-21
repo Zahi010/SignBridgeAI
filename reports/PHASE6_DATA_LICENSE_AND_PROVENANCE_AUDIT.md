@@ -50,3 +50,4 @@ Automated tests in `backend/tests/test_phase6_security_privacy.py` (`test_export
 - `CC-BY-4.0` is assigned strictly to `retargeted_mocap`.
 - `GODL-India` is assigned strictly to `islrtc_reference_metadata`.
 - Participants with `consent_data_sharing == False` or who requested data deletion are **strictly excluded** from export bundles.
+

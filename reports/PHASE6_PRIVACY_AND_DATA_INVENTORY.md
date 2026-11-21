@@ -52,3 +52,4 @@ Phase 6 introduced four independent, granular consent flags to `ParticipantConse
 4. `consent_academic_publication` (Boolean): Inclusion in peer-reviewed journal datasets.
 
 If a participant grants consent for research participation but disables `consent_data_sharing`, the `ExportEligibilityService` strictly omits their records from public dataset exports.
+

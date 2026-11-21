@@ -62,3 +62,4 @@ Verified in `backend/tests/test_phase6_security_privacy.py` (`test_academic_metr
 - Empty / initial dataset correctly triggers `sample_size_category: "NO_DATA"` with zero division prevention.
 - Cohort filtering executes SQL join on `phase5_reviewers.verification_status` seamlessly.
 - Returned values conform strictly to `AcademicEvaluationMetricsResponse` Pydantic schema.
+

@@ -314,3 +314,4 @@ def test_database_backup_and_restore_cycle():
 
     # Test restoration
     restore_database(backup_path)
+

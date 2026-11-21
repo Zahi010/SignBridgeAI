@@ -94,3 +94,4 @@ def restore_database(target_backup: Optional[Path] = None):
 if __name__ == "__main__":
     target = Path(sys.argv[1]) if len(sys.argv) > 1 else None
     restore_database(target)
+

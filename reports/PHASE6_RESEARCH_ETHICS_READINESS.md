@@ -52,3 +52,4 @@
 1. Submit protocol to partner university Institutional Ethics Committee (IEC).
 2. Attach `PHASE6_PRIVACY_AND_DATA_INVENTORY.md` and `PHASE6_RIGHT_TO_DELETION_AUDIT.md`.
 3. Provide sample participant information sheet (PIS) with accompanying ISL translation video.
+

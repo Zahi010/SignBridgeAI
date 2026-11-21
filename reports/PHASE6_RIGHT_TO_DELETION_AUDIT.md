@@ -62,3 +62,4 @@ The hardened erasure protocol was tested against live database transactions in `
 ## 4. Conclusion
 
 SignBridge AI's Right-to-Erasure implementation successfully balances individual data sovereignty with academic reproducibility. The platform guarantees that any participant who withdraws cannot be identified, exported, or re-associated with research outputs.
+
