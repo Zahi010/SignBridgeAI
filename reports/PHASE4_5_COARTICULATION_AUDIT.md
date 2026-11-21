@@ -55,3 +55,4 @@ SignBridge AI implements **Discrete Lexical Concatenation with Boundary Co-Artic
 > 
 > Under the Zero-Fabrication Policy, SignBridge AI explicitly disclaims this limitation to users:
 > *"Multi-sign sentences are assembled by concatenating independently validated lexical tokens. Continuous co-articulation blending remains experimental until validated against continuous ISL sentence datasets."*
+

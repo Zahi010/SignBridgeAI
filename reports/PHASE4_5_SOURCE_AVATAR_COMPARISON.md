@@ -108,3 +108,4 @@ The interface simultaneously renders:
 ## 4. Linguistic Conclusion
 
 The visual audit establishes that the 3D avatar successfully reproduces the global trajectories, signing space locations, two-handed coordination, and basic handshapes of the human signers. The primary technical limitation is monocular depth ambiguity along the camera $Z$-axis, which is clearly disclosed in the application interface and documentation.
+

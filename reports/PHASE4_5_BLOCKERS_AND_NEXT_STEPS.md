@@ -73,3 +73,4 @@ flowchart TD
 ### Phase 5.3: Continuous Co-Articulation Neural Network
 1. **Continuous Corpus Ingestion:** Ingest complete engineering lectures and multi-sentence technical dialogues in ISL.
 2. **Kinematic Blending Network:** Train a deep generative or transformer-based motion in-betweening model constrained by ISL phonological phonotactics to replace discrete boundary pauses with natural continuous signing.
+

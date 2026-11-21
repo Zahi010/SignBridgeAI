@@ -430,3 +430,172 @@ export interface DocumentUploadResponse {
   document_analysis?: DocumentAnalysis;
   uploaded_at: string;
 }
+
+// --- PHASE 5 VALIDATION & COMMUNITY RESEARCH TYPES ---
+
+export type ReviewerRoleType =
+  | 'reviewer'
+  | 'expert_reviewer'
+  | 'deaf_native_signer'
+  | 'certified_interpreter'
+  | 'admin'
+  | 'community_participant';
+
+export type ReviewerVerificationStatusType =
+  | 'unverified'
+  | 'verification_pending'
+  | 'verified'
+  | 'rejected'
+  | 'suspended';
+
+export type RubricRatingType =
+  | 'pass'
+  | 'minor_issue'
+  | 'major_issue'
+  | 'incorrect'
+  | 'not_applicable'
+  | 'unable_to_assess';
+
+export interface Phase5Reviewer {
+  id: number;
+  username: string;
+  email: string;
+  full_name: string;
+  is_deaf_native_signer: boolean;
+  is_certified_interpreter: boolean;
+  years_of_experience: number;
+  institution_affiliation?: string;
+  role: ReviewerRoleType;
+  verification_status: ReviewerVerificationStatusType;
+  verification_notes?: string;
+}
+
+export interface Phase5ReviewerToken {
+  access_token: string;
+  token_type: string;
+  reviewer_id: number;
+  username: string;
+  full_name: string;
+  role: ReviewerRoleType;
+  verification_status: ReviewerVerificationStatusType;
+}
+
+export interface Phase5Credential {
+  id: number;
+  reviewer_id: number;
+  credential_type: string;
+  credential_identifier: string;
+  issuing_body: string;
+  verification_status: ReviewerVerificationStatusType;
+  notes?: string;
+  created_at: string;
+}
+
+export interface Phase5Task {
+  id: number;
+  project_id?: number;
+  sign_record_id: number;
+  concept_id: number;
+  concept_term: string;
+  sign_gloss: string;
+  status: string;
+  assigned_reviewers_count: number;
+  completed_reviews_count: number;
+  has_video: boolean;
+  has_animation: boolean;
+  annotations_count: number;
+  disagreements_count: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface Phase5Annotation {
+  id?: number;
+  task_id: number;
+  reviewer_id?: number;
+  reviewer_name?: string;
+  timestamp_ms: number;
+  duration_ms: number;
+  target_type: string;
+  category: string;
+  comment: string;
+  created_at?: string;
+}
+
+export interface Phase5CriterionRating {
+  criterion_name: string;
+  rating: RubricRatingType;
+  notes?: string;
+  is_critical_error: boolean;
+}
+
+export interface Phase5Evaluation {
+  id: number;
+  task_id: number;
+  reviewer_id: number;
+  reviewer_name: string;
+  reviewer_verification_status: ReviewerVerificationStatusType;
+  is_draft: boolean;
+  overall_recommendation: string;
+  general_feedback?: string;
+  suggested_dialect?: string;
+  criteria_ratings: Phase5CriterionRating[];
+  submitted_at: string;
+}
+
+export interface Phase5Disagreement {
+  id: number;
+  task_id: number;
+  criterion_name: string;
+  disagreement_type: string;
+  reviewer_ratings: Record<string, string>;
+  status: string;
+  detected_at: string;
+}
+
+export interface Phase5AcademicMetrics {
+  sample_size_category: string;
+  total_signs_reviewed: number;
+  total_verified_reviewers: number;
+  total_evaluations: number;
+  cohens_kappa?: number;
+  fleiss_kappa?: number;
+  average_inter_reviewer_agreement_percent: number;
+  disagreement_frequency_percent: number;
+  critical_error_count: number;
+  criterion_statistics: Array<{
+    criterion_name: string;
+    total_evaluations: number;
+    agreement_percentage: number;
+    pass_rate: number;
+    major_error_rate: number;
+  }>;
+  confidence_interval_95: { lower: number; upper: number };
+  academic_disclaimer: string;
+}
+
+export interface Phase5DashboardStats {
+  total_validation_tasks: number;
+  unreviewed_tasks_count: number;
+  under_review_tasks_count: number;
+  reviewed_tasks_count: number;
+  disagreements_count: number;
+  adjudicated_tasks_count: number;
+  verified_reviewers_count: number;
+  pending_credential_verifications_count: number;
+  community_participants_count: number;
+  technical_vs_linguistic_status: {
+    technical_mocap_available_count: number;
+    technical_fidelity_passing_count: number;
+    linguistically_verified_signs_count: number;
+    partially_verified_mocap_count: number;
+    pending_external_review_count: number;
+  };
+  critical_issues_summary: Array<{
+    criterion: string;
+    rating: string;
+    notes?: string;
+    evaluation_id: number;
+  }>;
+}
+

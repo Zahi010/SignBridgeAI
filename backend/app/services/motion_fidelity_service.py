@@ -253,3 +253,4 @@ class MotionFidelityService:
             if res.get("available") is not False:
                 results.append(res)
         return results
+

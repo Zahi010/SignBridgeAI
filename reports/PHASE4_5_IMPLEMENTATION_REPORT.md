@@ -109,3 +109,4 @@ SignBridge AI strictly separates technical feasibility from linguistic validity:
 - **Level 5 (Linguistically Valid):** **BLOCKED (GATED)** — In accordance with the Zero-Fabrication Policy, no animation is promoted to `VERIFIED_ISL_MOTION` without formal review and sign-off by accredited Deaf ISL experts.
 
 Phase 4.5 delivers an uncompromised, honest, evidence-backed foundation for Phase 5.
+

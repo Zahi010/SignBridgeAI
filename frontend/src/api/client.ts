@@ -254,4 +254,92 @@ export const api = {
     });
     return res.data;
   },
+
+  // --- Phase 5 Validation & Community Endpoints ---
+  registerReviewer: async (data: any) => {
+    const res = await apiClient.post('/validation/register', data);
+    return res.data;
+  },
+
+  loginReviewer: async (data: any) => {
+    const res = await apiClient.post('/validation/login', data);
+    return res.data;
+  },
+
+  getCurrentReviewer: async (token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.get('/validation/me', { headers });
+    return res.data;
+  },
+
+  submitCredential: async (data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post('/validation/credentials', data, { headers });
+    return res.data;
+  },
+
+  listValidationTasks: async (statusFilter?: string) => {
+    const params = statusFilter ? { status_filter: statusFilter } : {};
+    const res = await apiClient.get('/validation/tasks', { params });
+    return res.data;
+  },
+
+  getValidationTaskDetail: async (taskId: number) => {
+    const res = await apiClient.get(`/validation/tasks/${taskId}`);
+    return res.data;
+  },
+
+  submitTaskEvaluation: async (taskId: number, data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post(`/validation/tasks/${taskId}/evaluate`, data, { headers });
+    return res.data;
+  },
+
+  addTaskAnnotation: async (taskId: number, data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post(`/validation/tasks/${taskId}/annotations`, data, { headers });
+    return res.data;
+  },
+
+  adjudicateTask: async (taskId: number, data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post(`/validation/tasks/${taskId}/adjudicate`, data, { headers });
+    return res.data;
+  },
+
+  getValidationDashboardStats: async () => {
+    const res = await apiClient.get('/validation/dashboard');
+    return res.data;
+  },
+
+  getAcademicMetrics: async () => {
+    const res = await apiClient.get('/validation/academic-metrics');
+    return res.data;
+  },
+
+  getValidationAuditLogs: async (limit: number = 50) => {
+    const res = await apiClient.get('/validation/audit-logs', { params: { limit } });
+    return res.data;
+  },
+
+  // Community research
+  recordParticipantConsent: async (data: any) => {
+    const res = await apiClient.post('/community/consent', data);
+    return res.data;
+  },
+
+  recordResearchSession: async (data: any) => {
+    const res = await apiClient.post('/community/sessions', data);
+    return res.data;
+  },
+
+  deleteParticipantData: async (data: any) => {
+    const res = await apiClient.post('/community/delete-data', data);
+    return res.data;
+  },
+
+  exportResearchDataset: async () => {
+    const res = await apiClient.get('/community/export');
+    return res.data;
+  },
 };

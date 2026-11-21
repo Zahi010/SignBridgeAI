@@ -64,3 +64,4 @@ A benchmark signal combining a sudden step function ($0.0 \to 1.0$) with high-fr
 
 ### Conclusion:
 Dual-stage filtering is adopted: One-Euro is utilized during offline video extraction where temporal lookahead is permissible, while lightweight EMA ($\alpha = 0.65$) is utilized for interactive playback.
+

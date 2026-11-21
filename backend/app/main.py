@@ -6,6 +6,7 @@ from pathlib import Path
 from backend.app.core.config import settings
 from backend.app.api.router import api_router
 from backend.app.database.seed import seed_database
+from backend.app.database.seed_phase5 import seed_phase5_database
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -37,6 +38,7 @@ app.include_router(api_router, prefix=settings.API_V1_PREFIX)
 def on_startup():
     print(f"[{settings.PROJECT_NAME}] Starting up. Initializing database and verifying seed data...")
     seed_database()
+    seed_phase5_database()
 
 @app.get("/")
 def root():

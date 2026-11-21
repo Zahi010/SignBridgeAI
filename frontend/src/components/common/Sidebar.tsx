@@ -12,7 +12,10 @@ import {
   Info,
   Home,
   ShieldCheck,
-  GraduationCap
+  GraduationCap,
+  Award,
+  Users,
+  Scale
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -27,7 +30,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { to: '/live-lecture', label: 'Live Lecture', icon: Mic },
     { to: '/documents', label: 'Document Translator', icon: FileText },
     { to: '/vocabulary', label: 'Vocabulary Explorer', icon: BookOpen },
-    { to: '/validation', label: 'Expert Validation', icon: ShieldCheck },
+    { to: '/validation', label: 'Governance & Validation', icon: ShieldCheck },
+    { to: '/expert-review', label: 'Expert Review Portal', icon: Award },
+    { to: '/community-evaluation', label: 'Deaf Community Portal', icon: Users },
+    { to: '/validation-dashboard', label: 'Validation Analytics', icon: Scale },
     { to: '/history', label: 'Translation History', icon: History },
     { to: '/avatar-settings', label: 'Avatar Studio', icon: Sliders },
     { to: '/avatar-audit', label: 'Motion Fidelity Audit', icon: SplitSquareVertical },

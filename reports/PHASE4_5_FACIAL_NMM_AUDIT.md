@@ -60,3 +60,4 @@ This audit evaluates the technical implementation and linguistic claims surround
 > is grounded in established sign language linguistics literature (Zeshan 2004; Sagara 2014; ISLRTC grammar notes). However, in SignBridge AI, these procedural mappings are **explicitly classified as unvalidated linguistic hypotheses**, not certified ISL grammar rules.
 >
 > Simple eyebrow animation must never be misrepresented as comprehensive Indian Sign Language Non-Manual Marker proficiency. Native ISL signing incorporates intricate co-occurring mouthings, eye gazes, and body shifts that require extensive native Deaf educator curation.
+
