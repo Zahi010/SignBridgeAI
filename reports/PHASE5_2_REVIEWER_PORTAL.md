@@ -82,3 +82,4 @@ Status: VERIFICATION_PENDING
 - Intuitive rating buttons for each criterion (`Pass`, `Minor Issue`, `Major Issue`, `Incorrect`, `Unable to Assess`).
 - Critical error lock: if a major phonological error is flagged, the overall recommendation is prevented from selecting "Accept".
 - Actions: **Save Review Draft** (persists without affecting task status) and **Submit Final Evaluation** (triggers disagreement detection and status advancement).
+

@@ -1,8 +1,10 @@
 """
-SignBridge AI - Deaf Community Research, Informed Consent & Ethics Endpoints (Phase 5).
+SignBridge AI - Deaf Community Research, Informed Consent & Ethics Endpoints (Phase 5 & 6).
 Guarantees participant pseudonymization, ethical consent, withdrawal, and complete data deletion.
+Enforces multi-license export segregation via ExportEligibilityService.
 """
 
+import hashlib
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, Query, status
@@ -22,6 +24,7 @@ from backend.app.schemas.validation_v2 import (
     DataDeletionRequest
 )
 from backend.app.services.validation_service import ValidationWorkflowService
+from backend.app.services.export_eligibility_service import ExportEligibilityService
 
 router = APIRouter()
 
@@ -32,7 +35,7 @@ def record_participant_consent(
     db: Session = Depends(get_db)
 ):
     """
-    Registers participant informed consent under a pseudonym.
+    Registers participant informed consent under a pseudonym with granular consent flags.
     No personally identifiable information (PII) is stored.
     """
     existing = db.query(ParticipantConsent).filter(ParticipantConsent.pseudonym == req.pseudonym).first()
@@ -49,6 +52,11 @@ def record_participant_consent(
         consent_given=req.consent_given,
         can_withdraw_anytime=req.can_withdraw_anytime,
         data_deletion_requested=False,
+        consent_general_research=getattr(req, "consent_general_research", True),
+        consent_video_recording=getattr(req, "consent_video_recording", False),
+        consent_data_sharing=getattr(req, "consent_data_sharing", True),
+        consent_academic_publication=getattr(req, "consent_academic_publication", True),
+        is_anonymized=False,
         consent_date=datetime.utcnow(),
         notes=req.notes
     )
@@ -61,7 +69,12 @@ def record_participant_consent(
         action="PARTICIPANT_CONSENT_RECORDED",
         target_type="participant_consent",
         target_id=req.pseudonym,
-        details={"study_name": req.study_name, "version": req.consent_version}
+        details={
+            "study_name": req.study_name,
+            "version": req.consent_version,
+            "data_sharing": consent.consent_data_sharing,
+            "publication": consent.consent_academic_publication
+        }
     )
 
     db.commit()
@@ -158,72 +171,72 @@ def delete_participant_data(
     db: Session = Depends(get_db)
 ):
     """
-    Ethical Research / Right to be Forgotten:
-    Purges all research sessions, feedback, and notes associated with a participant pseudonym.
+    Ethical Research / Right to be Forgotten (Phase 6 Hardened):
+    1. Purges all research sessions, feedback, and notes associated with a participant pseudonym.
+    2. Irreversibly hashes the pseudonym to protect audit integrity without retaining identifiable pseudonyms.
+    3. Scrubs historical audit log entries referencing the original pseudonym.
+    4. Logs a non-identifying erasure audit record.
     """
     consent = db.query(ParticipantConsent).filter(ParticipantConsent.pseudonym == req.participant_pseudonym).first()
     if not consent:
         raise HTTPException(status_code=404, detail=f"Pseudonym '{req.participant_pseudonym}' not found.")
 
-    # Delete all research sessions
+    # 1. Purge all research sessions
     deleted_sessions_count = db.query(ResearchSession).filter(ResearchSession.consent_id == consent.id).delete()
 
-    # Mark consent as withdrawn and data purged
+    # 2. Cryptographically anonymize the pseudonym
+    orig_pseudonym = consent.pseudonym
+    hashed_orig = hashlib.sha256(orig_pseudonym.encode("utf-8")).hexdigest()
+    purged_pseudonym = f"ANONYMIZED_PURGED_{hashed_orig[:12]}"
+
+    consent.original_pseudonym_hash = hashed_orig
+    consent.pseudonym = purged_pseudonym
+    consent.is_anonymized = True
     consent.consent_given = False
     consent.data_deletion_requested = True
     consent.withdrawal_date = datetime.utcnow()
-    consent.notes = f"Data deletion executed. Purged {deleted_sessions_count} sessions. Reason: {req.reason or 'User request'}."
+    consent.notes = f"Right-to-erasure executed. Sessions purged: {deleted_sessions_count}. Reason: {req.reason or 'User withdrawal request'}."
 
+    # 3. Scrub historical audit logs that reference the original pseudonym
+    db.query(ValidationAuditLog).filter(ValidationAuditLog.actor_username == orig_pseudonym).update(
+        {ValidationAuditLog.actor_username: "ANONYMIZED_PURGED_USER"}
+    )
+    db.query(ValidationAuditLog).filter(ValidationAuditLog.target_id == orig_pseudonym).update(
+        {ValidationAuditLog.target_id: purged_pseudonym}
+    )
+
+    # 4. Log non-identifying erasure audit entry
     wf_svc = ValidationWorkflowService(db)
     wf_svc.log_action(
         actor_id=None,
-        actor_username=req.participant_pseudonym,
-        action="PARTICIPANT_DATA_DELETED",
+        actor_username="RIGHT_TO_ERASURE_SYSTEM",
+        action="RIGHT_TO_ERASURE_EXECUTED",
         target_type="participant_consent",
-        target_id=req.participant_pseudonym,
+        target_id=purged_pseudonym,
         details={"purged_sessions": deleted_sessions_count}
     )
 
     db.commit()
     return {
         "status": "success",
-        "message": f"Successfully deleted all data for pseudonym '{req.participant_pseudonym}'.",
+        "message": f"Successfully deleted all data and cryptographically de-identified pseudonym.",
         "purged_sessions_count": deleted_sessions_count,
-        "withdrawal_timestamp": consent.withdrawal_date.isoformat()
+        "withdrawal_timestamp": consent.withdrawal_date.isoformat(),
+        "anonymized_pseudonym": purged_pseudonym
     }
 
 
-@router.get("/export", summary="Export anonymized research dataset")
-def export_research_dataset(db: Session = Depends(get_db)):
+@router.get("/export", summary="Export segregated research dataset")
+def export_research_dataset(
+    publication_only: bool = Query(default=False, description="Filter strictly for academic publication consent"),
+    db: Session = Depends(get_db)
+):
     """
-    Exports clean, anonymized dataset for academic research and publication.
-    Excludes withdrawn participants and unconsented data.
+    Exports clean, license-segregated dataset for academic research and publication.
+    Enforces multi-license segregation (ODC-By, CC-BY-4.0, GODL-India).
+    Strictly excludes withdrawn participants and unconsented data.
     """
-    active_consents = db.query(ParticipantConsent).filter(
-        ParticipantConsent.consent_given.is_(True),
-        ParticipantConsent.data_deletion_requested.is_(False)
-    ).all()
+    export_svc = ExportEligibilityService(db)
+    return export_svc.generate_segregated_export(academic_publication_only=publication_only)
 
-    consent_ids = [c.id for c in active_consents]
-    sessions = db.query(ResearchSession).filter(ResearchSession.consent_id.in_(consent_ids)).all()
 
-    export_records = []
-    for s in sessions:
-        export_records.append({
-            "session_code": s.session_code,
-            "pseudonym": s.consent.pseudonym,
-            "session_type": s.session_type,
-            "comprehension_score": s.comprehension_score,
-            "naturalness_rating": s.naturalness_rating,
-            "completed_at": s.completed_at.isoformat() if s.completed_at else None
-        })
-
-    return {
-        "dataset_name": "SignBridge AI Deaf Community Validation Cohort",
-        "export_timestamp": datetime.utcnow().isoformat(),
-        "total_active_participants": len(active_consents),
-        "total_sessions": len(export_records),
-        "records": export_records,
-        "license": "Open Data Commons Attribution License (ODC-By)",
-        "ethics_statement": "All data collected with voluntary informed consent. No PII retained."
-    }

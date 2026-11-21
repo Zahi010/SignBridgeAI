@@ -96,3 +96,4 @@ cd frontend && npm run build
   - `dist/index.html`: 0.91 kB
   - `dist/assets/index-*.css`: 54.92 kB
   - `dist/assets/index-*.js`: 1,325.55 kB
+

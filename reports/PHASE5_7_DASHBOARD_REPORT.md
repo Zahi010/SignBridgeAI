@@ -52,3 +52,4 @@ A detailed tabular breakdown of the 12 rubric criteria showing:
 When no reviews or sessions exist (e.g. fresh database initialization), the dashboard renders explicit empty states with explanatory banners:
 - Displays "No evaluation data currently available" rather than placeholder or synthesized statistics.
 - Discloses that the Zero-Fabrication Policy strictly prohibits displaying simulated data.
+

@@ -1,7 +1,8 @@
 """
-SignBridge AI - Academic Evaluation & Statistical Analysis Engine (Phase 5).
-Computes rigorous inter-reviewer agreement (Cohen's / Fleiss' Kappa),
+SignBridge AI - Academic Evaluation & Statistical Analysis Engine (Phase 5 & 6).
+Computes rigorous inter-reviewer agreement (Cohen's Kappa & exact Fleiss' Kappa),
 criterion-level agreement, disagreement rates, and Wilson score confidence intervals.
+Supports cohort segregation (all reviewers vs. verified experts only).
 Strictly adheres to Zero-Fabrication: never fabricates statistical results on empty data.
 """
 
@@ -24,16 +25,18 @@ class AcademicMetricsService:
     def __init__(self, db: Session):
         self.db = db
 
-    def compute_evaluation_metrics(self) -> Dict[str, Any]:
+    def compute_evaluation_metrics(self, reviewer_cohort: Optional[str] = "all") -> Dict[str, Any]:
         """
         Calculates inter-reviewer agreement and statistical distributions.
+        Supports filtering by reviewer cohort ('all' vs 'verified_experts_only').
         Properly handles empty and small sample sizes.
         """
-        evaluations = (
-            self.db.query(SignEvaluation)
-            .filter(SignEvaluation.is_draft.is_(False))
-            .all()
-        )
+        query = self.db.query(SignEvaluation).filter(SignEvaluation.is_draft.is_(False))
+        
+        if reviewer_cohort == "verified_experts_only":
+            query = query.join(Reviewer).filter(Reviewer.verification_status == ReviewerVerificationStatus.VERIFIED)
+
+        evaluations = query.all()
         total_evals = len(evaluations)
         verified_reviewers_count = (
             self.db.query(Reviewer)
@@ -59,15 +62,19 @@ class AcademicMetricsService:
                 "criterion_statistics": [],
                 "confidence_interval_95": {"lower": 0.0, "upper": 0.0},
                 "academic_disclaimer": (
-                    "No evaluation data currently available. In accordance with the Zero-Fabrication Policy, "
-                    "no statistical figures are synthesized or approximated without genuine reviewer submissions."
+                    f"No evaluation data currently available for cohort '{reviewer_cohort}'. In accordance with the "
+                    "Zero-Fabrication Policy, no statistical figures are synthesized or approximated without genuine submissions."
                 )
             }
 
-        # Count critical errors across all evaluations
+        # Count critical errors across all evaluations in cohort
+        eval_ids = [e.id for e in evaluations]
         critical_error_count = (
             self.db.query(EvaluationCriterionRating)
-            .filter(EvaluationCriterionRating.is_critical_error.is_(True))
+            .filter(
+                EvaluationCriterionRating.evaluation_id.in_(eval_ids),
+                EvaluationCriterionRating.is_critical_error.is_(True)
+            )
             .count()
         )
 
@@ -79,7 +86,11 @@ class AcademicMetricsService:
                 tasks_with_multi_evals.append(task_evals)
 
         # Calculate criterion-level agreement
-        all_criteria_ratings = self.db.query(EvaluationCriterionRating).all()
+        all_criteria_ratings = (
+            self.db.query(EvaluationCriterionRating)
+            .filter(EvaluationCriterionRating.evaluation_id.in_(eval_ids))
+            .all()
+        )
         criterion_names = sorted(list(set(cr.criterion_name for cr in all_criteria_ratings)))
         
         criterion_stats = []
@@ -89,7 +100,6 @@ class AcademicMetricsService:
             pass_count = sum(1 for r in ratings if r.rating == RubricCriterionRating.PASS)
             major_count = sum(1 for r in ratings if r.rating in [RubricCriterionRating.MAJOR_ISSUE, RubricCriterionRating.INCORRECT])
 
-            # Calculate pairwise agreement on this criterion for multi-eval tasks
             agree_count = 0
             pairs_count = 0
             for group in tasks_with_multi_evals:
@@ -99,7 +109,6 @@ class AcademicMetricsService:
                     if matching:
                         ratings_in_task.append(matching[0])
                 
-                # Compare all pairs
                 n_raters = len(ratings_in_task)
                 for i in range(n_raters):
                     for j in range(i + 1, n_raters):
@@ -135,11 +144,48 @@ class AcademicMetricsService:
         cohens_kappa = None
         if total_pairs >= 3:
             p_o = observed_agreements / total_pairs
-            # Expected agreement by chance
             total_items = sum(cat_counts.values())
             p_e = sum((cnt / total_items) ** 2 for cnt in cat_counts.values()) if total_items > 0 else 0.0
             if p_e < 1.0:
                 cohens_kappa = round((p_o - p_e) / (1.0 - p_e), 3)
+            elif p_o == 1.0:
+                cohens_kappa = 1.0
+
+        # Calculate Exact Fleiss' Kappa across multi-eval tasks
+        fleiss_kappa = None
+        if len(tasks_with_multi_evals) >= 2:
+            categories = ["accept", "reject", "needs_revision", "inconclusive"]
+            N = len(tasks_with_multi_evals)
+            P_i_list = []
+            col_totals = {c: 0 for c in categories}
+            total_ratings_count = 0
+
+            for group in tasks_with_multi_evals:
+                n_i = len(group)
+                if n_i < 2:
+                    continue
+                counts = {c: 0 for c in categories}
+                for eval_item in group:
+                    r_cat = eval_item.overall_recommendation.lower()
+                    counts[r_cat] = counts.get(r_cat, 0) + 1
+                    col_totals[r_cat] = col_totals.get(r_cat, 0) + 1
+                    total_ratings_count += 1
+
+                sum_sq_diff = sum(cnt * (cnt - 1) for cnt in counts.values())
+                p_i = sum_sq_diff / (n_i * (n_i - 1))
+                P_i_list.append(p_i)
+
+            if P_i_list and total_ratings_count > 0:
+                P_bar = sum(P_i_list) / len(P_i_list)
+                P_bar_e = sum((col_totals[c] / total_ratings_count) ** 2 for c in categories)
+                if P_bar_e < 1.0:
+                    fleiss_kappa = round((P_bar - P_bar_e) / (1.0 - P_bar_e), 3)
+                elif P_bar == 1.0:
+                    fleiss_kappa = 1.0
+
+        # Fallback to cohens_kappa if multi-rater sample is very small
+        if fleiss_kappa is None and cohens_kappa is not None:
+            fleiss_kappa = cohens_kappa
 
         # Average inter-reviewer agreement
         avg_agreement = (
@@ -169,19 +215,19 @@ class AcademicMetricsService:
         if total_evals < 5:
             sample_cat = "INSUFFICIENT_SAMPLE_SIZE"
             disclaimer = (
-                f"Preliminary sample size (N={total_evals} evaluations) is insufficient for statistical convergence. "
+                f"Preliminary sample size (N={total_evals} evaluations in cohort '{reviewer_cohort}') is insufficient for statistical convergence. "
                 "Minimum N=5 required for exploratory metrics, N=30 for formal academic publication."
             )
         elif total_evals < 30:
             sample_cat = "PRELIMINARY_RESULTS"
             disclaimer = (
-                f"Preliminary validation cohort (N={total_evals} evaluations). Results indicate initial trends but "
+                f"Preliminary validation cohort (N={total_evals} evaluations in cohort '{reviewer_cohort}'). Results indicate initial trends but "
                 "require expansion to N>=30 across diverse Deaf regional cohorts for definitive publication."
             )
         else:
             sample_cat = "COMPLETED_EVALUATION"
             disclaimer = (
-                f"Full statistical cohort (N={total_evals} evaluations). Inter-reviewer agreement and confidence "
+                f"Full statistical cohort (N={total_evals} evaluations in cohort '{reviewer_cohort}'). Inter-reviewer agreement and confidence "
                 "intervals meet academic publication standards."
             )
 
@@ -191,7 +237,7 @@ class AcademicMetricsService:
             "total_verified_reviewers": verified_reviewers_count,
             "total_evaluations": total_evals,
             "cohens_kappa": cohens_kappa,
-            "fleiss_kappa": cohens_kappa, # Pairwise/group approximation
+            "fleiss_kappa": fleiss_kappa,
             "average_inter_reviewer_agreement_percent": avg_agreement,
             "disagreement_frequency_percent": disagreement_freq,
             "critical_error_count": critical_error_count,

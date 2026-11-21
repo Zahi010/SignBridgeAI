@@ -262,6 +262,15 @@ class ParticipantConsent(Base):
     consent_given = Column(Boolean, default=True)
     can_withdraw_anytime = Column(Boolean, default=True)
     data_deletion_requested = Column(Boolean, default=False)
+    
+    # Granular Multi-Part Consent Flags (Phase 6 Ethics)
+    consent_general_research = Column(Boolean, default=True)
+    consent_video_recording = Column(Boolean, default=False)
+    consent_data_sharing = Column(Boolean, default=True)
+    consent_academic_publication = Column(Boolean, default=True)
+    
+    is_anonymized = Column(Boolean, default=False)
+    original_pseudonym_hash = Column(String(64), nullable=True)
     consent_date = Column(DateTime, default=datetime.utcnow)
     withdrawal_date = Column(DateTime, nullable=True)
     notes = Column(Text, nullable=True)
@@ -296,3 +305,15 @@ class ValidationAuditLog(Base):
     target_id = Column(String(100), nullable=False)
     details_json = Column(Text, nullable=True)
     timestamp = Column(DateTime, default=datetime.utcnow)
+
+
+class RevokedToken(Base):
+    __tablename__ = "phase6_revoked_tokens"
+
+    id = Column(Integer, primary_key=True, index=True)
+    token_signature = Column(String(100), unique=True, index=True, nullable=False)
+    revoked_at = Column(DateTime, default=datetime.utcnow)
+    expires_at = Column(DateTime, nullable=False)
+    revoked_by_user_id = Column(Integer, nullable=True)
+
+

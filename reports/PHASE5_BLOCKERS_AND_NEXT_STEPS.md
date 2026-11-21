@@ -49,3 +49,4 @@ flowchart LR
 3. **Step 3: Continuous Engineering Corpus Collection**
    - Conduct studio recordings with native Deaf signers using synchronized multi-camera RGB-D hardware to eliminate monocular foreshortening depth ambiguity.
    - Codify an expanded vocabulary of 100 engineering concepts across Computer Science, Electronics, and Mechanical Engineering.
+

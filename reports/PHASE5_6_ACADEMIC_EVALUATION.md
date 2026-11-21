@@ -92,3 +92,4 @@ SignBridge AI explicitly distinguishes four sample size tiers in the API output:
   "academic_disclaimer": "Preliminary validation cohort (N=5 evaluations). Results indicate initial trends but require expansion to N>=30 across diverse Deaf regional cohorts for definitive publication."
 }
 ```
+

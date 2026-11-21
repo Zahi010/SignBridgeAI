@@ -22,6 +22,11 @@ venv/
 data/uploads/*
 !data/uploads/.gitkeep
 
+# Disaster Recovery Backups
+data/backups/*
+!data/backups/.gitkeep
+!data/backups/backup_manifest.json
+
 # Node / Frontend
 node_modules/
 frontend/node_modules/

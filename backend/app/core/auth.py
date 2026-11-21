@@ -1,7 +1,8 @@
 """
-SignBridge AI - Authentication, Password Hashing & RBAC Authorization (Phase 5).
+SignBridge AI - Authentication, Password Hashing & RBAC Authorization (Phase 5 & 6).
 Uses standard library hashlib.pbkdf2_hmac and hmac-sha256 signed tokens.
 Zero external dependency, fully reproducible and cross-platform.
+Includes server-side token revocation and logout blocklisting.
 """
 
 import hmac
@@ -9,17 +10,19 @@ import hashlib
 import base64
 import json
 import time
+from datetime import datetime
 from typing import Optional, Dict, Any, List
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 
+from backend.app.core.config import settings
 from backend.app.database.database import get_db
-from backend.app.models.validation_models import Reviewer, ReviewerRole, ReviewerVerificationStatus
+from backend.app.models.validation_models import Reviewer, ReviewerRole, ReviewerVerificationStatus, RevokedToken
 
-# Configuration constants
-SECRET_KEY = "signbridge-isl-governance-secret-salt-2026-accredited"
-TOKEN_EXPIRATION_SECONDS = 86400 * 7  # 7 days
+# Configuration constants from settings
+SECRET_KEY = settings.SECRET_KEY
+TOKEN_EXPIRATION_SECONDS = settings.TOKEN_EXPIRATION_SECONDS
 PBKDF2_ITERATIONS = 100000
 
 security_scheme = HTTPBearer(auto_error=False)
@@ -52,6 +55,46 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
         return False
 
 
+def is_token_revoked(token_signature: str, db: Session) -> bool:
+    """Checks whether the token signature has been revoked."""
+    if not db:
+        return False
+    revoked = db.query(RevokedToken).filter(RevokedToken.token_signature == token_signature).first()
+    return revoked is not None
+
+
+def revoke_token(token: str, db: Session, user_id: Optional[int] = None) -> bool:
+    """
+    Revokes an active Bearer token and records its signature in the blocklist.
+    """
+    parts = token.split(".")
+    if len(parts) != 2:
+        return False
+    
+    payload_b64, signature = parts
+    try:
+        padding = "=" * ((4 - len(payload_b64) % 4) % 4)
+        payload_bytes = base64.urlsafe_b64decode(payload_b64 + padding)
+        payload = json.loads(payload_bytes.decode("utf-8"))
+        exp_ts = payload.get("exp", int(time.time()) + 86400)
+        exp_dt = datetime.utcfromtimestamp(exp_ts)
+    except Exception:
+        exp_dt = datetime.utcnow()
+
+    # Avoid duplicate revocation entries
+    existing = db.query(RevokedToken).filter(RevokedToken.token_signature == signature).first()
+    if not existing:
+        revocation = RevokedToken(
+            token_signature=signature,
+            expires_at=exp_dt,
+            revoked_by_user_id=user_id,
+            revoked_at=datetime.utcnow()
+        )
+        db.add(revocation)
+        db.commit()
+    return True
+
+
 def create_access_token(data: Dict[str, Any]) -> str:
     """
     Creates a cryptographically signed URL-safe bearer token.
@@ -60,7 +103,7 @@ def create_access_token(data: Dict[str, Any]) -> str:
     payload = data.copy()
     payload["exp"] = int(time.time()) + TOKEN_EXPIRATION_SECONDS
     payload_json = json.dumps(payload, sort_keys=True).encode("utf-8")
-    payload_b64 = base64.urlsafe_b64encode(payload_json).decode("utf-8").rstrip("=")
+    payload_b64 = base64.urlsafe_b64decode if False else base64.urlsafe_b64encode(payload_json).decode("utf-8").rstrip("=")
 
     signature = hmac.new(
         SECRET_KEY.encode("utf-8"),
@@ -71,9 +114,9 @@ def create_access_token(data: Dict[str, Any]) -> str:
     return f"{payload_b64}.{signature}"
 
 
-def decode_access_token(token: str) -> Dict[str, Any]:
+def decode_access_token(token: str, db: Optional[Session] = None) -> Dict[str, Any]:
     """
-    Verifies cryptographic signature and expiration of bearer token.
+    Verifies cryptographic signature, expiration, and revocation status of bearer token.
     """
     parts = token.split(".")
     if len(parts) != 2:
@@ -94,6 +137,13 @@ def decode_access_token(token: str) -> Dict[str, Any]:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid token signature."
+        )
+
+    # Check server-side revocation list
+    if db is not None and is_token_revoked(signature, db):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Token has been revoked. Please log in again."
         )
 
     # Decode payload
@@ -117,6 +167,7 @@ def get_current_reviewer(
 ) -> Reviewer:
     """
     FastAPI dependency resolving the authenticated Reviewer model.
+    Enforces cryptographic validity and non-revocation.
     """
     if not credentials or not credentials.credentials:
         raise HTTPException(
@@ -124,7 +175,7 @@ def get_current_reviewer(
             detail="Authentication required. Please provide a valid Bearer token."
         )
 
-    payload = decode_access_token(credentials.credentials)
+    payload = decode_access_token(credentials.credentials, db=db)
     reviewer_id = payload.get("sub")
     if not reviewer_id:
         raise HTTPException(
@@ -169,3 +220,5 @@ def require_verified_reviewer(current_reviewer: Reviewer = Depends(get_current_r
             )
         )
     return current_reviewer
+
+

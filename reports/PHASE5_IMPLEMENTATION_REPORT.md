@@ -67,3 +67,4 @@ Rather than stopping at a planning roadmap, Phase 5 delivered a complete full-st
 ```
 
 The system strictly enforces the Zero-Fabrication rule: **No sign is promoted to `VERIFIED_ISL_MOTION` automatically.** All five baseline assets remain honestly classified as `PARTIALLY_VERIFIED_MOTION` pending genuine external human evaluation.
+

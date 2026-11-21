@@ -116,3 +116,4 @@ All endpoints are hosted under `/api/v1/`:
 - **`POST /api/v1/community/sessions`**: Records comprehension survey score or naturalness rating.
 - **`POST /api/v1/community/delete-data`**: GDPR/ethical right to be forgotten: permanently purges all session records for a pseudonym.
 - **`GET /api/v1/community/export`**: Exports anonymized research dataset under Open Data Commons (ODC-By).
+

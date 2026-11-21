@@ -78,3 +78,4 @@ Disagreements cannot be resolved through automated statistical averaging. Human 
 1. **No Automated Promotion:** No machine learning confidence score, 3D landmark NMLE metric, or test pass count can transition an asset from `PARTIALLY_VERIFIED_MOTION` to `VERIFIED_ISL_MOTION`.
 2. **No Promotion via Unverified Reviewers:** Candidate reviewer evaluations remain advisory; status promotion strictly requires verified credentials.
 3. **Current Status Retained:** All five existing mocap assets (`Algorithm`, `Frequency`, `Current`, `Beam`, `Torque`) remain strictly **`PARTIALLY_VERIFIED_MOTION`** and **`PENDING_REVIEW`**, truthfully reflecting the pending nature of external accredited evaluation.
+

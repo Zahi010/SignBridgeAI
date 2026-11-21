@@ -6,6 +6,7 @@ Handles Reviewer Auth, Credentials, Tasks, Rubric Evaluations, Annotations, Disa
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi.security import HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 
 from backend.app.database.database import get_db
@@ -52,7 +53,9 @@ from backend.app.core.auth import (
     create_access_token,
     get_current_reviewer,
     require_roles,
-    require_verified_reviewer
+    require_verified_reviewer,
+    revoke_token,
+    security_scheme
 )
 from backend.app.services.validation_service import ValidationWorkflowService
 from backend.app.services.academic_metrics_service import AcademicMetricsService
@@ -149,6 +152,34 @@ def login_reviewer(req: ReviewerLoginRequest, db: Session = Depends(get_db)):
 @router.get("/me", response_model=ReviewerProfileResponse, summary="Get current logged in reviewer")
 def get_current_user_profile(current_user: Reviewer = Depends(get_current_reviewer)):
     return current_user
+
+
+@router.post("/logout", summary="Logout and revoke active Bearer token")
+def logout_reviewer(
+    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security_scheme),
+    current_user: Reviewer = Depends(get_current_reviewer),
+    db: Session = Depends(get_db)
+):
+    """
+    Revokes the active Bearer token server-side, preventing token reuse.
+    """
+    if credentials and credentials.credentials:
+        revoke_token(credentials.credentials, db=db, user_id=current_user.id)
+    
+    wf_svc = ValidationWorkflowService(db)
+    wf_svc.log_action(
+        actor_id=current_user.id,
+        actor_username=current_user.username,
+        action="REVIEWER_LOGGED_OUT",
+        target_type="reviewer",
+        target_id=str(current_user.id),
+        details={"status": "revoked"}
+    )
+    return {
+        "status": "success",
+        "message": "Successfully logged out. Bearer token has been revoked."
+    }
+
 
 
 # --- 2. CREDENTIAL SUBMISSION & VERIFICATION (ADMIN GATE) ---
@@ -594,12 +625,16 @@ def get_validation_dashboard(db: Session = Depends(get_db)):
 
 
 @router.get("/academic-metrics", response_model=AcademicEvaluationMetricsResponse, summary="Get inter-reviewer agreement and statistical metrics")
-def get_academic_metrics(db: Session = Depends(get_db)):
+def get_academic_metrics(
+    cohort: Optional[str] = Query(default="all", description="Reviewer cohort: 'all' or 'verified_experts_only'"),
+    db: Session = Depends(get_db)
+):
     """
     Returns academic statistics (Cohen's Kappa, Fleiss' Kappa, criterion agreement, confidence intervals).
+    Supports cohort filtering to segregate accredited expert evaluations from exploratory reviews.
     """
     acad_svc = AcademicMetricsService(db)
-    return acad_svc.compute_evaluation_metrics()
+    return acad_svc.compute_evaluation_metrics(reviewer_cohort=cohort)
 
 
 @router.get("/audit-logs", summary="List validation audit logs")
@@ -629,3 +664,4 @@ def get_validation_audit_logs(
         }
         for l in logs
     ]
+

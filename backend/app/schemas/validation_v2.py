@@ -207,6 +207,10 @@ class ParticipantConsentCreateRequest(BaseModel):
     consent_version: str = Field(default="v1.0-2026")
     consent_given: bool = True
     can_withdraw_anytime: bool = True
+    consent_general_research: bool = True
+    consent_video_recording: bool = False
+    consent_data_sharing: bool = True
+    consent_academic_publication: bool = True
     notes: Optional[str] = None
 
 
@@ -216,6 +220,11 @@ class ParticipantConsentResponse(BaseModel):
     study_name: str
     consent_given: bool
     data_deletion_requested: bool
+    consent_general_research: bool = True
+    consent_video_recording: bool = False
+    consent_data_sharing: bool = True
+    consent_academic_publication: bool = True
+    is_anonymized: bool = False
     consent_date: datetime
 
 
@@ -223,7 +232,7 @@ class ResearchSessionCreateRequest(BaseModel):
     participant_pseudonym: str
     session_code: str
     session_type: str = "comprehension_survey"
-    concepts_tested: List[Dict[str, Any]] = []
+    concepts_tested: List[Any] = []
     comprehension_score: Optional[float] = Field(None, ge=0.0, le=1.0)
     naturalness_rating: Optional[float] = Field(None, ge=1.0, le=5.0)
     feedback_notes: Optional[str] = None

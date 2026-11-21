@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from pydantic_settings import BaseSettings
 from typing import List
@@ -10,9 +11,13 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     API_V1_PREFIX: str = "/api/v1"
     
-    # Environment
-    ENVIRONMENT: str = "development"
-    DEBUG: bool = True
+    # Environment & Security
+    ENVIRONMENT: str = os.getenv("SIGNBRIDGE_ENV", "development")
+    DEBUG: bool = os.getenv("SIGNBRIDGE_DEBUG", "True").lower() == "true"
+    SECRET_KEY: str = os.getenv("SIGNBRIDGE_SECRET_KEY", "signbridge-isl-governance-secret-salt-2026-accredited")
+    TOKEN_EXPIRATION_SECONDS: int = int(os.getenv("SIGNBRIDGE_TOKEN_EXP_SECONDS", str(86400 * 7)))
+    SECURITY_HEADERS_ENABLED: bool = True
+    RATE_LIMIT_PER_MINUTE: int = int(os.getenv("SIGNBRIDGE_RATE_LIMIT", "120"))
     
     # CORS
     CORS_ORIGINS: List[str] = [
@@ -23,7 +28,7 @@ class Settings(BaseSettings):
     ]
     
     # Database
-    DATABASE_URL: str = f"sqlite:///{BASE_DIR / 'signbridge.db'}"
+    DATABASE_URL: str = os.getenv("SIGNBRIDGE_DATABASE_URL", f"sqlite:///{BASE_DIR / 'signbridge.db'}")
     
     # Storage Paths
     DATA_DIR: Path = ROOT_DIR / "data"
@@ -31,6 +36,7 @@ class Settings(BaseSettings):
     SIGN_VIDEOS_DIR: Path = ROOT_DIR / "data" / "sign_videos"
     AVATAR_ANIMATIONS_DIR: Path = ROOT_DIR / "data" / "avatar_animations"
     UPLOADS_DIR: Path = ROOT_DIR / "data" / "uploads"
+    BACKUPS_DIR: Path = ROOT_DIR / "data" / "backups"
     
     # File limits
     MAX_UPLOAD_SIZE_MB: int = 15
@@ -48,4 +54,6 @@ settings.VOCABULARY_DIR.mkdir(parents=True, exist_ok=True)
 settings.SIGN_VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
 settings.AVATAR_ANIMATIONS_DIR.mkdir(parents=True, exist_ok=True)
 settings.UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+settings.BACKUPS_DIR.mkdir(parents=True, exist_ok=True)
+
 

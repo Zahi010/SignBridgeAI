@@ -106,3 +106,4 @@ Categories supported:
 - `expression_missing`: Missing brow raise or mouth morpheme.
 - `timing_lag`: Depth foreshortening discrepancy.
 - `general`: Broad pedagogical or linguistic commentary.
+
