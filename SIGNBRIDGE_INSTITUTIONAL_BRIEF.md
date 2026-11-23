@@ -53,3 +53,4 @@ Institutions are invited to join as **Institutional Research Collaborators** in 
 * **Pilot Host Institution:** Host a controlled, IRB-approved evaluation with enrolled Deaf undergraduate students to evaluate comprehension and usability.
 
 **No financial commitment is required.** The software is completely open-source. For collaborative pilots, grant funding pathways and student honoraria will be mutually coordinated.
+

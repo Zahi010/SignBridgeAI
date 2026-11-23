@@ -45,3 +45,4 @@ The software platform is technically ready for external engagement. However, bef
 
 4. **Multi-Center Lexicon Expansion:**
    - Following validation of the 5 baseline signs, progressively ingest authentic signing videos for the remaining 95 engineering concepts in the candidate lexicon.
+

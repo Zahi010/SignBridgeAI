@@ -148,3 +148,4 @@ class FeedbackRemediationService:
         self.db.commit()
         self.db.refresh(ticket)
         return ticket
+

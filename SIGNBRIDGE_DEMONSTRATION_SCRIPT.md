@@ -77,3 +77,4 @@
 ## 3. Fallback & Troubleshooting Procedures
 * If video fails to stream: Ensure backend is running and `/data` static mount is accessible.
 * If avatar WebGL context is lost: Refresh page or toggle hardware acceleration in browser settings.
+

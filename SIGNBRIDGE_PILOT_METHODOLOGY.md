@@ -101,3 +101,4 @@ Expert reviewers evaluate each candidate sign across **12 standardized phonologi
 In accordance with SignBridge AI's Non-Negotiable Governance Rules:
 * **The pilot is officially designated as `IN_PREPARATION`.**
 * No participant recruitment or data collection will occur until formal Institutional Ethics Committee (IEC) clearance is granted and formal institutional collaboration agreements are executed.
+

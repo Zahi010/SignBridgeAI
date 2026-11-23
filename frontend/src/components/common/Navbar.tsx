@@ -58,6 +58,15 @@ export const Navbar: React.FC<{ onToggleSidebar?: () => void }> = ({ onToggleSid
         {/* Center: Quick Shortcuts for Demonstration */}
         <nav className="hidden md:flex items-center gap-1 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60 text-xs font-medium text-slate-600">
           <Link
+            to="/demo"
+            className={`px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1 font-bold ${
+              location.pathname === '/demo' ? 'bg-indigo-600 text-white shadow-xs' : 'text-indigo-700 hover:bg-indigo-50'
+            }`}
+          >
+            <Sparkles size={13} />
+            <span>Live Demo</span>
+          </Link>
+          <Link
             to="/dashboard"
             className={`px-3 py-1.5 rounded-lg transition-colors ${
               location.pathname === '/dashboard' ? 'bg-white text-indigo-700 shadow-xs font-semibold' : 'hover:text-slate-900'
@@ -74,28 +83,12 @@ export const Navbar: React.FC<{ onToggleSidebar?: () => void }> = ({ onToggleSid
             Translator
           </Link>
           <Link
-            to="/live-lecture"
+            to="/outreach"
             className={`px-3 py-1.5 rounded-lg transition-colors ${
-              location.pathname === '/live-lecture' ? 'bg-white text-indigo-700 shadow-xs font-semibold' : 'hover:text-slate-900'
+              location.pathname === '/outreach' ? 'bg-white text-indigo-700 shadow-xs font-semibold' : 'hover:text-slate-900'
             }`}
           >
-            Live Lecture
-          </Link>
-          <Link
-            to="/documents"
-            className={`px-3 py-1.5 rounded-lg transition-colors ${
-              location.pathname === '/documents' ? 'bg-white text-indigo-700 shadow-xs font-semibold' : 'hover:text-slate-900'
-            }`}
-          >
-            Documents
-          </Link>
-          <Link
-            to="/vocabulary"
-            className={`px-3 py-1.5 rounded-lg transition-colors ${
-              location.pathname === '/vocabulary' ? 'bg-white text-indigo-700 shadow-xs font-semibold' : 'hover:text-slate-900'
-            }`}
-          >
-            Vocabulary
+            Outreach CRM
           </Link>
           <Link
             to="/validation"

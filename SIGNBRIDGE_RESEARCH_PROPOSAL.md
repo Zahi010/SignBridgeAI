@@ -147,3 +147,4 @@ We propose a collaborative, non-commercial academic pilot structured in three ph
 To review technical demonstrations, inspect source code, or request a joint research agreement:
 - **Project Repository:** [https://github.com/Zahi010/SignBridgeAI](https://github.com/Zahi010/SignBridgeAI)
 - **Academic Inquiries:** Directed to the SignBridge AI Research Governance Group via project repository issue tracker or official institutional collaboration channels.
+

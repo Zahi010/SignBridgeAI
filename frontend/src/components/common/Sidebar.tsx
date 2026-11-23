@@ -15,7 +15,9 @@ import {
   GraduationCap,
   Award,
   Users,
-  Scale
+  Scale,
+  Sparkles,
+  Building2
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -25,8 +27,10 @@ interface SidebarProps {
 
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const navItems = [
+    { to: '/demo', label: 'Live Demonstration', icon: Sparkles, highlight: true },
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/translate', label: 'Text Translator', icon: Languages, highlight: true },
+    { to: '/translate', label: 'Text Translator', icon: Languages },
+    { to: '/outreach', label: 'Institutional Outreach', icon: Building2 },
     { to: '/live-lecture', label: 'Live Lecture', icon: Mic },
     { to: '/documents', label: 'Document Translator', icon: FileText },
     { to: '/vocabulary', label: 'Vocabulary Explorer', icon: BookOpen },

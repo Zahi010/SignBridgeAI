@@ -152,3 +152,4 @@ In strict adherence to academic research ethics and the Zero-Fabrication Policy:
 1. **No Cold Mass Messaging:** No automated scrapers, mailers, or spam outreach will be initiated.
 2. **Prior User/Admin Authorization:** Formal proposals will only be sent through direct human interaction upon explicit authorized sign-off.
 3. **Transparent Status Logging:** When exploratory discussions commence with any organization, this directory will be updated with mutual correspondence dates, moving the status from `POTENTIAL_COLLABORATOR` to `CONFIRMED_CONTACT`.
+

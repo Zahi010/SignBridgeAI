@@ -599,3 +599,86 @@ export interface Phase5DashboardStats {
   }>;
 }
 
+// --- PHASE 8 INSTITUTIONAL OUTREACH TYPES ---
+
+export type OutreachCategory =
+  | 'GOVERNMENT_NATIONAL'
+  | 'DEAF_ORGANIZATION'
+  | 'ACADEMIC_RESEARCH'
+  | 'SPECIAL_EDUCATION'
+  | 'DISABILITY_CENTER'
+  | 'OTHER';
+
+export type OutreachStatus =
+  | 'IDENTIFIED'
+  | 'RESEARCHED'
+  | 'VERIFIED'
+  | 'READY_FOR_OUTREACH'
+  | 'CONTACTED'
+  | 'RESPONSE_RECEIVED'
+  | 'MEETING_REQUESTED'
+  | 'MEETING_COMPLETED'
+  | 'COLLABORATION_DISCUSSION'
+  | 'AGREEMENT_PENDING'
+  | 'COLLABORATION_CONFIRMED'
+  | 'NO_RESPONSE'
+  | 'DECLINED'
+  | 'ON_HOLD'
+  | 'INVALID_CONTACT';
+
+export type InteractionType =
+  | 'EMAIL_SENT'
+  | 'EMAIL_RECEIVED'
+  | 'PHONE_CALL'
+  | 'VIRTUAL_MEETING'
+  | 'IN_PERSON_MEETING'
+  | 'PRESENTATION'
+  | 'MOU_DRAFT'
+  | 'NOTE';
+
+export interface OutreachInteraction {
+  id: number;
+  outreach_id: number;
+  interaction_type: InteractionType;
+  summary: string;
+  details?: string;
+  outcome?: string;
+  next_steps?: string;
+  logged_by_id?: number;
+  logged_by_name?: string;
+  timestamp: string;
+}
+
+export interface InstitutionalOutreach {
+  id: number;
+  organization_name: string;
+  acronym?: string;
+  category: OutreachCategory;
+  website: string;
+  public_contact: string;
+  telephone?: string;
+  department?: string;
+  contact_person?: string;
+  designation?: string;
+  verification_source: string;
+  verification_date: string;
+  collaboration_role: string;
+  outreach_status: OutreachStatus;
+  proposed_collaboration_tier: string;
+  follow_up_date?: string;
+  notes?: string;
+  interaction_count: number;
+  created_at: string;
+  updated_at: string;
+  interactions?: OutreachInteraction[];
+}
+
+export interface OutreachStats {
+  total_organizations: number;
+  by_category: Record<string, number>;
+  by_status: Record<string, number>;
+  pending_follow_ups: number;
+  total_interactions: number;
+}
+
+

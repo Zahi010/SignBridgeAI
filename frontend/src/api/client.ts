@@ -342,4 +342,43 @@ export const api = {
     const res = await apiClient.get('/community/export');
     return res.data;
   },
+
+  // Phase 8 Institutional Outreach
+  getOutreachOrganizations: async (params?: { category?: string; status?: string; search?: string }) => {
+    const res = await apiClient.get('/outreach/organizations', { params });
+    return res.data;
+  },
+
+  getOutreachStats: async () => {
+    const res = await apiClient.get('/outreach/stats');
+    return res.data;
+  },
+
+  getOutreachOrganizationDetail: async (id: number) => {
+    const res = await apiClient.get(`/outreach/organizations/${id}`);
+    return res.data;
+  },
+
+  createOutreachOrganization: async (data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post('/outreach/organizations', data, { headers });
+    return res.data;
+  },
+
+  updateOutreachOrganization: async (id: number, data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.patch(`/outreach/organizations/${id}`, data, { headers });
+    return res.data;
+  },
+
+  logOutreachInteraction: async (id: number, data: any, token?: string) => {
+    const headers = token ? { Authorization: `Bearer ${token}` } : {};
+    const res = await apiClient.post(`/outreach/organizations/${id}/interactions`, data, { headers });
+    return res.data;
+  },
+
+  exportOutreachData: async () => {
+    const res = await apiClient.get('/outreach/export');
+    return res.data;
+  },
 };

@@ -40,3 +40,4 @@
 SignBridge AI is **APPROVED FOR INSTITUTIONAL PRESENTATION AND RESEARCH PROPOSAL SUBMISSION**. 
 
 The technical platform, linguistic safeguards, review workflows, and remediation pipelines are complete. Live participant testing will commence upon execution of formal institutional collaboration agreements and Institutional Ethics Committee (IRB) clearance.
+

@@ -11,12 +11,14 @@ from backend.app.core.config import settings
 from backend.app.api.router import api_router
 from backend.app.database.seed import seed_database
 from backend.app.database.seed_phase5 import seed_phase5_database
+from scripts.migrate_phase8 import run_phase8_migration
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print(f"[{settings.PROJECT_NAME}] Starting up. Initializing database and verifying seed data...")
     seed_database()
     seed_phase5_database()
+    run_phase8_migration()
     yield
 
 app = FastAPI(

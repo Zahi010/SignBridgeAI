@@ -25,3 +25,4 @@ add_col("phase5_validation_tasks", "is_pilot_task", "BOOLEAN DEFAULT 0")
 conn.commit()
 conn.close()
 print("Phase 7 database schema migration successfully applied.")
+

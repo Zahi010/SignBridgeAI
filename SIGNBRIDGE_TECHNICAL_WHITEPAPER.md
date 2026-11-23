@@ -122,3 +122,4 @@ Bounds are strictly clamped to $[0.0, 1.0]$. Tested and verified for $n=1, n=10,
 - **Backend Test Suite:** 107 automated test cases passing in 7.43 seconds (`pytest`).
 - **Warning Count:** 1 upstream Starlette deprecation warning; 194 deprecation warnings eliminated.
 - **Frontend Production Build:** Vite 5.4 + TypeScript 5.0 compiling 2,181 modules in 7.93 seconds with 0 errors.
+
