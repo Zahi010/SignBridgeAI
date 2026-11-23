@@ -86,3 +86,4 @@ SignBridge AI is **officially certified as ready to be demonstrated to college f
 SignBridge AI satisfies every academic, technical, ethical, and demonstration requirement for a capstone engineering defense.
 
 The team recommends proceeding directly to the **College Prototype Demonstration**, presenting the working prototype with pride in its technical rigor and humility regarding its linguistic boundaries.
+

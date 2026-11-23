@@ -15,10 +15,20 @@ import { AvatarControls, CameraPreset } from './AvatarControls';
 import { AnimationTimeline } from './AnimationTimeline';
 import { AnimationStatusBadge } from './AnimationStatusBadge';
 
-interface AvatarViewerProps {
+export interface AvatarViewerProps {
   avatarData?: AvatarOutput;
   animationSequence?: AvatarSequencePayload;
   conceptTerm?: string;
+  // Controlled inputs for dual-viewport synchronization
+  controlledIsPlaying?: boolean;
+  controlledSpeed?: number;
+  controlledCurrentTime?: number;
+  controlledCameraPreset?: CameraPreset;
+  onTimeUpdate?: (time: number) => void;
+  onTogglePlay?: () => void;
+  onSeek?: (time: number) => void;
+  onSelectCameraPreset?: (preset: CameraPreset) => void;
+  showControls?: boolean;
 }
 
 // 15-Joint Articulated Hand Component
@@ -44,20 +54,20 @@ const ArticulatedHand: React.FC<ArticulatedHandProps> = ({ isLeft, handPose, ski
 
     return (
       <group position={[offsetX * sideMultiplier, offsetY, 0]}>
-        {/* Proximal Phalange (MCP) */}
-        <group rotation={[fState.mcp.x, fState.mcp.y * sideMultiplier, fState.mcp.z]}>
+        {/* Proximal Phalange (MCP) - Negate X rotation so flexion curls forward into palm (+Z) */}
+        <group rotation={[-fState.mcp.x, fState.mcp.y * sideMultiplier, fState.mcp.z]}>
           <mesh position={[0, -phalangeLength / 2, 0]} material={skinMaterial} castShadow>
             <cylinderGeometry args={[phalangeRadius, phalangeRadius * 0.9, phalangeLength, 8]} />
           </mesh>
 
           {/* Intermediate Phalange (PIP) */}
-          <group position={[0, -phalangeLength, 0]} rotation={[fState.pip.x, fState.pip.y, fState.pip.z]}>
+          <group position={[0, -phalangeLength, 0]} rotation={[-fState.pip.x, fState.pip.y, fState.pip.z]}>
             <mesh position={[0, -phalangeLength / 2, 0]} material={skinMaterial} castShadow>
               <cylinderGeometry args={[phalangeRadius * 0.9, phalangeRadius * 0.8, phalangeLength, 8]} />
             </mesh>
 
             {/* Distal Phalange (DIP) */}
-            <group position={[0, -phalangeLength, 0]} rotation={[fState.dip.x, fState.dip.y, fState.dip.z]}>
+            <group position={[0, -phalangeLength, 0]} rotation={[-fState.dip.x, fState.dip.y, fState.dip.z]}>
               <mesh position={[0, -phalangeLength * 0.4, 0]} material={skinMaterial} castShadow>
                 <cylinderGeometry args={[phalangeRadius * 0.8, phalangeRadius * 0.6, phalangeLength * 0.8, 8]} />
               </mesh>
@@ -127,28 +137,31 @@ const ArticulatedHumanoidSigner = ({
         headRef.current.rotation.z = currentKeyframe.head_rotation.z;
       }
 
-      if (leftArmRef.current && currentKeyframe.left_arm_rotation) {
-        leftArmRef.current.rotation.x = currentKeyframe.left_arm_rotation.x;
-        leftArmRef.current.rotation.y = currentKeyframe.left_arm_rotation.y;
-        leftArmRef.current.rotation.z = currentKeyframe.left_arm_rotation.z;
-      }
-
-      if (leftForearmRef.current && currentKeyframe.left_forearm_rotation) {
-        leftForearmRef.current.rotation.x = currentKeyframe.left_forearm_rotation.x;
-        leftForearmRef.current.rotation.y = currentKeyframe.left_forearm_rotation.y;
-        leftForearmRef.current.rotation.z = currentKeyframe.left_forearm_rotation.z;
-      }
-
+      // Dominant Right Arm (positioned at -0.44 X, viewer's left)
+      // Negate X so positive mocap pitch/flexion swings arm forward (+Z) towards camera
       if (rightArmRef.current && currentKeyframe.right_arm_rotation) {
-        rightArmRef.current.rotation.x = currentKeyframe.right_arm_rotation.x;
+        rightArmRef.current.rotation.x = -currentKeyframe.right_arm_rotation.x;
         rightArmRef.current.rotation.y = currentKeyframe.right_arm_rotation.y;
         rightArmRef.current.rotation.z = currentKeyframe.right_arm_rotation.z;
       }
 
       if (rightForearmRef.current && currentKeyframe.right_forearm_rotation) {
-        rightForearmRef.current.rotation.x = currentKeyframe.right_forearm_rotation.x;
+        rightForearmRef.current.rotation.x = -currentKeyframe.right_forearm_rotation.x;
         rightForearmRef.current.rotation.y = currentKeyframe.right_forearm_rotation.y;
         rightForearmRef.current.rotation.z = currentKeyframe.right_forearm_rotation.z;
+      }
+
+      // Left Arm (positioned at +0.44 X, viewer's right)
+      if (leftArmRef.current && currentKeyframe.left_arm_rotation) {
+        leftArmRef.current.rotation.x = -currentKeyframe.left_arm_rotation.x;
+        leftArmRef.current.rotation.y = currentKeyframe.left_arm_rotation.y;
+        leftArmRef.current.rotation.z = currentKeyframe.left_arm_rotation.z;
+      }
+
+      if (leftForearmRef.current && currentKeyframe.left_forearm_rotation) {
+        leftForearmRef.current.rotation.x = -currentKeyframe.left_forearm_rotation.x;
+        leftForearmRef.current.rotation.y = currentKeyframe.left_forearm_rotation.y;
+        leftForearmRef.current.rotation.z = currentKeyframe.left_forearm_rotation.z;
       }
 
       // Facial Blendshapes
@@ -179,14 +192,16 @@ const ArticulatedHumanoidSigner = ({
         headRef.current.rotation.z = 0;
       }
 
-      if (leftArmRef.current && rightArmRef.current) {
-        leftArmRef.current.rotation.set(-0.35, 0, 0.22);
+      if (rightArmRef.current && leftArmRef.current) {
+        // Right arm is at -0.44 X, abducted with -0.22 Z
         rightArmRef.current.rotation.set(-0.35, 0, -0.22);
+        // Left arm is at +0.44 X, abducted with +0.22 Z
+        leftArmRef.current.rotation.set(-0.35, 0, 0.22);
       }
 
-      if (leftForearmRef.current && rightForearmRef.current) {
-        leftForearmRef.current.rotation.set(0.15, 0, 0);
-        rightForearmRef.current.rotation.set(0.15, 0, 0);
+      if (rightForearmRef.current && leftForearmRef.current) {
+        rightForearmRef.current.rotation.set(-0.15, 0, 0);
+        leftForearmRef.current.rotation.set(-0.15, 0, 0);
       }
     }
   });
@@ -276,34 +291,8 @@ const ArticulatedHumanoidSigner = ({
           </mesh>
         </group>
 
-        {/* Left Arm Group (Clavicle to Upper Arm) */}
-        <group ref={leftArmRef} position={[-0.44, 0.4, 0]}>
-          <mesh material={shirtMaterial} castShadow>
-            <sphereGeometry args={[0.1, 16, 16]} />
-          </mesh>
-          <mesh position={[0, -0.2, 0]} material={shirtMaterial} castShadow>
-            <cylinderGeometry args={[0.075, 0.07, 0.32, 16]} />
-          </mesh>
-
-          {/* Left Forearm */}
-          <group ref={leftForearmRef} position={[0, -0.36, 0]}>
-            <mesh position={[0, -0.16, 0]} material={skinMaterial} castShadow>
-              <cylinderGeometry args={[0.065, 0.055, 0.3, 16]} />
-            </mesh>
-
-            {/* Left 15-Joint Hand */}
-            <group position={[0, -0.32, 0]}>
-              <ArticulatedHand
-                isLeft={true}
-                handPose={currentKeyframe?.left_hand}
-                skinMaterial={skinMaterial}
-              />
-            </group>
-          </group>
-        </group>
-
-        {/* Right Arm Group */}
-        <group ref={rightArmRef} position={[0.44, 0.4, 0]}>
+        {/* Right Arm Group (Anatomical Right = Viewer's Left at -0.44 X) */}
+        <group ref={rightArmRef} position={[-0.44, 0.4, 0]}>
           <mesh material={shirtMaterial} castShadow>
             <sphereGeometry args={[0.1, 16, 16]} />
           </mesh>
@@ -327,6 +316,32 @@ const ArticulatedHumanoidSigner = ({
             </group>
           </group>
         </group>
+
+        {/* Left Arm Group (Anatomical Left = Viewer's Right at +0.44 X) */}
+        <group ref={leftArmRef} position={[0.44, 0.4, 0]}>
+          <mesh material={shirtMaterial} castShadow>
+            <sphereGeometry args={[0.1, 16, 16]} />
+          </mesh>
+          <mesh position={[0, -0.2, 0]} material={shirtMaterial} castShadow>
+            <cylinderGeometry args={[0.075, 0.07, 0.32, 16]} />
+          </mesh>
+
+          {/* Left Forearm */}
+          <group ref={leftForearmRef} position={[0, -0.36, 0]}>
+            <mesh position={[0, -0.16, 0]} material={skinMaterial} castShadow>
+              <cylinderGeometry args={[0.065, 0.055, 0.3, 16]} />
+            </mesh>
+
+            {/* Left 15-Joint Hand */}
+            <group position={[0, -0.32, 0]}>
+              <ArticulatedHand
+                isLeft={true}
+                handPose={currentKeyframe?.left_hand}
+                skinMaterial={skinMaterial}
+              />
+            </group>
+          </group>
+        </group>
       </group>
 
       {/* Waist Pedestal */}
@@ -343,16 +358,37 @@ const ArticulatedHumanoidSigner = ({
 export const AvatarViewer: React.FC<AvatarViewerProps> = ({
   avatarData,
   animationSequence,
-  conceptTerm
+  conceptTerm,
+  controlledIsPlaying,
+  controlledSpeed,
+  controlledCurrentTime,
+  controlledCameraPreset,
+  onTimeUpdate,
+  onTogglePlay,
+  onSeek,
+  onSelectCameraPreset,
+  showControls = true
 }) => {
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
-  const [speed, setSpeed] = useState<number>(1.0);
-  const [currentTime, setCurrentTime] = useState<number>(0.0);
+  const [internalIsPlaying, setInternalIsPlaying] = useState<boolean>(true);
+  const [internalSpeed, setInternalSpeed] = useState<number>(1.0);
+  const [internalCurrentTime, setInternalCurrentTime] = useState<number>(0.0);
   const [isLooping, setIsLooping] = useState<boolean>(true);
-  const [cameraPreset, setCameraPreset] = useState<CameraPreset>('default');
+  const [cameraPreset, setCameraPreset] = useState<CameraPreset>(controlledCameraPreset || 'default');
   const [activeMocapData, setActiveMocapData] = useState<any>(null);
 
+  const isControlledTime = controlledCurrentTime !== undefined;
+  const isPlaying = controlledIsPlaying !== undefined ? controlledIsPlaying : internalIsPlaying;
+  const speed = controlledSpeed !== undefined ? controlledSpeed : internalSpeed;
+  const currentTime = controlledCurrentTime !== undefined ? controlledCurrentTime : internalCurrentTime;
+
   const controlsRef = useRef<any>(null);
+
+  // Sync camera preset when controlled prop changes
+  useEffect(() => {
+    if (controlledCameraPreset && controlledCameraPreset !== cameraPreset) {
+      handleSelectCameraPreset(controlledCameraPreset);
+    }
+  }, [controlledCameraPreset]);
 
   // Fetch mocap keyframes if concept is provided and has mocap
   useEffect(() => {
@@ -422,10 +458,11 @@ export const AvatarViewer: React.FC<AvatarViewerProps> = ({
 
   // Frame tick animation loop
   useEffect(() => {
+    if (isControlledTime) return;
     if (!isPlaying || totalDuration <= 0) return;
 
     const interval = setInterval(() => {
-      setCurrentTime((prev) => {
+      setInternalCurrentTime((prev) => {
         const next = prev + 0.033 * speed;
         if (next >= totalDuration) {
           return isLooping ? 0.0 : totalDuration;
@@ -435,7 +472,7 @@ export const AvatarViewer: React.FC<AvatarViewerProps> = ({
     }, 33);
 
     return () => clearInterval(interval);
-  }, [isPlaying, speed, totalDuration, isLooping]);
+  }, [isControlledTime, isPlaying, speed, totalDuration, isLooping]);
 
   // Calculate current interpolated keyframe
   const currentKeyframe = useMemo(() => {
@@ -488,18 +525,31 @@ export const AvatarViewer: React.FC<AvatarViewerProps> = ({
     controlsRef.current.update();
   };
 
+  const handleSeek = (newTime: number) => {
+    if (onSeek) {
+      onSeek(newTime);
+    } else {
+      setInternalCurrentTime(newTime);
+    }
+  };
+
   const handleStepFrame = (dir: 'forward' | 'backward') => {
-    setIsPlaying(false);
+    if (onTogglePlay && isPlaying) {
+      onTogglePlay();
+    } else {
+      setInternalIsPlaying(false);
+    }
     const dt = 0.033;
-    setCurrentTime((prev) => {
-      const next = dir === 'forward' ? prev + dt : prev - dt;
-      return Math.max(0, Math.min(totalDuration, next));
-    });
+    const next = dir === 'forward' ? currentTime + dt : currentTime - dt;
+    handleSeek(Math.max(0, Math.min(totalDuration, next)));
   };
 
   const handleReset = () => {
-    setCurrentTime(0.0);
-    setIsPlaying(false);
+    handleSeek(0.0);
+    if (isPlaying) {
+      if (onTogglePlay) onTogglePlay();
+      else setInternalIsPlaying(false);
+    }
     handleSelectCameraPreset('default');
   };
 
@@ -577,29 +627,37 @@ export const AvatarViewer: React.FC<AvatarViewerProps> = ({
       </div>
 
       {/* Transport Controls */}
-      <AvatarControls
-        isPlaying={isPlaying}
-        onTogglePlay={() => setIsPlaying(!isPlaying)}
-        speed={speed}
-        onSpeedChange={setSpeed}
-        currentTimeSeconds={currentTime}
-        totalDurationSeconds={totalDuration}
-        onSeek={setCurrentTime}
-        onStepFrame={handleStepFrame}
-        isLooping={isLooping}
-        onToggleLoop={() => setIsLooping(!isLooping)}
-        cameraPreset={cameraPreset}
-        onSelectCameraPreset={handleSelectCameraPreset}
-        onReset={handleReset}
-      />
+      {showControls && (
+        <AvatarControls
+          isPlaying={isPlaying}
+          onTogglePlay={() => {
+            if (onTogglePlay) onTogglePlay();
+            else setInternalIsPlaying(!internalIsPlaying);
+          }}
+          speed={speed}
+          onSpeedChange={(newSpeed) => setInternalSpeed(newSpeed)}
+          currentTimeSeconds={currentTime}
+          totalDurationSeconds={totalDuration}
+          onSeek={handleSeek}
+          onStepFrame={handleStepFrame}
+          isLooping={isLooping}
+          onToggleLoop={() => setIsLooping(!isLooping)}
+          cameraPreset={cameraPreset}
+          onSelectCameraPreset={(p) => {
+            handleSelectCameraPreset(p);
+            if (onSelectCameraPreset) onSelectCameraPreset(p);
+          }}
+          onReset={handleReset}
+        />
+      )}
 
       {/* Animation Sequence Timeline */}
-      {tracks.length > 0 && (
+      {showControls && tracks.length > 0 && (
         <AnimationTimeline
           tracks={tracks}
           currentTimeSeconds={currentTime}
           totalDurationSeconds={totalDuration}
-          onSeek={setCurrentTime}
+          onSeek={handleSeek}
         />
       )}
     </div>

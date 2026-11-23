@@ -381,6 +381,13 @@ export const AvatarAuditComparisonPage: React.FC = () => {
               motion_status: 'PARTIALLY_VERIFIED_MOTION',
               notice: 'Authentic ISLRTC mocap retargeted to 54-joint rig.'
             }}
+            controlledIsPlaying={isPlaying}
+            controlledSpeed={speed}
+            controlledCurrentTime={currentTime}
+            onTimeUpdate={(t) => setCurrentTime(t)}
+            onTogglePlay={handleTogglePlay}
+            onSeek={handleSeek}
+            showControls={false}
           />
         </div>
       </div>

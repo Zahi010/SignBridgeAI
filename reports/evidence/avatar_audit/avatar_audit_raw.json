@@ -1,0 +1,69 @@
+{
+  "webgl": {
+    "width": 466,
+    "height": 150,
+    "vendor": "WebKit",
+    "renderer": "WebKit WebGL",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "glsl": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)",
+    "maxTextureSize": 16384,
+    "maxVertexAttribs": 16
+  },
+  "scene_graph": {},
+  "anatomy_topology": {},
+  "kinematics": {},
+  "synchronization": {
+    "avatar_audit_page": {
+      "hasVideo": true,
+      "videoSrc": "http://localhost:5173/data/sign_videos/islrtc_algorithm.mp4",
+      "videoDuration": 15,
+      "videoCurrentTime": 0,
+      "videoPaused": true,
+      "hasMasterSlider": true,
+      "sliderMax": "6",
+      "hasAvatarContainer": true,
+      "timeDisplays": [
+        "Timestamp: ",
+        "0.000s",
+        " / 6.00s",
+        "1920x1080 (Full HD)",
+        "Frame: 0 / 150"
+      ]
+    },
+    "demo_page_coupling": {
+      "before": {
+        "vStateBefore": {
+          "paused": true,
+          "time": 0
+        },
+        "clickedMasterPlay": true
+      },
+      "after": {
+        "vStateAfter": {
+          "paused": false,
+          "time": 1.462842
+        }
+      }
+    }
+  },
+  "facial_nmm": {},
+  "performance": {
+    "fps": 50,
+    "elapsedMs": 1002.8999998569489,
+    "frames": 50,
+    "memory": {
+      "usedJSHeapSize": 40223009,
+      "totalJSHeapSize": 56259389
+    }
+  },
+  "screenshots": {
+    "07_avatar_audit_side_by_side.png": "reports\\evidence\\avatar_audit\\07_avatar_audit_side_by_side.png",
+    "06_algorithm_signing_step4.png": "reports\\evidence\\avatar_audit\\06_algorithm_signing_step4.png",
+    "01_model_front.png": "reports\\evidence\\avatar_audit\\01_model_front.png",
+    "02_model_left45.png": "reports\\evidence\\avatar_audit\\02_model_left45.png",
+    "03_model_right45.png": "reports\\evidence\\avatar_audit\\03_model_right45.png",
+    "04_model_hands_closeup.png": "reports\\evidence\\avatar_audit\\04_model_hands_closeup.png",
+    "05_model_face_closeup.png": "reports\\evidence\\avatar_audit\\05_model_face_closeup.png",
+    "08_torque_signing.png": "reports\\evidence\\avatar_audit\\08_torque_signing.png"
+  }
+}

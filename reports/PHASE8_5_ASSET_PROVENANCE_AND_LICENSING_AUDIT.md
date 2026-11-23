@@ -133,3 +133,4 @@ In accordance with strict audit governance, all assets are classified into four 
 * **Demonstration Legality:** Display of the 5 authentic ISLRTC videos during a college project presentation or academic evaluation is **100% lawful** under Indian Copyright Act 1957 Section 52(1)(a) (fair dealing for research/education) and GODL-India Section 3.
 * **Attribution Requirement:** The `/demo` page (Step 6) and presentation slides must explicitly state:  
   *"Source videos: Indian Sign Language Research and Training Centre (ISLRTC), Government of India, under Government Open Data License (GODL-India). Displayed strictly for non-profit academic research."*
+

@@ -74,3 +74,4 @@ Phase 12: Controlled Classroom Demonstration Pilot (Months 10–12)
 ├── Evaluate cognitive load and avatar visual fatigue
 └── Publish open-source dataset and peer-reviewed journal paper
 ```
+

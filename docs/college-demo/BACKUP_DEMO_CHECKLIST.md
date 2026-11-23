@@ -92,3 +92,4 @@ In the unlikely event of total laptop hardware failure, all demonstration screen
 13. `13_text_translator.png` — Engineering text translator.
 
 *Keep a copy of this folder on a USB flash drive as an ultimate fallback.*
+

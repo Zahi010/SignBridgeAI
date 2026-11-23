@@ -93,3 +93,4 @@ The test inspected:
 * **Action:** Clicked "Reset Demo" button from Step 6.
 * **Verified Behavior:** Clears current timeline; pauses video player; resets camera to default frontal view; returns directly to Step 1 with default preset selected in under 5 ms.
 * **Result:** **`PASS`**
+

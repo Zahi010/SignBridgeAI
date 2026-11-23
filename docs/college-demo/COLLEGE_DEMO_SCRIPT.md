@@ -103,3 +103,4 @@
   > *SignBridge AI proves that AI can assist accessibility while upholding the highest ethical and linguistic standards: **Nothing about us without us**.*
   >
   > *Thank you. We now welcome questions from the evaluation committee."*
+

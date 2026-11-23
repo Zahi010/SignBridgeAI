@@ -506,6 +506,11 @@ export const LiveDemoPage: React.FC = () => {
                         loop
                         playsInline
                         muted
+                        onTimeUpdate={() => {
+                          if (videoRef.current) {
+                            setCurrentTime(videoRef.current.currentTime);
+                          }
+                        }}
                       />
                     </div>
 
@@ -529,6 +534,18 @@ export const LiveDemoPage: React.FC = () => {
                       <AvatarViewer
                         conceptTerm={selectedPreset.term}
                         animationSequence={avatarSequence || undefined}
+                        controlledIsPlaying={isPlaying}
+                        controlledSpeed={playbackSpeed}
+                        controlledCurrentTime={currentTime}
+                        controlledCameraPreset={cameraAngle}
+                        onTimeUpdate={(t) => setCurrentTime(t)}
+                        onTogglePlay={() => setIsPlaying(!isPlaying)}
+                        onSeek={(t) => {
+                          setCurrentTime(t);
+                          if (videoRef.current) videoRef.current.currentTime = t;
+                        }}
+                        onSelectCameraPreset={(p) => setCameraAngle(p)}
+                        showControls={false}
                       />
                     </div>
 

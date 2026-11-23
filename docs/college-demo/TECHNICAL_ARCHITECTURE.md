@@ -131,3 +131,4 @@ flowchart TB
 * **Backend Runtime:** Python 3.12 / 3.13, Uvicorn ASGI server.
 * **Frontend Runtime:** Node.js v18+, Vite 5 production bundle.
 * **Client System Requirements:** Any standard laptop or desktop with modern browser (Chrome, Edge, Firefox, Safari) with WebGL 2.0 support; no dedicated GPU required.
+

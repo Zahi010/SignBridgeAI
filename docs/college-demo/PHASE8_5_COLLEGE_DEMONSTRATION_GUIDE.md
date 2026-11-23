@@ -133,3 +133,4 @@ Click the **"Live Demo"** button in the top navigation bar to open `http://local
 1. **Academic Rigor:** SignBridge AI avoids the common mistake of claiming "complete sign language translation." It is an honest, rigorously engineered engineering prototype with clear ethical boundaries.
 2. **Technical Depth:** Combines modern full-stack web architecture, client-side WebGL 3D character animation, spaCy NLP dependency parsing, and MediaPipe computer vision kinematics.
 3. **Zero Fabrication:** The project strictly respects the Deaf community by refusing to invent synthetic signs and adhering to the principle: *"Nothing about us without us."*
+
