@@ -189,6 +189,16 @@ def test_organization_status_transition_on_interaction():
     assert res_check.status_code == 200
     assert res_check.json()["outreach_status"] == "CONTACTED"
 
+    # Clean up test organization to prevent test artifact pollution
+    db = SessionLocal()
+    try:
+        test_org = db.query(InstitutionalOutreach).filter(InstitutionalOutreach.id == org_id).first()
+        if test_org:
+            db.delete(test_org)
+            db.commit()
+    finally:
+        db.close()
+
 
 def test_update_organization():
     """Tests updating an organization's fields."""

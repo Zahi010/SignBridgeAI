@@ -1,0 +1,104 @@
+{
+  "routes": {
+    "/": {
+      "title": "SignBridge AI \u2014 Indian Sign Language Translation for Engineering",
+      "status": "VERIFIED",
+      "screenshot": "docs\\college-demo\\evidence\\01_landing_page.png"
+    },
+    "/demo": {
+      "header": "SignBridge AI \u2014 Live Demonstration Experience",
+      "status": "VERIFIED"
+    },
+    "/outreach": {
+      "header": "Institutional Outreach & Collaboration Readiness",
+      "institution_rows_count": 14,
+      "status": "PASS"
+    },
+    "/outreach/modal": {
+      "modal_organization": "Indian Sign Language Research and Training Centre (ISLRTC)",
+      "status": "PASS"
+    },
+    "/expert-review": {
+      "header": "ISL Expert Review & Validation Portal",
+      "status": "PASS"
+    },
+    "/validation-dashboard": {
+      "header": "ISL Validation & Academic Evaluation Dashboard",
+      "status": "PASS"
+    },
+    "/community-evaluation": {
+      "header": "Deaf Community Linguistic & Comprehension Evaluation",
+      "status": "PASS"
+    },
+    "/translate": {
+      "header": "Text-to-ISL Translation Engine",
+      "translated_gloss_found": false,
+      "status": "FAIL"
+    }
+  },
+  "demo_presets": {
+    "Algorithm": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Frequency": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Current (Electrical)": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Beam": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Torque": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Backpropagation": {
+      "selected": true,
+      "status": "PASS"
+    },
+    "Deadlock": {
+      "selected": true,
+      "status": "PASS"
+    }
+  },
+  "demo_steps": {
+    "step1_presets": {
+      "count": 7,
+      "expected": 7,
+      "status": "PASS"
+    },
+    "step2_context": {
+      "heading": "SignBridge AI",
+      "status": "FAIL"
+    },
+    "step3_strategy": {
+      "heading": "SignBridge AI",
+      "status": "FAIL"
+    },
+    "step4_sync": {
+      "heading": "SignBridge AI",
+      "has_video": true,
+      "video_src": "http://localhost:5173/data/sign_videos/islrtc_algorithm.mp4",
+      "has_avatar_canvas": true,
+      "status": "PASS"
+    },
+    "step5_pedagogical": {
+      "heading": "SignBridge AI",
+      "has_fallback_content": false,
+      "status": "FAIL"
+    },
+    "step6_evidence": {
+      "heading": "SignBridge AI",
+      "has_godl_license": true,
+      "has_limitations": true,
+      "status": "PASS"
+    }
+  },
+  "console_errors": [],
+  "screenshots": []
+}
