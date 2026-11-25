@@ -76,3 +76,4 @@ Using `MotionFidelityService`, retargeted joint trajectories were evaluated agai
 | **Torque** | 0.052 | 0.046 | 0.085 | 0.098 | 0.915 |
 
 All signs maintain a Normalized Mean Landmark Error (NMLE) below **$0.06$ body units** ($< 6\%$ of shoulder width).
+

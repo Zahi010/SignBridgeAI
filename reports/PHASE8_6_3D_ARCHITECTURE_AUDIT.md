@@ -82,3 +82,4 @@ flowchart TD
    `AvatarViewer` was written as a self-contained widget. It initially failed to expose controlled props for `currentTime`, `isPlaying`, `speed`, and `cameraPreset`, preventing parent pages from synchronizing the 3D model with external video players.
 3. **Euler Angle Discontinuities:**  
    The retargeting engine solves kinematics directly to Euler angles rather than quaternions. Rapid arm elevations near $90^\circ$ exhibit gimbal-lock vulnerability and sudden sign flips in yaw.
+

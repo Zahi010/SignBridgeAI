@@ -59,3 +59,4 @@ In Indian Sign Language, non-manual markers on the face are not decorative; they
 1. The facial controls are mechanically connected and successfully deform based on incoming keyframes.
 2. They function adequately as **symbolic grammatical indicators** for an engineering research prototype.
 3. However, they **do not constitute natural human facial signing** and must be honestly disclosed as geometric proxy markers rather than production-grade expressive facial performance.
+

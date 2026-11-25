@@ -97,3 +97,4 @@ All screenshots captured during automated Chrome DevTools Protocol verification:
 | `reports/evidence/avatar_audit/07_avatar_audit_side_by_side.png` | 230,987 B | Full audit comparison page with master scrubber | **VERIFIED** |
 | `reports/evidence/avatar_audit/08_torque_signing.png` | 224,677 B | Step 4 synchronized view for Torque rotational sign | **VERIFIED** |
 | `reports/evidence/avatar_audit/avatar_audit_raw.json` | 1,482 B | Raw WebGL context and performance telemetry | **VERIFIED** |
+

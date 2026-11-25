@@ -51,3 +51,4 @@ Measurements were taken directly from the running browser using the Chrome DevTo
 
 - **Performance Gate Status:** **PASS (GATE 3D-A)**.
 - The 3D scene renders reliably with zero WebGL crashes, maintaining an average **37 FPS** and consuming only **38.2 MB** of heap memory.
+

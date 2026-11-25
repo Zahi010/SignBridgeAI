@@ -57,3 +57,4 @@ Each animation was tested independently for all playback transport states:
 ### Defect PLAY-02: Nearest-Keyframe Stepping vs Linear Lerp (P2)
 - **Observation:** At 0.25x playback speed, the avatar holds each keyframe for 4 screen frames before jumping to the next, causing perceptible stepped motion.
 - **Remediation Plan:** Document as a known limitation for Phase 9 quaternion SLERP interpolation.
+

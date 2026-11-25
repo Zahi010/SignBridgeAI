@@ -102,3 +102,4 @@ groupRef (Avatar Root: [0, -0.65, 0])
 | **Gate 3D-B2: Handedness Orientation** | Anatomical left/right alignment | Left and Right arms inverted in position. | **FAIL (Needs P0 Fix)** |
 | **Gate 3D-B3: Joint Pivot Continuity** | Pointers rotate around parent pivots | Elbows and finger phalanges pivot at joint origins. | **PASS** |
 | **Gate 3D-B4: Rest Pose Stability** | Arms down at sides, hands relaxed | Verified rest pose stable when no mocap active. | **PASS** |
+

@@ -56,3 +56,4 @@ All computed joint angles remain strictly bounded within physiological `JOINT_LI
 - No synthetic keyframes were inserted into the 5 mocap files.
 - All files contain explicit `linguistic_disclaimer` tags identifying them as `PARTIALLY_VERIFIED_MOTION` pending accredited Deaf expert sign-off.
 - Source video SHA-256 hashes are recorded in each JSON header and match the physical files in `data/sign_videos/`.
+

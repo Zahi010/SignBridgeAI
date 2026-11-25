@@ -69,3 +69,4 @@ By the right-hand rule in Three.js coordinates:
 ## 4. KINEMATICS AUDIT CONCLUSION
 
 The 15-joint structural breakdown per hand is genuine and correctly matches the 54-joint specification. However, due to an uncompensated Euler axis sign inversion in `ArticulatedHand`, all positive finger flexion angles caused severe dorsal hyperextension. This is a **P0 repair priority**.
+

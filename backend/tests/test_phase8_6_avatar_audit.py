@@ -139,3 +139,4 @@ def test_live_demo_page_synchronization_integration():
     assert "controlledCurrentTime={currentTime}" in content
     assert "controlledCameraPreset={cameraAngle}" in content
     assert "onTimeUpdate=" in content
+
